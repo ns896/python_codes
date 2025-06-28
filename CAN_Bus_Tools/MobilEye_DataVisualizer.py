@@ -34,7 +34,7 @@ class MobilEyeVisualizer:
         
         # Control flags
         self.is_running = False
-        self.update_interval = 75  # milliseconds
+        self.update_interval = 200  # milliseconds
         
         # Data storage
         self.lane_data_history = {
