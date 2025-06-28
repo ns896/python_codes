@@ -1,0 +1,1 @@
+CAN_Bus_Tools/CAN_LOGs/*.log filter=lfs diff=lfs merge=lfs -text
