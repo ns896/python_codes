@@ -3,6 +3,7 @@
 This repository contains tools for replaying CAN data from recorded log files.
 
 ## Table of Contents
+- [Canplayer](#canplayer) 
 - Set Up Virtual CAN Port
   - [Virtual CAN Setup](#virtual-can-setup)
     - [Prerequisites](#require-modules)
@@ -11,6 +12,37 @@ This repository contains tools for replaying CAN data from recorded log files.
   - [PyEnv Setup](#pyenv-setup)
   - [Installation](#installation)
   - [Usage](#usage)
+
+## Canplayer
+The canplayer utility allows you to replay CAN messages from a log file. This is useful for testing and development without requiring actual CAN hardware.
+
+### Basic Usage
+
+To replay CAN messages from a log file:
+```bash
+# Navigate to your CAN logs directory
+cd /home/nsingh/python_codes/CAN_Bus_Tools/CAN_LOGs
+
+# Play a specific log file (replace with your desired file)
+canplayer -I candump-2025-06-24_093934.log vcan0
+
+# Play at real-time speed (default)
+canplayer -I candump-2025-06-24_093934.log vcan0
+
+# Play at 2x speed
+canplayer -t 2 -I candump-2025-06-24_093934.log vcan0
+
+# Play at 0.5x speed (slower)
+canplayer -t 0.5 -I candump-2025-06-24_093934.log vcan0
+
+# Play the log file in a continuous loop
+canplayer -l i -I candump-2025-06-24_093934.log vcan0
+
+# Play with loop and timing
+canplayer -l i -t 2 -I candump-2025-06-24_093934.log vcan0
+
+
+```
 
 ## Virtual CAN Setup
 Follow the following guide to set up a virtual CAN on a host laptop to visualize/simulate a actual CAN port. 
