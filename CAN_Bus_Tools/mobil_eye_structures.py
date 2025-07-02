@@ -1,3 +1,7 @@
+# Author: Navneet Singh
+# mobil_eye_structures.py
+# Data structures for the Mobil Eye CAN Data
+
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional
 import time 

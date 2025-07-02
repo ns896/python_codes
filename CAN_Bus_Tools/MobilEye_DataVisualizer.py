@@ -1,3 +1,7 @@
+# Author: Navneet Singh
+# MobilEye_DataVisualizer.py
+# Plotly Dash app to visualize the data from the MobilEye sensor.
+
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
@@ -36,6 +40,8 @@ class MobilEyeVisualizer:
         self.is_running = False
         self.update_interval = 200  # milliseconds
         
+        self.enable_obstacle_detection = False  
+
         # Data storage
         self.lane_data_history = {
             'left': deque(maxlen=max_data_points),
@@ -53,12 +59,14 @@ class MobilEyeVisualizer:
         self.app.layout = html.Div([
             html.H1("MobilEye CAN Data Visualization", 
                    style={'textAlign': 'center', 'color': '#2c3e50'}),
-            
+            html.H2("By Navneet Singh", style={'textAlign': 'center', 'color': '#2c3e50'}),
             # Control panel
             html.Div([
                 html.Button('Start Visualization', id='start-btn', n_clicks=0),
                 html.Button('Stop Visualization', id='stop-btn', n_clicks=0),
                 html.Button('Clear Data', id='clear-btn', n_clicks=0),
+                html.Button('Enable Obstacle Detection', id='enable-obstacle-btn', n_clicks=0),
+                html.Button('Disable Obstacle Detection', id='disable-obstacle-btn', n_clicks=0),
                 html.Div(id='status-display', style={'marginTop': '10px'})
             ], style={'textAlign': 'center', 'marginBottom': '20px'}),
             
@@ -143,9 +151,11 @@ class MobilEyeVisualizer:
              Output('status-display', 'children')],
             [Input('start-btn', 'n_clicks'),
              Input('stop-btn', 'n_clicks'),
-             Input('clear-btn', 'n_clicks')]
+             Input('clear-btn', 'n_clicks'),
+             Input('enable-obstacle-btn', 'n_clicks'),
+             Input('disable-obstacle-btn', 'n_clicks')]
         )
-        def control_visualization(start_clicks, stop_clicks, clear_clicks):
+        def control_visualization(start_clicks, stop_clicks, clear_clicks, enable_obstacle_clicks, disable_obstacle_clicks):
             ctx = callback_context
             if not ctx.triggered:
                 return True, True, "Ready to start"
@@ -161,11 +171,16 @@ class MobilEyeVisualizer:
             elif button_id == 'clear-btn':
                 self.clear_data()
                 return True, True, "Data cleared"
-            
+            elif button_id == 'enable-obstacle-btn':
+                self.enable_obstacle_detection = True
+                return False, False, "Obstacle detection enabled - obstacles overlaid on lane plot"
+            elif button_id == 'disable-obstacle-btn':
+                self.enable_obstacle_detection = False
+                return False, False, "Obstacle detection disabled"
             return True, True, "Ready to start"
     
     def create_lane_plot(self):
-        """Create the lane visualization plot"""
+        """Create the lane visualization plot with optional obstacle overlay"""
         fig = go.Figure()
         
         # Add vehicle representation
@@ -193,6 +208,7 @@ class MobilEyeVisualizer:
             ))
             
             # Lane boundary
+            # Ignore this line in plot only for Navneets Stupid eyes
             lane_width = 3.5
             fig.add_trace(go.Scatter(
                 x=x, y=[yi + lane_width/2 for yi in y],
@@ -215,6 +231,7 @@ class MobilEyeVisualizer:
             ))
             
             # Lane boundary
+            # Ignore this line in plot only for Navneets Stupid eyes
             lane_width = 3.5
             fig.add_trace(go.Scatter(
                 x=x, y=[yi - lane_width/2 for yi in y],
@@ -224,12 +241,44 @@ class MobilEyeVisualizer:
                 showlegend=False
             ))
         
+        # OVERLAY OBSTACLES ON THE SAME PLOT
+        if hasattr(self, 'enable_obstacle_detection') and self.enable_obstacle_detection:
+            if self.obstacle_data_history:
+                obstacle_list = self.obstacle_data_history[-1] if self.obstacle_data_history else None
+                
+                if obstacle_list:
+                    # Extract individual obstacles from the Obstacle_Data_List
+                    obstacles = [
+                        obstacle_list.object1, obstacle_list.object2, obstacle_list.object3,
+                        obstacle_list.object4, obstacle_list.object5, obstacle_list.object6,
+                        obstacle_list.object7, obstacle_list.object8, obstacle_list.object9,
+                        obstacle_list.object10
+                    ]
+                    
+                    for obstacle in obstacles:
+                        # Only plot obstacles that have valid data
+                        if obstacle and obstacle.last_update > 0:
+                            fig.add_trace(go.Scatter(
+                                x=[obstacle.longitudinal_distance],
+                                y=[obstacle.lateral_distance],
+                                mode='markers',
+                                marker=dict(
+                                    size=15,
+                                    color='red' if obstacle.object_class == 1 else 'orange',
+                                    symbol='circle'
+                                ),
+                                name=f'Obstacle {obstacle.id}',
+                                text=f'ID: {obstacle.id}<br>Class: {obstacle.object_class}<br>Velocity: {obstacle.absolute_long_velocity:.1f} m/s',
+                                hoverinfo='text',
+                                showlegend=True
+                            ))
+        
         # Update layout
         fig.update_layout(
-            title="Real-time Lane Detection",
+            title="Real-time Lane Detection with Obstacles" if hasattr(self, 'enable_obstacle_detection') and self.enable_obstacle_detection else "Real-time Lane Detection",
             xaxis_title="Distance Ahead (m)",
             yaxis_title="Lateral Position (m)",
-            xaxis=dict(range=[0, 50]),
+            xaxis=dict(range=[0, 100]),
             yaxis=dict(range=[-20, 20]),
             height=500,
             showlegend=True
@@ -239,6 +288,10 @@ class MobilEyeVisualizer:
     
     def create_obstacle_plot(self):
         """Create the obstacle visualization plot"""
+        # Run the plot if not exclusively plotted in lane plot
+        if self.enable_obstacle_detection:
+            return None
+        
         fig = go.Figure()
         
         if self.obstacle_data_history:
@@ -299,7 +352,7 @@ class MobilEyeVisualizer:
             c3 = lane_data.LaneMarkModelDerivA_C3_Rh_ME
         
         # Generate x coordinates (distance ahead)
-        x = np.linspace(0, 50, 100)
+        x = np.linspace(0, 100, 200)
         
         # Calculate y coordinates using cubic polynomial
         # Jimmy told me to use the cubic polynomial model

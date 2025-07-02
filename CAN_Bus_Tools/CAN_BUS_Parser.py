@@ -1,3 +1,8 @@
+# Author: Navneet Singh
+# CAN_BUS_Parser.py
+# Main file for the CAN BUS Parser
+
+
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
