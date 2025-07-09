@@ -75,9 +75,9 @@ class Process_Mobil_Eye_CAN_Data:
                 # Decode the message using cantools database
                 try:
                     decoded = self.can_data_base.decode_message(msg.arbitration_id, msg.data)
-                    print("--------------------------------")
-                    print(decoded)
-                    print("--------------------------------")
+                    # print("--------------------------------")
+                    # print(decoded)
+                    # print("--------------------------------")
                     # Update object1 data from the decoded dictionary
                     self.obstacle_data_list.object1.object_class = decoded['Object_Class_1_A']
                     self.obstacle_data_list.object1.longitudinal_distance = decoded['Longitudinal_Distance_1_A'] 
@@ -452,6 +452,8 @@ class Process_Mobil_Eye_CAN_Data:
                     self.left_lane_data.quality = decoded['Quality_Lh_ME']
                     self.left_lane_data.LaneMarkPosition_C0_Lh_ME = decoded['LaneMarkPosition_C0_Lh_ME']
                     self.left_lane_data.LaneMarkModelA_C2_Lh_ME = decoded['LaneMarkModelA_C2_Lh_ME']
+                    # Update timestamp immediately when first part of left lane data arrives
+                    self.left_lane_data.last_update = time.time()
                 except Exception as e:
                     print(f"Error decoding message: {e}")
 
@@ -461,6 +463,7 @@ class Process_Mobil_Eye_CAN_Data:
                     decoded = self.can_data_base.decode_message(msg.arbitration_id, msg.data)
                     self.left_lane_data.LaneMarkHeadingAngle_C1_Lh_ME = decoded['LaneMarkHeadingAngle_C1_Lh_ME']
                     self.left_lane_data.LaneMarkModelDerivA_C3_Lh_ME = decoded['LaneMarkModelDerivA_C3_Lh_ME']
+                    # Update timestamp when second part of left lane data arrives
                     self.left_lane_data.last_update = time.time()
                 except Exception as e:
                     print(f"Error decoding message: {e}")
@@ -473,6 +476,8 @@ class Process_Mobil_Eye_CAN_Data:
                     self.right_lane_data.quality = decoded['Quality_Rh_ME']
                     self.right_lane_data.LaneMarkPosition_C0_Rh_ME = decoded['LaneMarkPosition_C0_Rh_ME']
                     self.right_lane_data.LaneMarkModelA_C2_Rh_ME = decoded['LaneMarkModelA_C2_Rh_ME']
+                    # Update timestamp immediately when first part of right lane data arrives
+                    self.right_lane_data.last_update = time.time()
                 except Exception as e:
                     print(f"Error decoding message: {e}")
 
@@ -482,9 +487,11 @@ class Process_Mobil_Eye_CAN_Data:
                     decoded = self.can_data_base.decode_message(msg.arbitration_id, msg.data)
                     self.right_lane_data.LaneMarkHeadingAngle_C1_Rh_ME = decoded['LaneMarkHeadingAngle_C1_Rh_ME']
                     self.right_lane_data.LaneMarkModelDerivA_C3_Rh_ME = decoded['LaneMarkModelDerivA_C3_Rh_ME']
+                    # Update timestamp when second part of right lane data arrives
                     self.right_lane_data.last_update = time.time()
                 except Exception as e:
                     print(f"Error decoding message: {e}")
 
             case _:
-                print("Unknown message ID")
+                pass
+                # print("Unknown message ID")

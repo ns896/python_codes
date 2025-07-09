@@ -9,10 +9,12 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from krv_logger.krv_logger import KRV_Logger
 import time
 import asyncio
+import threading
+
 from mobil_eye_structures import Process_Mobil_Eye_CAN_Data, Obstacle_Data_List
 
 # Importing the Data Visualizer
-from MobilEye_DataVisualizer import create_and_start_visualizer
+from MobilEye_DataVisualizer import MobilEyeVisualizer
 
 # Importing CAN Related Libraries
 import can
@@ -41,6 +43,25 @@ mobil_eye_parser = Process_Mobil_Eye_CAN_Data(database)
 
 # Global visualizer instance
 visualizer = None
+visualizer_thread = None
+
+def start_visualizer_thread():
+    """Start the visualizer in a separate thread"""
+    global visualizer
+    try:
+        # Create and start the visualizer
+        visualizer = MobilEyeVisualizer(host='0.0.0.0', port=8050)
+        
+        # Start the Dash server in the current thread
+        visualizer.app.run(
+            host=visualizer.host,
+            port=visualizer.port,
+            debug=False,
+            use_reloader=False
+        )
+        
+    except Exception as e:
+        LOG.error(f"Visualizer thread error: {e}")
 
 async def data_logger(mobil_eye_parser):
     """Separate task for data logging"""
@@ -54,9 +75,11 @@ async def data_logger(mobil_eye_parser):
             LOG.error(f"Data logger error: {e}")
             await asyncio.sleep(1.0)
 
-async def process_can_messages():
-    """Separate task for processing CAN messages"""
+def process_can_messages():
+    """Separate thread for processing CAN messages"""
     global visualizer
+    LOG.info("CAN message processing thread started")
+    
     while True:
         try:
             msg = bus.recv(timeout=1.0)
@@ -69,12 +92,12 @@ async def process_can_messages():
                 
                 # Add data to visualizer if available
                 if visualizer:
-                    # Add lane data to visualizer
-                    if hasattr(mobil_eye_parser, 'left_lane_data') and mobil_eye_parser.left_lane_data.last_update > 0:
-                        visualizer.add_lane_data(left_lane_data=mobil_eye_parser.left_lane_data)
-                        
-                    if hasattr(mobil_eye_parser, 'right_lane_data') and mobil_eye_parser.right_lane_data.last_update > 0:
-                        visualizer.add_lane_data(right_lane_data=mobil_eye_parser.right_lane_data)
+                    # Add lane data to visualizer - combine both lanes in single call
+                    left_lane = mobil_eye_parser.left_lane_data if hasattr(mobil_eye_parser, 'left_lane_data') and mobil_eye_parser.left_lane_data.last_update > 0 else None
+                    right_lane = mobil_eye_parser.right_lane_data if hasattr(mobil_eye_parser, 'right_lane_data') and mobil_eye_parser.right_lane_data.last_update > 0 else None
+                    
+                    if left_lane or right_lane:
+                        visualizer.add_lane_data(left_lane_data=left_lane, right_lane_data=right_lane)
                         
                     # Add obstacle data to visualizer
                     if hasattr(mobil_eye_parser, 'obstacle_data_list'):
@@ -83,7 +106,7 @@ async def process_can_messages():
             except Exception as e:
                 LOG.error(f"Error decoding message: {e}")
             
-            await asyncio.sleep(0.1)
+            time.sleep(0.001)  # Small delay to prevent excessive CPU usage
                 
         except KeyboardInterrupt:
             LOG.info("Stopping CAN bus monitoring...")
@@ -91,52 +114,35 @@ async def process_can_messages():
         except Exception as e:
             LOG.error(f"Bus error: {e}")
             continue
-
-async def visualizer_task():
-    """Separate task for running the visualizer"""
-    global visualizer
-    try:
-        # Start the visualizer
-        visualizer = await create_and_start_visualizer(host='0.0.0.0', port=8050)
-        LOG.info("Visualizer started successfully")
-        
-        # Keep the visualizer running
-        while True:
-            await asyncio.sleep(1.0)
-            
-    except Exception as e:
-        LOG.error(f"Visualizer error: {e}")
-    finally:
-        if visualizer:
-            await visualizer.stop_server()
+    
+    LOG.info("CAN message processing thread stopped")
 
 async def main():
-    # Create all tasks
-    data_logger_task = asyncio.create_task(data_logger(mobil_eye_parser))
-    can_processor_task = asyncio.create_task(process_can_messages())
-    visualizer_task_obj = asyncio.create_task(visualizer_task())
+    global visualizer_thread
     
-    # Run all tasks concurrently
+    # Start visualizer in a separate thread
+    LOG.info("Starting visualizer in separate thread...")
+    visualizer_thread = threading.Thread(target=start_visualizer_thread, daemon=True)
+    visualizer_thread.start()
+    
+    # Wait a moment for visualizer to start
+    await asyncio.sleep(3)
+    
+    # Start CAN processing in a separate thread
+    LOG.info("Starting CAN message processing thread...")
+    can_processor_thread = threading.Thread(target=process_can_messages, daemon=True)
+    can_processor_thread.start()
+    
+    # Keep the main thread alive
     try:
-        await asyncio.gather(data_logger_task, can_processor_task, visualizer_task_obj)
+        while True:
+            await asyncio.sleep(1)
     except KeyboardInterrupt:
-        LOG.info("Shutting down all tasks...")
-        # Cancel all tasks gracefully
-        data_logger_task.cancel()
-        can_processor_task.cancel()
-        visualizer_task_obj.cancel()
-        
-        # Wait for tasks to finish
-        await asyncio.gather(
-            data_logger_task, 
-            can_processor_task, 
-            visualizer_task_obj, 
-            return_exceptions=True
-        )
+        LOG.info("Shutting down all threads...")
         
         # Shutdown CAN bus
         bus.shutdown()
-        LOG.info("All tasks stopped gracefully")
+        LOG.info("All threads stopped gracefully")
 
 LOG.info("CAN_BUS_Parser is ending")
 
