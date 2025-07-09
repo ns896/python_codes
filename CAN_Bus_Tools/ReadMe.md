@@ -3,6 +3,7 @@
 This repository contains tools for replaying CAN data from recorded log files.
 
 ## Table of Contents
+- [Mobil Eye Visualizer](#mobil-eye-visualizer)
 - [Canplayer](#canplayer) 
 - Set Up Virtual CAN Port
   - [Virtual CAN Setup](#virtual-can-setup)
@@ -12,6 +13,32 @@ This repository contains tools for replaying CAN data from recorded log files.
   - [PyEnv Setup](#pyenv-setup)
   - [Installation](#installation)
   - [Usage](#usage)
+
+## Mobil Eye Visualizer
+
+Steps to get the Mobil Eye Data Visualizer 
+
+Step 1 - Run your Can dump on vcan0
+
+```
+some example data is there in /mnt/zen-vault/ffa/nsingh/MobilEye_CANLogs/CAN_LOGs
+```
+
+```bash
+canplayer -I <location_to_log_file> -l i vcan0=can0
+```
+
+Step 2 - Source the python env 
+```bash
+cd CAN_BUS_Tools 
+source can_env/bin/activate
+```
+Step 3 - Run the Mobil Eye Visu Server
+```bash
+python3 CAN_BUS_Parser.py
+# go to the server IP from terminal :8050
+```
+
 
 ## Canplayer
 The canplayer utility allows you to replay CAN messages from a log file. This is useful for testing and development without requiring actual CAN hardware.
