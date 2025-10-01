@@ -1,8 +1,6 @@
 <!-- Jai Guru Dev -->
 <!-- AC Measurement System with Modbus Measurement -->
 
-
-
 ## AC Voltage Current and PowerFactor Measurement System
 Author : Navneet Singh <br>
 Lang   : Python3       <br> 
@@ -14,7 +12,8 @@ This system measures AC voltage (80-260V), current (0-100A), active power (0-23k
     - [System Description](#system-description)
     - [Component List](#component-list)
 - [USB Interface BringUP](#usb-interface-bringup) 
-- Set Up Virtual CAN Port
+- [Software Interface](#software-interface)
+    - [MODBUS Communication](#modbus-communication)
   - [Virtual CAN Setup](#virtual-can-setup)
     - [Prerequisites](#require-modules)
     - [Create Virtual CAN Interface](#create-virtual-can-interface)
@@ -25,6 +24,12 @@ This system measures AC voltage (80-260V), current (0-100A), active power (0-23k
 
 ## Hardware Block Diagram
 The connection diagram to connect the measuremnt system through the Tranformer coil.
+<br>
+<p>
+The AC measurement module uses AC voltage to power itself up. if the AC power goes out then then the whole system will fail and not provide any readings to the MODBUS master command to read the measurement register.
+
+The wire going through the Measurement Transformer is the return wire of the AC input to the load. i.e. in the system shown below we are using return wire from the AC to DC converter. 
+</p>
 
 ![System Block Diagram](assets/Connection_Block_Diagram.png)
 <p><div align="center"> IMAGE-1 - Hardware Block Diagram 
@@ -33,7 +38,7 @@ The connection diagram to connect the measuremnt system through the Tranformer c
 ## Component List
 **Measurement Module**  : PZEM-016<br>
 **Coil Transformer**    : PZCT-02<br>
-**RS232 to USB**        : Future Technology Devices International, Ltd FT232<br>
+**RS485 to USB**        : Future Technology Devices International, Ltd FT232<br>
 **AC to DC Converter**  : MeanWell AGP-120-12<br>
 
 ## USB Interface Bringup
@@ -82,3 +87,18 @@ minicom -b 9600 -D /dev/ttyUSB0
 **Parameters:**
 - `-b 9600`: Baud rate (9600 bps)
 - `-D /dev/ttyUSB0`: Device path
+
+## Software Interface
+<p style="text-align: justify">
+Python scripts interface with the sensing module to retrieve measurements from the device.
+
+Communication uses `RS485` as the physical layer with `MODBUS` as the application layer protocol. A `USB` to `RS485` converter enables communication with an x86 machine, which acts as the MODBUS master on the RS485 bus.
+</p>
+
+### Modbus Communication 
+<p style="text-align: justify">
+Python liberary `MinimalModbus` is used to communicate as the master on the bus which is created. The lib can interface with a variety of physical layers including `serial` `RS485` `tcp`. 
+
+For our applicaion in the setup defined above we will deal with the communicaiton as if we are dealing with a serial bus as the serial to `RS485`
+
+Using RS485 provides the advantage of connecting multiple sensors on the same two-wire bus in a daisy-chain configuration. This eliminates the need for additional UART devices and simplifies system wiring, as each sensor can be addressed uniquely through the MODBUS protocol on the shared RS485 bus.

@@ -1,6 +1,14 @@
+from tkinter import W
 import minimalmodbus
 import serial
 import time
+
+from krv_comman.TUI.basic_tui import BasicTUI
+
+class ACMeasurementTUI(BasicTUI):
+    def __init__(self):
+        super().__init__("AC Measurement System")
+        
 
 # Configure the serial port for your RS485 converter
 # Replace 'COM3' with your actual serial port (e.g., '/dev/ttyUSB0' on Linux)
@@ -48,10 +56,16 @@ def read_pzem_016_data():
         print(f"An unexpected error occurred: {e}")
         return None
 
+def main():
+    app = ACMeasurementTUI()
+    app.start()
+    # print("Reading PZEM-016 data...")
+    # while True:
+    #     sensor_data = read_pzem_016_data()
+    #     if sensor_data:
+    #         print(f"PZEM-016 Data: {sensor_data}")
+    #     time.sleep(5) # Read every 5 seconds
+
+
 if __name__ == "__main__":
-    print("Reading PZEM-016 data...")
-    while True:
-        sensor_data = read_pzem_016_data()
-        if sensor_data:
-            print(f"PZEM-016 Data: {sensor_data}")
-        time.sleep(5) # Read every 5 seconds
+    main()

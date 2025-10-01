@@ -582,4 +582,16 @@ if __name__ == "__main__":
         except KeyboardInterrupt:
             await visualizer.stop_server()
     
-    asyncio.run(test())
+def main():
+    """Main function for command line tool"""
+    print("Starting MobilEye Data Visualizer...")
+    print("The visualizer will be available at http://localhost:8050")
+    print("Press Ctrl+C to stop")
+    
+    try:
+        asyncio.run(test())
+    except KeyboardInterrupt:
+        print("\nVisualizer stopped by user")
+
+if __name__ == "__main__":
+    main()
