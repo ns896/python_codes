@@ -7,6 +7,11 @@ Lang   : Python3       <br>
 
 This system measures AC voltage (80-260V), current (0-100A), active power (0-23kW), frequency (45-65Hz), power factor (0.00-1.00), and energy consumption through RS485 Modbus-RTU communication protocol. Perfect for power monitoring, generator load balancing, and energy management applications. 
 
+## Project Video Blogs 
+Project Description Video : 
+https://youtu.be/QOBo3sWSI8o
+Software Walk Through Video : 
+[coming soon]
 ## Table of Contents
 - [System Block Diagram](#hardware-block-diagram)
     - [System Description](#system-description)
