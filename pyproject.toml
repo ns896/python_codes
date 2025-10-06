@@ -1,0 +1,152 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-codes"
+version = "0.1.0"
+description = "Collection of Python tools for AC measurement, CAN bus analysis, and TUI applications"
+authors = [
+    {name = "Navneet Singh", email = "navneet@example.com"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Hardware",
+    "Topic :: Scientific/Engineering",
+]
+
+# Core dependencies for all packages
+dependencies = [
+    "pyserial>=3.5",
+    "minimalmodbus>=2.1.1",
+]
+
+# Optional dependencies for different use cases
+[project.optional-dependencies]
+can-tools = [
+    "python-can>=4.0.0",
+    "cantools>=39.0.0",
+    "plotly>=5.0.0",
+    "dash>=2.0.0",
+    "dash-bootstrap-components>=1.0.0",
+    "numpy>=1.20.0",
+    "pandas>=1.3.0",
+]
+ac-measurement = [
+    "pyserial>=3.5",
+    "minimalmodbus>=2.1.1",
+]
+tui = [
+    # curses is part of Python standard library
+]
+visualization = [
+    "plotly>=5.0.0",
+    "dash>=2.0.0",
+    "dash-bootstrap-components>=1.0.0",
+    "numpy>=1.20.0",
+    "pandas>=1.3.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+    "mypy>=1.0.0",
+]
+all = [
+    "python-codes[can-tools,ac-measurement,visualization,dev]"
+]
+
+[project.urls]
+Homepage = "https://github.com/nsingh/python_codes"
+Repository = "https://github.com/nsingh/python_codes"
+Documentation = "https://github.com/nsingh/python_codes#readme"
+"Bug Tracker" = "https://github.com/nsingh/python_codes/issues"
+
+# Package discovery - tells Python where to find your packages
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["krv_*", "AC_Measurement_System*", "CAN_Bus_Tools*"]
+exclude = ["tests*", "venv*", "*_env*", "__pycache__*", "*.pyc"]
+
+# Package data - include non-Python files
+[tool.setuptools.package-data]
+"AC_Measurement_System" = ["assets/*.png", "*.md"]
+"CAN_Bus_Tools" = ["dbc_files/*.dbc", "CAN_LOGs/*.log", "*.md"]
+
+# Entry points - create command-line tools
+[project.scripts]
+ac-measurement = "AC_Measurement_System.main:main"
+can-parser = "CAN_Bus_Tools.CAN_BUS_Parser:main"
+can-visualizer = "CAN_Bus_Tools.MobilEye_DataVisualizer:main"
+krv-logger-test = "krv_logger.krv_logger_unit_test:main"
+
+# Configuration for development tools
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | venv
+  | can_env
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--cov=krv_logger",
+    "--cov=AC_Measurement_System", 
+    "--cov=CAN_Bus_Tools",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "hardware: marks tests that require hardware",
+]
