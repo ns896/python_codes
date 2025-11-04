@@ -51,6 +51,11 @@ ac-measurement = [
 tui = [
     # curses is part of Python standard library
 ]
+iostat = [
+    "h5py>=3.0.0",
+    "numpy>=1.20.0",
+    "matplotlib>=3.5.0",
+]
 visualization = [
     "plotly>=5.0.0",
     "dash>=2.0.0",
@@ -66,7 +71,7 @@ dev = [
     "mypy>=1.0.0",
 ]
 all = [
-    "python-codes[can-tools,ac-measurement,visualization,dev]"
+    "python-codes[can-tools,ac-measurement,iostat,visualization,dev]"
 ]
 
 [project.urls]
