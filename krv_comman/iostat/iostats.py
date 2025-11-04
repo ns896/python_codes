@@ -8,26 +8,39 @@ import datetime
 
 @dataclass
 class IOStatData:
-    device_name: str = ""
-    read_requests_per_second: float = 0.0
-    write_requests_per_second: float = 0.0
-    kb_data_read_per_second: float = 0.0
-    kb_data_write_per_second: float = 0.0
-    read_req_merged_persec: float = 0.0
-    write_req_merged_persec: float = 0.0
-    read_time_wait_latency: float = 0.0
-    write_time_wait_latency: float = 0.0
-    device_utilization: float = 0.0
+    disk_device: str = ""
+    r_s: float = 0.0
+    w_s: float = 0.0
+    d_s: float = 0.0
+    f_s: float = 0.0
+    rkB_s: float = 0.0
+    wkB_s: float = 0.0
+    dkB_s: float = 0.0
+    rrqm_s: float = 0.0
+    wrqm_s: float = 0.0
+    drqm_s: float = 0.0
+    rrqm: float = 0.0
+    wrqm: float = 0.0
+    drqm: float = 0.0
+    r_await: float = 0.0
+    w_await: float = 0.0
+    d_await: float = 0.0
+    f_await: float = 0.0
+    rareq_sz: float = 0.0
+    wareq_sz: float = 0.0
+    dareq_sz: float = 0.0
+    aqu_sz: float = 0.0
+    util: float = 0.0
     time_stamp: datetime.datetime = None
     
 class IOStats:
     def __init__(self, device_name: str):
         self._device_name = device_name
-        self.io_stat_data = IOStatData(device_name=device_name)
+        self.io_stat_data = IOStatData(disk_device=device_name)
         
     def __str__(self):
-        if self.io_stat_data and self.io_stat_data.device_name:
-            return f"IOStats for {self.io_stat_data.device_name}: {self.io_stat_data.device_utilization}% utilization"
+        if self.io_stat_data and self.io_stat_data.disk_device:
+            return f"IOStats for {self.io_stat_data.disk_device}: {self.io_stat_data.util}% utilization"
         return f"IOStats for {self._device_name}: No data available"
 
     def get_iostat_data(self) -> IOStatData:
@@ -79,16 +92,29 @@ class IOStats:
             if disk['disk_device'] == self._device_name:
                 print(f"DEBUG: Found device! Using current activity with util={disk['util']}%")
                 return IOStatData(
-                    device_name=disk['disk_device'],
-                    read_requests_per_second=disk['r/s'],
-                    write_requests_per_second=disk['w/s'],
-                    kb_data_read_per_second=disk['rkB/s'],
-                    kb_data_write_per_second=disk['wkB/s'],
-                    read_req_merged_persec=disk['rrqm/s'],
-                    write_req_merged_persec=disk['wrqm/s'],
-                    read_time_wait_latency=disk['r_await'],
-                    write_time_wait_latency=disk['w_await'],
-                    device_utilization=disk['util'],
+                    disk_device=disk['disk_device'],
+                    r_s=disk.get('r/s', 0.0),
+                    w_s=disk.get('w/s', 0.0),
+                    d_s=disk.get('d/s', 0.0),
+                    f_s=disk.get('f/s', 0.0),
+                    rkB_s=disk.get('rkB/s', 0.0),
+                    wkB_s=disk.get('wkB/s', 0.0),
+                    dkB_s=disk.get('dkB/s', 0.0),
+                    rrqm_s=disk.get('rrqm/s', 0.0),
+                    wrqm_s=disk.get('wrqm/s', 0.0),
+                    drqm_s=disk.get('drqm/s', 0.0),
+                    rrqm=disk.get('rrqm', 0.0),
+                    wrqm=disk.get('wrqm', 0.0),
+                    drqm=disk.get('drqm', 0.0),
+                    r_await=disk.get('r_await', 0.0),
+                    w_await=disk.get('w_await', 0.0),
+                    d_await=disk.get('d_await', 0.0),
+                    f_await=disk.get('f_await', 0.0),
+                    rareq_sz=disk.get('rareq-sz', 0.0),
+                    wareq_sz=disk.get('wareq-sz', 0.0),
+                    dareq_sz=disk.get('dareq-sz', 0.0),
+                    aqu_sz=disk.get('aqu-sz', 0.0),
+                    util=disk.get('util', 0.0),
                     time_stamp=datetime.datetime.now())
         
         print(f"DEBUG: Device '{self._device_name}' not found in current activity, falling back to first entry")
@@ -101,15 +127,15 @@ def main():
         time.sleep(2)
         data = iostat_stats.get_iostat_data()
         if data:
-            print(f"Device: {data.device_name}")
-            print(f"Read IOPS: {data.read_requests_per_second:.2f}")
-            print(f"Write IOPS: {data.write_requests_per_second:.2f}")
-            print(f"Read MB/s: {data.kb_data_read_per_second/1024:.2f}")
-            print(f"Write MB/s: {data.kb_data_write_per_second/1024:.2f}")
-            print(f"Utilization: {data.device_utilization:.2f}%")
+            print(f"Device: {data.disk_device}")
+            print(f"Read IOPS: {data.r_s:.2f}")
+            print(f"Write IOPS: {data.w_s:.2f}")
+            print(f"Read MB/s: {data.rkB_s/1024:.2f}")
+            print(f"Write MB/s: {data.wkB_s/1024:.2f}")
+            print(f"Utilization: {data.util:.2f}%")
             print(f"Time: {data.time_stamp}")
             # Highlight high utilization
-            if data.device_utilization > 80:
+            if data.util > 80:
                 print("🚨 HIGH UTILIZATION DETECTED! 🚨")
             print("-" * 40)
         else:
