@@ -66,7 +66,7 @@ dev = [
     "mypy>=1.0.0",
 ]
 all = [
-    "python-codes[can-tools,ac-measurement,visualization,dev]"
+    "python-codes[can-tools,ac-measurement,iostat,visualization,dev]"
 ]
 
 [project.urls]
