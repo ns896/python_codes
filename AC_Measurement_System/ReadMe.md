@@ -9,7 +9,7 @@ This system measures AC voltage (80-260V), current (0-100A), active power (0-23k
 
 ## Project Video Blogs 
 Project Description Video : 
-https://youtu.be/QOBo3sWSI8o
+https://youtu.be/QOBo3sWSI8o<br>
 Software Walk Through Video : 
 [coming soon]
 ## Table of Contents
@@ -107,3 +107,33 @@ Python liberary `MinimalModbus` is used to communicate as the master on the bus 
 For our applicaion in the setup defined above we will deal with the communicaiton as if we are dealing with a serial bus as the serial to `RS485`
 
 Using RS485 provides the advantage of connecting multiple sensors on the same two-wire bus in a daisy-chain configuration. This eliminates the need for additional UART devices and simplifies system wiring, as each sensor can be addressed uniquely through the MODBUS protocol on the shared RS485 bus.
+
+
+### Software Visualizer 
+
+`minimalmodbus` python module is used to interpret the protocol layer.
+
+### Running the TUI Visualizer
+
+The provided TUI (Text User Interface) visualizes live AC measurement data from all connected MODBUS slave devices. It uses the `curses` library for a terminal-based interface that refreshes periodically and can be manually updated by pressing "r" in the UI.
+
+To set up the environment and launch the TUI:
+
+1. **Environment Setup:**  
+   In the main folder, you will find a `.sh` script that configures a Python virtual environment and installs all dependencies automatically. Run:
+   ```bash
+   ./setup_and_run.sh
+   ```
+   This script will activate the venv, install requirements.
+
+2. **Manual Run:**  
+   Alternatively, after activating the Python venv manually, you can launch the visualizer by running:
+   ```bash
+   python AC_Measurement_System/main.py
+   ```
+
+Once started, the TUI will display real-time voltage, current, power, and energy values for each slave on the RS485 bus. Press "r" to refresh immediately or "q" to quit the TUI.
+
+![System Block Diagram](assets/AC_Measurement_TUI.png)
+<p><div align="center"> IMAGE-2 - TUI in action
+</div> </p>
