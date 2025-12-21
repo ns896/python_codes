@@ -1,0 +1,2886 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: DPSU SHVU_RR DPSS RLPSM Dummy DAU IBU_HS BCW AHV RWS CGW DLBCU EPB RRHV MDPS WPC HSWS RR_C_RDR ADAS_PRK DSS FR_C_RDR_RH BCM FICU ACU vBDM CLU SAS ARS MLM SCC MM_CGW AHLS ILCU_RH TCU EMS SWRC LPI BMS SCM ADAS_DRV AFCU_AST YRS HUD SBW VCU ODS DVRS PSB APSU ESC SLB DIBOX APSM SCU FR_CMR RR_C_RDR_LH H_U RLHV PFSU GST PSU ILCU_LH MCU SHVU_FR OBC AFCU_RR PSD ADM SMK AFCU_RL IAU ESU PSM FCU ECS CCM ECW ICSC OPU FCS PTGM LDC AWD DHV OPI AFCU_DRV IBU FPCM MFSW HFKS HCU TPMS RWPC G5_RDR10 AFS RRPSM ICU FR_C_RDR_LH DATC eCall VESS RDC SVM FR_RDR_LH RR_C_RDR_RH FR_CDR FR_RDR
+
+
+BO_ 692 L_FR_CMR_TLR_Info_02_50ms: 32 FR_CMR
+ SG_ TLR_Type_06 : 208|4@1- (1,0) [-8|7] ""  ADAS_DRV
+ SG_ TLR_Type_05 : 192|4@1- (1,0) [-8|7] ""  ADAS_DRV
+ SG_ TLR_Type_04 : 176|4@1- (1,0) [-8|7] ""  ADAS_DRV
+ SG_ TLR_PosY06Val : 160|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ TLR_PosY05Val : 144|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ TLR_PosY04Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ TLR_PosX06Val : 112|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ TLR_PosX05Val : 96|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ TLR_PosX04Val : 80|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ TLR_ID_06 : 72|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TLR_ID_05 : 64|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TLR_ID_04 : 56|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TLR_Confidence_06 : 40|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TLR_Confidence_05 : 24|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TLR_Confidence_04 : 8|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TLR_Alive_Counter_040506 : 0|8@1+ (1,0) [0|255] ""  ADAS_DRV
+
+BO_ 691 L_FR_CMR_TLR_Info_01_50ms: 32 FR_CMR
+ SG_ TLR_Type_03 : 208|4@1- (1,0) [-8|7] ""  ADAS_DRV
+ SG_ TLR_Type_02 : 192|4@1- (1,0) [-8|7] ""  ADAS_DRV
+ SG_ TLR_Type_01 : 176|4@1- (1,0) [-8|7] ""  ADAS_DRV
+ SG_ TLR_PosY03Val : 160|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ TLR_PosY02Val : 144|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ TLR_PosY01Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ TLR_PosX03Val : 112|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ TLR_PosX02Val : 96|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ TLR_PosX01Val : 80|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ TLR_ID_03 : 72|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TLR_ID_02 : 64|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TLR_ID_01 : 56|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TLR_Confidence_03 : 40|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TLR_Confidence_02 : 24|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TLR_Confidence_01 : 8|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TLR_Alive_Counter_010203 : 0|8@1+ (1,0) [0|255] ""  ADAS_DRV
+
+BO_ 816 SV_TimeSync: 32 FR_CMR
+ SG_ H264_Sync_Time : 64|64@1+ (1,0) [0|1.84467440737096E+019] "date"  ADAS_DRV
+ SG_ Time_Domain : 0|64@1+ (1,0) [0|1.84467440737096E+019] "ms"  ADAS_DRV
+
+BO_ 784 CIPV_Info: 32 FR_CMR
+ SG_ CIPV_RelLongVel : 82|11@1+ (0.1,-51.2) [-51.2|51.1] "m/s"  ADAS_DRV
+ SG_ CIPV_RelLatVel : 61|8@1+ (0.1,-10.24) [-10.24|10.23] "m/s"  ADAS_DRV
+ SG_ CIPV_Longdist : 42|13@1+ (0.05,0) [0|300] "m"  ADAS_DRV
+ SG_ CIPV_Latdist : 21|11@1+ (0.05,-30) [-30|30] "m"  ADAS_DRV
+ SG_ CIPV_ID : 11|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ CIPV_Width : 69|4@1+ (0.5,0) [0|6] "m"  ADAS_DRV
+ SG_ CIPV_Length : 55|6@1+ (0.5,0) [0|20] ""  ADAS_DRV
+ SG_ CIPV_Height : 73|9@1+ (0.01,0) [0|2.95] "m"  ADAS_DRV
+ SG_ CIPV_HeadAng : 32|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ CIPV_Classification : 18|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ CIPV_Age : 0|11@1+ (1,0) [0|2047] "Frame"  ADAS_DRV
+
+BO_ 689 L_FR_CMR_TSR_Info_02_30ms: 48 FR_CMR
+ SG_ TSR_PosY06Val : 184|12@1+ (0.05,-102.4) [-102.4|102.35] "m" Vector__XXX
+ SG_ TSR_PosY05Val : 168|12@1+ (0.05,-102.4) [-102.4|102.35] "m" Vector__XXX
+ SG_ TSR_PosY04Val : 152|12@1+ (0.05,-102.4) [-102.4|102.35] "m" Vector__XXX
+ SG_ TSR_PosX06Val : 112|13@1+ (0.05,0) [0|350] "m" Vector__XXX
+ SG_ TSR_PosX05Val : 96|13@1+ (0.05,0) [0|350] "m" Vector__XXX
+ SG_ TSR_PosX04Val : 80|13@1+ (0.05,0) [0|350] "m" Vector__XXX
+ SG_ TSR_signType_06 : 360|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ TSR_signType_05 : 344|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ TSR_signType_04 : 328|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ TSR_signID_06 : 144|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TSR_signID_05 : 136|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TSR_signID_04 : 128|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TSR_signConfidence_06 : 58|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TSR_signConfidence_05 : 48|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TSR_signConfidence_04 : 38|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TSR_Alive_Counter_040506 : 0|8@1+ (1,0) [0|255] ""  ADAS_DRV
+
+BO_ 688 L_FR_CMR_TSR_Info_01_30ms: 48 FR_CMR
+ SG_ TSR_PosY03Val : 184|12@1+ (0.05,-102.4) [-102.4|102.35] "m" Vector__XXX
+ SG_ TSR_PosY02Val : 168|12@1+ (0.05,-102.4) [-102.4|102.35] "m" Vector__XXX
+ SG_ TSR_PosY01Val : 152|12@1+ (0.05,-102.4) [-102.4|102.35] "m" Vector__XXX
+ SG_ TSR_PosX03Val : 112|13@1+ (0.05,0) [0|350] "m" Vector__XXX
+ SG_ TSR_PosX02Val : 96|13@1+ (0.05,0) [0|350] "m" Vector__XXX
+ SG_ TSR_PosX01Val : 80|13@1+ (0.05,0) [0|350] "m" Vector__XXX
+ SG_ TSR_signType_03 : 360|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ TSR_signType_02 : 344|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ TSR_signType_01 : 328|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ TSR_signID_03 : 144|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TSR_signID_02 : 136|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TSR_signID_01 : 128|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ TSR_signConfidence_03 : 58|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TSR_signConfidence_02 : 48|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TSR_signConfidence_01 : 38|10@1+ (0.001,0) [0|1.023] ""  ADAS_DRV
+ SG_ TSR_Alive_Counter_010203 : 0|8@1+ (1,0) [0|255] ""  ADAS_DRV
+
+BO_ 699 L_FR_CMR_Obj_Add_01_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Add_Crc01Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_AlvCnt01Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl01Val : 24|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl02Val : 34|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl03Val : 44|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl04Val : 54|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl05Val : 64|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl06Val : 74|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl07Val : 84|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl08Val : 94|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl09Val : 104|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl10Val : 114|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry01Sta : 128|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient01Sta : 132|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx01Val : 136|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry02Sta : 140|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient02Sta : 144|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx02Val : 148|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry03Sta : 152|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient03Sta : 156|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx03Val : 160|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry04Sta : 164|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient04Sta : 168|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx04Val : 172|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry05Sta : 176|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient05Sta : 180|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx05Val : 184|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry06Sta : 192|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient06Sta : 196|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx06Val : 200|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry07Sta : 204|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient07Sta : 208|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx07Val : 212|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry08Sta : 216|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient08Sta : 220|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx08Val : 224|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry09Sta : 228|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient09Sta : 232|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx09Val : 236|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry10Sta : 240|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient10Sta : 244|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx10Val : 248|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 700 L_FR_CMR_Obj_Add_02_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Add_Crc02Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_AlvCnt02Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth01Val : 24|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth02Val : 32|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth03Val : 40|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth04Val : 48|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth05Val : 56|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth06Val : 64|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth07Val : 72|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth08Val : 80|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth09Val : 88|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth10Val : 96|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle01Val : 104|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle02Val : 116|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle03Val : 128|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle04Val : 140|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle05Val : 152|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle06Val : 164|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle07Val : 176|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle08Val : 192|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle09Val : 204|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle10Val : 216|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+
+BO_ 701 L_FR_CMR_Obj_Add_03_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Add_Crc03Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_AlvCnt03Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl11Val : 24|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl12Val : 34|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl13Val : 44|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl14Val : 54|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl15Val : 64|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl16Val : 74|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl17Val : 84|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl18Val : 94|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl19Val : 104|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_HdingAngl20Val : 114|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry11Sta : 128|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient11Sta : 132|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx11Val : 136|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry12Sta : 140|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient12Sta : 144|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx12Val : 148|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry13Sta : 152|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient13Sta : 156|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx13Val : 160|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry14Sta : 164|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient14Sta : 168|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx14Val : 172|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry15Sta : 176|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient15Sta : 180|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx15Val : 184|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry16Sta : 192|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient16Sta : 196|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx16Val : 200|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry17Sta : 204|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient17Sta : 208|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx17Val : 212|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry18Sta : 216|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient18Sta : 220|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx18Val : 224|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry19Sta : 228|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient19Sta : 232|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx19Val : 236|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnCtgry20Sta : 240|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MtnOrient20Sta : 244|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_SyncFrmIdx20Val : 248|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 702 L_FR_CMR_Obj_Add_04_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Add_Crc04Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_AlvCnt04Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth11Val : 24|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth12Val : 32|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth13Val : 40|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth14Val : 48|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth15Val : 56|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth16Val : 64|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth17Val : 72|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth18Val : 80|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth19Val : 88|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Lngth20Val : 96|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle11Val : 104|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle12Val : 116|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle13Val : 128|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle14Val : 140|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle15Val : 152|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle16Val : 164|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle17Val : 176|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle18Val : 192|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle19Val : 204|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+ SG_ FR_CMR_Obj_Angle20Val : 216|12@1+ (0.05,0) [0|204.8] "deg"  ADAS_DRV
+
+BO_ 703 L_FR_CMR_Obj_Add_05_30ms: 48 FR_CMR
+ SG_ FR_CMR_Obj_Add_Crc05Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_AlvCnt05Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Height01Val : 24|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height02Val : 32|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height03Val : 40|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height04Val : 48|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height05Val : 56|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height06Val : 64|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height07Val : 72|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height08Val : 80|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height09Val : 88|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height10Val : 96|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height11Val : 104|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height12Val : 112|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height13Val : 120|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height14Val : 128|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height15Val : 136|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height16Val : 144|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height17Val : 152|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height18Val : 160|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height19Val : 168|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Height20Val : 176|8@1+ (0.05,0) [0|12.8] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV01Sta : 264|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV02Sta : 266|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV03Sta : 268|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV04Sta : 270|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV05Sta : 272|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV06Sta : 274|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV07Sta : 276|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV08Sta : 278|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV09Sta : 280|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV10Sta : 282|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV11Sta : 284|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV12Sta : 286|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV13Sta : 288|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV14Sta : 290|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV15Sta : 292|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV16Sta : 294|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV17Sta : 296|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV18Sta : 298|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV19Sta : 300|2@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_isCIPV20Sta : 302|2@1+ (1,0) [0|3] ""  ADAS_DRV
+
+BO_ 704 L_FR_CMR_Obj_Add_06_30ms: 48 FR_CMR
+ SG_ FR_CMR_Obj_Add_Crc06Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Add_AlvCnt06Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign01Sta : 24|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign02Sta : 32|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign03Sta : 40|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign04Sta : 48|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign05Sta : 56|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign06Sta : 64|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign07Sta : 72|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign08Sta : 80|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign09Sta : 88|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign10Sta : 96|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign11Sta : 104|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign12Sta : 112|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign13Sta : 120|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign14Sta : 128|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign15Sta : 136|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign16Sta : 144|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign17Sta : 152|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign18Sta : 160|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign19Sta : 168|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_LaneAssign20Sta : 176|8@1- (1,0) [-2|3] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const01Val : 184|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const02Val : 192|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const03Val : 200|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const04Val : 208|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const05Val : 216|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const06Val : 224|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const07Val : 232|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const08Val : 240|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const09Val : 248|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const10Val : 256|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const11Val : 264|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const12Val : 272|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const13Val : 280|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const14Val : 288|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const15Val : 296|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const16Val : 304|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const17Val : 312|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const18Val : 320|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const19Val : 328|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_TTC_Const20Val : 336|8@1+ (0.05,0) [0|12.75] "Sec"  ADAS_DRV
+ SG_ FR_CMR_Obj_imageIndex : 344|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_frameIndex : 360|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+
+BO_ 387 L_FR_CMR_Obj_04_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Crc04Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvCnt04Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl07Sta : 24|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge07Val : 32|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag07Sta : 40|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id07Val : 44|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth07Val : 52|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct07Sta : 60|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX07Val : 64|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY07Val : 78|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX07Val : 91|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY07Val : 104|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX07Val : 115|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx07Val : 124|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX07Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX08Val : 140|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl08Sta : 152|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge08Val : 160|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag08Sta : 168|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id08Val : 172|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth08Val : 180|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct08Sta : 188|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX08Val : 192|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY08Val : 206|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX08Val : 219|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY08Val : 232|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX08Val : 243|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx08Val : 252|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 386 L_FR_CMR_Obj_03_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Crc03Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvCnt03Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl05Sta : 24|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge05Val : 32|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag05Sta : 40|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id05Val : 44|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth05Val : 52|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct05Sta : 60|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX05Val : 64|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY05Val : 78|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX05Val : 91|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY05Val : 104|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX05Val : 115|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx05Val : 124|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX05Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX06Val : 140|12@1+ (0.05,-100) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl06Sta : 152|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge06Val : 160|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag06Sta : 168|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id06Val : 172|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth06Val : 180|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct06Sta : 188|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX06Val : 192|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY06Val : 206|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX06Val : 219|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY06Val : 232|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX06Val : 243|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx06Val : 252|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 385 L_FR_CMR_Obj_02_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Crc02Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvCnt02Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl03Sta : 24|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge03Val : 32|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag03Sta : 40|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id03Val : 44|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth03Val : 52|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct03Sta : 60|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX03Val : 64|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY03Val : 78|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX03Val : 91|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY03Val : 104|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX03Val : 115|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx03Val : 124|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX03Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX04Val : 140|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl04Sta : 152|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge04Val : 160|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag04Sta : 168|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id04Val : 172|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth04Val : 180|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct04Sta : 188|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX04Val : 192|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY04Val : 206|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX04Val : 219|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY04Val : 232|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX04Val : 243|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx04Val : 252|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 384 L_FR_CMR_Obj_01_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Crc01Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvCnt01Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl01Sta : 24|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge01Val : 32|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag01Sta : 40|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id01Val : 44|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth01Val : 52|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct01Sta : 60|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX01Val : 64|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY01Val : 78|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX01Val : 91|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY01Val : 104|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX01Val : 115|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx01Val : 124|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX01Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX02Val : 140|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl02Sta : 152|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge02Val : 160|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag02Sta : 168|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id02Val : 172|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth02Val : 180|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct02Sta : 188|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX02Val : 192|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY02Val : 206|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX02Val : 219|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY02Val : 232|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX02Val : 243|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx02Val : 252|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 389 L_FR_CMR_Genrl_01_30ms: 24 FR_CMR
+ SG_ FR_CMR_Genrl_Crc01Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Genrl_AlvCnt01Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Genrl_DetObjNumVal : 24|6@1+ (1,0) [0|20] ""  ADAS_DRV
+ SG_ FR_CMR_Genrl_DetLnNumVal : 32|3@1+ (1,0) [0|4] ""  ADAS_DRV
+ SG_ FR_CMR_Genrl_Timestamp : 96|64@1+ (1,0) [0|1.84467440737096E+019] "sec"  ADAS_DRV
+
+BO_ 388 L_FR_CMR_Obj_05_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Crc05Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvCnt05Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl09Sta : 24|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge09Val : 32|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag09Sta : 40|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id09Val : 44|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth09Val : 52|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct09Sta : 60|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX09Val : 64|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY09Val : 78|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX09Val : 91|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY09Val : 104|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX09Val : 115|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx09Val : 124|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX09Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX10Val : 140|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl10Sta : 152|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge10Val : 160|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag10Sta : 168|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id10Val : 172|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth10Val : 180|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct10Sta : 188|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX10Val : 192|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY10Val : 206|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX10Val : 219|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY10Val : 232|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX10Val : 243|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx10Val : 252|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 438 L_FR_CMR_Obj_06_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Crc06Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvCnt06Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl11Sta : 24|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge11Val : 32|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag11Sta : 40|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id11Val : 44|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth11Val : 52|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct11Sta : 60|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX11Val : 64|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY11Val : 78|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX11Val : 91|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY11Val : 104|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX11Val : 115|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx11Val : 124|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX11Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX12Val : 140|12@1+ (0.05,-100) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl12Sta : 152|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge12Val : 160|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag12Sta : 168|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id12Val : 172|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth12Val : 180|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct12Sta : 188|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX12Val : 192|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY12Val : 206|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX12Val : 219|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY12Val : 232|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX12Val : 243|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx12Val : 252|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 439 L_FR_CMR_Obj_07_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Crc07Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvCnt07Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl13Sta : 24|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge13Val : 32|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag13Sta : 40|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id13Val : 44|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth13Val : 52|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct13Sta : 60|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX13Val : 64|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY13Val : 78|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX13Val : 91|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY13Val : 104|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX13Val : 115|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx13Val : 124|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX13Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX14Val : 140|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl14Sta : 152|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge14Val : 160|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag14Sta : 168|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id14Val : 172|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth14Val : 180|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct14Sta : 188|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX14Val : 192|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY14Val : 206|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX14Val : 219|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY14Val : 232|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX14Val : 243|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx14Val : 252|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 440 L_FR_CMR_Obj_08_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Crc08Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvCnt08Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl15Sta : 24|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge15Val : 32|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag15Sta : 40|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id15Val : 44|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth15Val : 52|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct15Sta : 60|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX15Val : 64|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY15Val : 78|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX15Val : 91|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY15Val : 104|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX15Val : 115|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx15Val : 124|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX15Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX16Val : 140|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl16Sta : 152|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge16Val : 160|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag16Sta : 168|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id16Val : 172|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth16Val : 180|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct16Sta : 188|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX16Val : 192|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY16Val : 206|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX16Val : 219|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY16Val : 232|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX16Val : 243|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx16Val : 252|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 441 L_FR_CMR_Obj_09_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Crc09Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvCnt09Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl17Sta : 24|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge17Val : 32|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag17Sta : 40|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id17Val : 44|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth17Val : 52|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct17Sta : 60|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX17Val : 64|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY17Val : 78|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX17Val : 91|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY17Val : 104|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX17Val : 115|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx17Val : 124|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX17Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX18Val : 140|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl18Sta : 152|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge18Val : 160|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag18Sta : 168|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id18Val : 172|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth18Val : 180|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct18Sta : 188|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX18Val : 192|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY18Val : 206|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX18Val : 219|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY18Val : 232|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX18Val : 243|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx18Val : 252|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 507 L_FR_CMR_Obj_10_30ms: 32 FR_CMR
+ SG_ FR_CMR_Obj_Crc10Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvCnt10Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl19Sta : 24|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge19Val : 32|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag19Sta : 40|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id19Val : 44|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth19Val : 52|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct19Sta : 60|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX19Val : 64|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY19Val : 78|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX19Val : 91|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY19Val : 104|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX19Val : 115|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx19Val : 124|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX19Val : 128|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_AbsltVelX20Val : 140|12@1+ (0.05,-102.4) [-102.4|102.35] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_QualLvl20Sta : 152|7@1+ (1,0) [0|100] "%"  ADAS_DRV
+ SG_ FR_CMR_Obj_AlvAge20Val : 160|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_MvngFlag20Sta : 168|4@1+ (1,0) [0|9] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Id20Val : 172|7@1+ (1,0) [0|127] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_Wth20Val : 180|7@1+ (0.05,0) [0|6.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_Clfct20Sta : 188|3@1+ (1,0) [0|6] ""  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosX20Val : 192|13@1+ (0.05,0) [0|350] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelPosY20Val : 206|12@1+ (0.05,-102.4) [-102.4|102.35] "m"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelX20Val : 219|12@1+ (0.05,-100) [-100|100] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelVelY20Val : 232|10@1+ (0.05,-25) [-25|25] "m/s"  ADAS_DRV
+ SG_ FR_CMR_Obj_RelAccelX20Val : 243|9@1- (0.05,0) [-12.8|12.75] "m/s^2"  ADAS_DRV
+ SG_ FR_CMR_Obj_SyncFrmIndx20Val : 252|4@1+ (1,0) [0|15] ""  ADAS_DRV
+
+BO_ 676 L_FR_CMR_Ln_03_30ms: 48 FR_CMR
+ SG_ FR_CMR_Ln_Crc03Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_AlvCnt03Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_WthLnLft01Val : 24|8@1+ (0.01,0) [0|0.5] "m"  ADAS_DRV
+ SG_ FR_CMR_Ln_WthLnRt01Val : 32|8@1+ (0.01,0) [0|0.5] "m"  ADAS_DRV
+ SG_ FR_CMR_Ln_ClfctLft01Sta : 40|4@1+ (1,0) [0|8] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_ClfctRt01Sta : 44|4@1+ (1,0) [0|8] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_LftClr01Sta : 48|3@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_RtClr01Sta : 52|3@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_QualLvlLft01Sta : 56|3@1+ (1,0) [0|7] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_QualLvlRt01Sta : 60|3@1+ (1,0) [0|7] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_ClfctLft02Sta : 64|4@1+ (1,0) [0|8] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_ClfctRt02Sta : 68|4@1+ (1,0) [0|8] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_QualLvlLft02Sta : 72|3@1+ (1,0) [0|7] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_QualLvlRt02Sta : 76|3@1+ (1,0) [0|7] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_LftViewRngVal : 80|16@1+ (0.1,0) [0|200] "m"  ADAS_DRV
+ SG_ FR_CMR_Ln_RtViewRngVal : 96|16@1+ (0.1,0) [0|200] "m"  ADAS_DRV
+ SG_ FR_CMR_Ln_LftViewRngSrtVal : 112|16@1+ (0.1,0) [0|200] "m"  ADAS_DRV
+ SG_ FR_CMR_Ln_RtViewRngSrtVal : 128|16@1+ (0.1,0) [0|200] "m"  ADAS_DRV
+ SG_ FR_CMR_Lnx_LftViewRng02Val : 144|16@1+ (0.1,0) [0|200] "m"  ADAS_DRV
+ SG_ FR_CMR_Lnx_RtViewRng02Val : 160|16@1+ (0.1,0) [0|200] "m"  ADAS_DRV
+ SG_ FR_CMR_Lnx_LftViewRngSrt02Val : 176|16@1+ (0.1,0) [0|200] "m"  ADAS_DRV
+ SG_ FR_CMR_Lnx_RtViewRngSrt02Val : 192|16@1+ (0.1,0) [0|200] "m"  ADAS_DRV
+ SG_ FR_CMR_Lnx_WthLnLft02Val : 208|8@1+ (0.01,0) [0|0.5] "m"  ADAS_DRV
+ SG_ FR_CMR_Lnx_WthLnRt02Val : 216|8@1+ (0.01,0) [0|0.5] "m"  ADAS_DRV
+ SG_ FR_CMR_Lnx_LftClr02Sta : 224|3@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_RtClr02Sta : 228|3@1+ (1,0) [0|3] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_LftsfConf01Val : 232|8@1+ (0.005,0) [0|1] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_RtsfConf01Val : 240|8@1+ (0.005,0) [0|1] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_LftsfConf02Val : 248|8@1+ (0.005,0) [0|1] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_RtsfConf02Val : 256|8@1+ (0.005,0) [0|1] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_imageIndex : 288|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_laneChange : 308|4@1+ (1,0) [0|15] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_fLftLane01 : 316|1@1+ (1,0) [0|1] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_fRtLane01 : 317|1@1+ (1,0) [0|1] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_fLftLane02 : 318|1@1+ (1,0) [0|1] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_fRtLane02 : 319|1@1+ (1,0) [0|1] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_FrameIndex : 320|32@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_LftdlmType01 : 352|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_RtdlmType01 : 360|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_LftdlmType02 : 368|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Lnx_RtdlmType02 : 376|8@1+ (1,0) [0|255] ""  ADAS_DRV
+
+BO_ 675 L_FR_CMR_Ln_02_30ms: 32 FR_CMR
+ SG_ FR_CMR_Ln_Crc02Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_AlvCnt02Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_LftNextDptDstVal : 24|16@1+ (0.01,-20) [-20|20] "m"  ADAS_DRV
+ SG_ FR_CMR_Ln_RtNextDptDstVal : 40|16@1+ (0.01,-20) [-20|20] "m"  ADAS_DRV
+ SG_ FR_CMR_Ln_LftNextDptAnglVal : 56|16@1+ (0.000977,-30) [-30|30] "rad"  ADAS_DRV
+ SG_ FR_CMR_Ln_RtNextDptAnglVal : 72|16@1+ (0.000977,-30) [-30|30] "rad"  ADAS_DRV
+ SG_ FR_CMR_Ln_LftNextCurveVal : 88|32@1+ (9.77E-007,-30) [-30|30] "1/m"  ADAS_DRV
+ SG_ FR_CMR_Ln_RtNextCurveVal : 120|32@1+ (9.77E-007,-30) [-30|30] "1/m"  ADAS_DRV
+ SG_ FR_CMR_Ln_LftNextCurveRatVal : 152|32@1+ (3.73E-009,-8) [-8|8] "1/m^2"  ADAS_DRV
+ SG_ FR_CMR_Ln_RtNextCurveRatVal : 184|32@1+ (3.73E-009,-8) [-8|8] "1/m^2"  ADAS_DRV
+
+BO_ 674 L_FR_CMR_Ln_01_30ms: 32 FR_CMR
+ SG_ FR_CMR_Ln_Crc01Val : 0|16@1+ (1,0) [0|65535] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_AlvCnt01Val : 16|8@1+ (1,0) [0|255] ""  ADAS_DRV
+ SG_ FR_CMR_Ln_LftDptDstVal : 24|16@1+ (0.01,-20) [-20|20] "m"  ADAS_DRV
+ SG_ FR_CMR_Ln_RtDptDstVal : 40|16@1+ (0.01,-20) [-20|20] "m"  ADAS_DRV
+ SG_ FR_CMR_Ln_LftDptAnglVal : 56|16@1+ (0.000977,-30) [-30|30] "rad"  ADAS_DRV
+ SG_ FR_CMR_Ln_RtDptAnglVal : 72|16@1+ (0.000977,-30) [-30|30] "rad"  ADAS_DRV
+ SG_ FR_CMR_Ln_LftCurveVal : 88|32@1+ (9.77E-007,-30) [-30|30] "1/m"  ADAS_DRV
+ SG_ FR_CMR_Ln_RtCurveVal : 120|32@1+ (9.77E-007,-30) [-30|30] "1/m"  ADAS_DRV
+ SG_ FR_CMR_Ln_LftCurveRatVal : 152|32@1+ (3.73E-009,-8) [-8|8] "1/m^2"  ADAS_DRV
+ SG_ FR_CMR_Ln_RtCurveRatVal : 184|32@1+ (3.73E-009,-8) [-8|8] "1/m^2"  ADAS_DRV
+
+
+
+CM_ BO_ 689 "[P] Periodic";
+CM_ BO_ 688 "[P] Periodic";
+CM_ BO_ 699 "[P] Periodic";
+CM_ BO_ 700 "[P] Periodic";
+CM_ BO_ 701 "[P] Periodic";
+CM_ BO_ 702 "[P] Periodic";
+CM_ BO_ 703 "[P] Periodic";
+CM_ BO_ 704 "[P] Periodic";
+CM_ BO_ 387 "[P] Periodic";
+CM_ SG_ 387 FR_CMR_Obj_Crc04Val "FR_CMR_Obj_CyclicRedundancyCheck04Value";
+CM_ SG_ 387 FR_CMR_Obj_AlvCnt04Val "FR_CMR_Obj_AliveCounter04Value";
+CM_ SG_ 387 FR_CMR_Obj_QualLvl07Sta "FR_CMR_Obj_QualityLevel07Value";
+CM_ SG_ 387 FR_CMR_Obj_AlvAge07Val "FR_CMR_Obj_AliveAge07Value";
+CM_ SG_ 387 FR_CMR_Obj_MvngFlag07Sta "FR_CMR_Obj_MovingFlag07Status";
+CM_ SG_ 387 FR_CMR_Obj_Id07Val "FR_CMR_Obj_ID07Value";
+CM_ SG_ 387 FR_CMR_Obj_Wth07Val "FR_CMR_Obj_Width07Value";
+CM_ SG_ 387 FR_CMR_Obj_Clfct07Sta "FR_CMR_Obj_Classification07Status";
+CM_ SG_ 387 FR_CMR_Obj_RelPosX07Val "FR_CMR_Obj_RelativePositionX07Value";
+CM_ SG_ 387 FR_CMR_Obj_RelPosY07Val "FR_CMR_Obj_RelativePositionY07Value";
+CM_ SG_ 387 FR_CMR_Obj_RelVelX07Val "FR_CMR_Obj_RelativeVelocityX07Value";
+CM_ SG_ 387 FR_CMR_Obj_RelVelY07Val "FR_CMR_Obj_RelativeVelocityY07Value";
+CM_ SG_ 387 FR_CMR_Obj_RelAccelX07Val "FR_CMR_Obj_RelativeAccelerationX07Value";
+CM_ SG_ 387 FR_CMR_Obj_QualLvl08Sta "FR_CMR_Obj_QualityLevel08Value";
+CM_ SG_ 387 FR_CMR_Obj_AlvAge08Val "FR_CMR_Obj_AliveAge08Value";
+CM_ SG_ 387 FR_CMR_Obj_MvngFlag08Sta "FR_CMR_Obj_MovingFlag08Status";
+CM_ SG_ 387 FR_CMR_Obj_Id08Val "FR_CMR_Obj_ID08Value";
+CM_ SG_ 387 FR_CMR_Obj_Wth08Val "FR_CMR_Obj_Width08Value";
+CM_ SG_ 387 FR_CMR_Obj_Clfct08Sta "FR_CMR_Obj_Classification08Status";
+CM_ SG_ 387 FR_CMR_Obj_RelPosX08Val "FR_CMR_Obj_RelativePositionX08Value";
+CM_ SG_ 387 FR_CMR_Obj_RelPosY08Val "FR_CMR_Obj_RelativePositionY08Value";
+CM_ SG_ 387 FR_CMR_Obj_RelVelX08Val "FR_CMR_Obj_RelativeVelocityX08Value";
+CM_ SG_ 387 FR_CMR_Obj_RelVelY08Val "FR_CMR_Obj_RelativeVelocityY08Value";
+CM_ SG_ 387 FR_CMR_Obj_RelAccelX08Val "FR_CMR_Obj_RelativeAccelerationX08Value";
+CM_ BO_ 386 "[P] Periodic";
+CM_ SG_ 386 FR_CMR_Obj_Crc03Val "FR_CMR_Obj_CyclicRedundancyCheck03Value";
+CM_ SG_ 386 FR_CMR_Obj_AlvCnt03Val "FR_CMR_Obj_AliveCounter03Value";
+CM_ SG_ 386 FR_CMR_Obj_QualLvl05Sta "FR_CMR_Obj_QualityLevel05Value";
+CM_ SG_ 386 FR_CMR_Obj_AlvAge05Val "FR_CMR_Obj_AliveAge05Value";
+CM_ SG_ 386 FR_CMR_Obj_MvngFlag05Sta "FR_CMR_Obj_MovingFlag05Status";
+CM_ SG_ 386 FR_CMR_Obj_Id05Val "FR_CMR_Obj_ID05Value";
+CM_ SG_ 386 FR_CMR_Obj_Wth05Val "FR_CMR_Obj_Width05Value";
+CM_ SG_ 386 FR_CMR_Obj_Clfct05Sta "FR_CMR_Obj_Classification05Status";
+CM_ SG_ 386 FR_CMR_Obj_RelPosX05Val "FR_CMR_Obj_RelativePositionX05Value";
+CM_ SG_ 386 FR_CMR_Obj_RelPosY05Val "FR_CMR_Obj_RelativePositionY05Value";
+CM_ SG_ 386 FR_CMR_Obj_RelVelX05Val "FR_CMR_Obj_RelativeVelocityX05Value";
+CM_ SG_ 386 FR_CMR_Obj_RelVelY05Val "FR_CMR_Obj_RelativeVelocityY05Value";
+CM_ SG_ 386 FR_CMR_Obj_RelAccelX05Val "FR_CMR_Obj_RelativeAccelerationX05Value";
+CM_ SG_ 386 FR_CMR_Obj_QualLvl06Sta "FR_CMR_Obj_QualityLevel06Value";
+CM_ SG_ 386 FR_CMR_Obj_AlvAge06Val "FR_CMR_Obj_AliveAge06Value";
+CM_ SG_ 386 FR_CMR_Obj_MvngFlag06Sta "FR_CMR_Obj_MovingFlag06Status";
+CM_ SG_ 386 FR_CMR_Obj_Id06Val "FR_CMR_Obj_ID06Value";
+CM_ SG_ 386 FR_CMR_Obj_Wth06Val "FR_CMR_Obj_Width06Value";
+CM_ SG_ 386 FR_CMR_Obj_Clfct06Sta "FR_CMR_Obj_Classification06Status";
+CM_ SG_ 386 FR_CMR_Obj_RelPosX06Val "FR_CMR_Obj_RelativePositionX06Value";
+CM_ SG_ 386 FR_CMR_Obj_RelPosY06Val "FR_CMR_Obj_RelativePositionY06Value";
+CM_ SG_ 386 FR_CMR_Obj_RelVelX06Val "FR_CMR_Obj_RelativeVelocityX06Value";
+CM_ SG_ 386 FR_CMR_Obj_RelVelY06Val "FR_CMR_Obj_RelativeVelocityY06Value";
+CM_ SG_ 386 FR_CMR_Obj_RelAccelX06Val "FR_CMR_Obj_RelativeAccelerationX06Value";
+CM_ BO_ 385 "[P] Periodic";
+CM_ SG_ 385 FR_CMR_Obj_Crc02Val "FR_CMR_Obj_CyclicRedundancyCheck02Value";
+CM_ SG_ 385 FR_CMR_Obj_AlvCnt02Val "FR_CMR_Obj_AliveCounter02Value";
+CM_ SG_ 385 FR_CMR_Obj_QualLvl03Sta "FR_CMR_Obj_QualityLevel03Value";
+CM_ SG_ 385 FR_CMR_Obj_AlvAge03Val "FR_CMR_Obj_AliveAge03Value";
+CM_ SG_ 385 FR_CMR_Obj_MvngFlag03Sta "FR_CMR_Obj_MovingFlag03Status";
+CM_ SG_ 385 FR_CMR_Obj_Id03Val "FR_CMR_Obj_ID03Value";
+CM_ SG_ 385 FR_CMR_Obj_Wth03Val "FR_CMR_Obj_Width03Value";
+CM_ SG_ 385 FR_CMR_Obj_Clfct03Sta "FR_CMR_Obj_Classification03Status";
+CM_ SG_ 385 FR_CMR_Obj_RelPosX03Val "FR_CMR_Obj_RelativePositionX03Value";
+CM_ SG_ 385 FR_CMR_Obj_RelPosY03Val "FR_CMR_Obj_RelativePositionY03Value";
+CM_ SG_ 385 FR_CMR_Obj_RelVelX03Val "FR_CMR_Obj_RelativeVelocityX03Value";
+CM_ SG_ 385 FR_CMR_Obj_RelVelY03Val "FR_CMR_Obj_RelativeVelocityY03Value";
+CM_ SG_ 385 FR_CMR_Obj_RelAccelX03Val "FR_CMR_Obj_RelativeAccelerationX03Value";
+CM_ SG_ 385 FR_CMR_Obj_QualLvl04Sta "FR_CMR_Obj_QualityLevel04Value";
+CM_ SG_ 385 FR_CMR_Obj_AlvAge04Val "FR_CMR_Obj_AliveAge04Value";
+CM_ SG_ 385 FR_CMR_Obj_MvngFlag04Sta "FR_CMR_Obj_MovingFlag04Status";
+CM_ SG_ 385 FR_CMR_Obj_Id04Val "FR_CMR_Obj_ID04Value";
+CM_ SG_ 385 FR_CMR_Obj_Wth04Val "FR_CMR_Obj_Width04Value";
+CM_ SG_ 385 FR_CMR_Obj_Clfct04Sta "FR_CMR_Obj_Classification04Status";
+CM_ SG_ 385 FR_CMR_Obj_RelPosX04Val "FR_CMR_Obj_RelativePositionX04Value";
+CM_ SG_ 385 FR_CMR_Obj_RelPosY04Val "FR_CMR_Obj_RelativePositionY04Value";
+CM_ SG_ 385 FR_CMR_Obj_RelVelX04Val "FR_CMR_Obj_RelativeVelocityX04Value";
+CM_ SG_ 385 FR_CMR_Obj_RelVelY04Val "FR_CMR_Obj_RelativeVelocityY04Value";
+CM_ SG_ 385 FR_CMR_Obj_RelAccelX04Val "FR_CMR_Obj_RelativeAccelerationX04Value";
+CM_ BO_ 384 "[P] Periodic";
+CM_ SG_ 384 FR_CMR_Obj_Crc01Val "FR_CMR_Obj_CyclicRedundancyCheck01Value";
+CM_ SG_ 384 FR_CMR_Obj_AlvCnt01Val "FR_CMR_Obj_AliveCounter01Value";
+CM_ SG_ 384 FR_CMR_Obj_QualLvl01Sta "FR_CMR_Obj_QualityLevel01Value";
+CM_ SG_ 384 FR_CMR_Obj_AlvAge01Val "FR_CMR_Obj_AliveAge01Value";
+CM_ SG_ 384 FR_CMR_Obj_MvngFlag01Sta "FR_CMR_Obj_MovingFlag01Status";
+CM_ SG_ 384 FR_CMR_Obj_Id01Val "FR_CMR_Obj_ID01Value";
+CM_ SG_ 384 FR_CMR_Obj_Wth01Val "FR_CMR_Obj_Width01Value";
+CM_ SG_ 384 FR_CMR_Obj_Clfct01Sta "FR_CMR_Obj_Classification01Status";
+CM_ SG_ 384 FR_CMR_Obj_RelPosX01Val "FR_CMR_Obj_RelativePositionX01Value";
+CM_ SG_ 384 FR_CMR_Obj_RelPosY01Val "FR_CMR_Obj_RelativePositionY01Value";
+CM_ SG_ 384 FR_CMR_Obj_RelVelX01Val "FR_CMR_Obj_RelativeVelocityX01Value";
+CM_ SG_ 384 FR_CMR_Obj_RelVelY01Val "FR_CMR_Obj_RelativeVelocityY01Value";
+CM_ SG_ 384 FR_CMR_Obj_RelAccelX01Val "FR_CMR_Obj_RelativeAccelerationX01Value";
+CM_ SG_ 384 FR_CMR_Obj_QualLvl02Sta "FR_CMR_Obj_QualityLevel02Value";
+CM_ SG_ 384 FR_CMR_Obj_AlvAge02Val "FR_CMR_Obj_AliveAge02Value";
+CM_ SG_ 384 FR_CMR_Obj_MvngFlag02Sta "FR_CMR_Obj_MovingFlag02Status";
+CM_ SG_ 384 FR_CMR_Obj_Id02Val "FR_CMR_Obj_ID02Value";
+CM_ SG_ 384 FR_CMR_Obj_Wth02Val "FR_CMR_Obj_Width02Value";
+CM_ SG_ 384 FR_CMR_Obj_Clfct02Sta "FR_CMR_Obj_Classification02Status";
+CM_ SG_ 384 FR_CMR_Obj_RelPosX02Val "FR_CMR_Obj_RelativePositionX02Value";
+CM_ SG_ 384 FR_CMR_Obj_RelPosY02Val "FR_CMR_Obj_RelativePositionY02Value";
+CM_ SG_ 384 FR_CMR_Obj_RelVelX02Val "FR_CMR_Obj_RelativeVelocityX02Value";
+CM_ SG_ 384 FR_CMR_Obj_RelVelY02Val "FR_CMR_Obj_RelativeVelocityY02Value";
+CM_ SG_ 384 FR_CMR_Obj_RelAccelX02Val "FR_CMR_Obj_RelativeAccelerationX02Value";
+CM_ BO_ 389 "[P] Periodic";
+CM_ SG_ 389 FR_CMR_Genrl_Crc01Val "FR_CMR_Genrl_CyclicRedundancyCheck01Value";
+CM_ SG_ 389 FR_CMR_Genrl_AlvCnt01Val "FR_CMR_Genrl_AliveCounter01Value";
+CM_ SG_ 389 FR_CMR_Genrl_DetObjNumVal "FR_CMR_Genrl_DetectionObjectNumberValue";
+CM_ SG_ 389 FR_CMR_Genrl_DetLnNumVal "FR_CMR_Genrl_DetectionLineNumberValue";
+CM_ BO_ 388 "[P] Periodic";
+CM_ SG_ 388 FR_CMR_Obj_Crc05Val "FR_CMR_Obj_CyclicRedundancyCheck05Value";
+CM_ SG_ 388 FR_CMR_Obj_AlvCnt05Val "FR_CMR_Obj_AliveCounter05Value";
+CM_ SG_ 388 FR_CMR_Obj_QualLvl09Sta "FR_CMR_Obj_QualityLevel09Value";
+CM_ SG_ 388 FR_CMR_Obj_AlvAge09Val "FR_CMR_Obj_AliveAge09Value";
+CM_ SG_ 388 FR_CMR_Obj_MvngFlag09Sta "FR_CMR_Obj_MovingFlag09Status";
+CM_ SG_ 388 FR_CMR_Obj_Id09Val "FR_CMR_Obj_ID09Value";
+CM_ SG_ 388 FR_CMR_Obj_Wth09Val "FR_CMR_Obj_Width09Value";
+CM_ SG_ 388 FR_CMR_Obj_Clfct09Sta "FR_CMR_Obj_Classification09Status";
+CM_ SG_ 388 FR_CMR_Obj_RelPosX09Val "FR_CMR_Obj_RelativePositionX09Value";
+CM_ SG_ 388 FR_CMR_Obj_RelPosY09Val "FR_CMR_Obj_RelativePositionY09Value";
+CM_ SG_ 388 FR_CMR_Obj_RelVelX09Val "FR_CMR_Obj_RelativeVelocityX09Value";
+CM_ SG_ 388 FR_CMR_Obj_RelVelY09Val "FR_CMR_Obj_RelativeVelocityY09Value";
+CM_ SG_ 388 FR_CMR_Obj_RelAccelX09Val "FR_CMR_Obj_RelativeAccelerationX09Value";
+CM_ SG_ 388 FR_CMR_Obj_QualLvl10Sta "FR_CMR_Obj_QualityLevel10Value";
+CM_ SG_ 388 FR_CMR_Obj_AlvAge10Val "FR_CMR_Obj_AliveAge10Value";
+CM_ SG_ 388 FR_CMR_Obj_MvngFlag10Sta "FR_CMR_Obj_MovingFlag10Status";
+CM_ SG_ 388 FR_CMR_Obj_Id10Val "FR_CMR_Obj_ID10Value";
+CM_ SG_ 388 FR_CMR_Obj_Wth10Val "FR_CMR_Obj_Width10Value";
+CM_ SG_ 388 FR_CMR_Obj_Clfct10Sta "FR_CMR_Obj_Classification10Status";
+CM_ SG_ 388 FR_CMR_Obj_RelPosX10Val "FR_CMR_Obj_RelativePositionX10Value";
+CM_ SG_ 388 FR_CMR_Obj_RelPosY10Val "FR_CMR_Obj_RelativePositionY10Value";
+CM_ SG_ 388 FR_CMR_Obj_RelVelX10Val "FR_CMR_Obj_RelativeVelocityX10Value";
+CM_ SG_ 388 FR_CMR_Obj_RelVelY10Val "FR_CMR_Obj_RelativeVelocityY10Value";
+CM_ SG_ 388 FR_CMR_Obj_RelAccelX10Val "FR_CMR_Obj_RelativeAccelerationX10Value";
+CM_ BO_ 438 "[P] Periodic";
+CM_ BO_ 439 "[P] Periodic";
+CM_ BO_ 440 "[P] Periodic";
+CM_ BO_ 441 "[P] Periodic";
+CM_ BO_ 507 "[P] Periodic";
+CM_ BO_ 676 "[P] Periodic";
+CM_ SG_ 676 FR_CMR_Ln_Crc03Val "FR_CMR_Ln_CyclicRedundancyCheck03Value";
+CM_ SG_ 676 FR_CMR_Ln_AlvCnt03Val "FR_CMR_Ln_AliveCounter03Value";
+CM_ SG_ 676 FR_CMR_Ln_WthLnLft01Val "FR_CMR_Ln_WidthLineLeft01Value";
+CM_ SG_ 676 FR_CMR_Ln_WthLnRt01Val "FR_CMR_Ln_WidthLineRight01Value";
+CM_ SG_ 676 FR_CMR_Ln_ClfctLft01Sta "FR_CMR_Ln_ClassificationLeft01Status";
+CM_ SG_ 676 FR_CMR_Ln_ClfctRt01Sta "FR_CMR_Ln_ClassificationRight01Status";
+CM_ SG_ 676 FR_CMR_Ln_LftClr01Sta "FR_CMR_Ln_LeftColor01Status";
+CM_ SG_ 676 FR_CMR_Ln_RtClr01Sta "FR_CMR_Ln_RightColor01Status";
+CM_ SG_ 676 FR_CMR_Ln_QualLvlLft01Sta "FR_CMR_Ln_QualityLevelLeft01Status";
+CM_ SG_ 676 FR_CMR_Ln_QualLvlRt01Sta "FR_CMR_Ln_QualityLevelRight01Status";
+CM_ SG_ 676 FR_CMR_Ln_ClfctLft02Sta "FR_CMR_Ln_ClassificationLeft02Status";
+CM_ SG_ 676 FR_CMR_Ln_ClfctRt02Sta "FR_CMR_Ln_ClassificationRight02Status";
+CM_ SG_ 676 FR_CMR_Ln_QualLvlLft02Sta "FR_CMR_Ln_QualityLevelLeft02Status";
+CM_ SG_ 676 FR_CMR_Ln_QualLvlRt02Sta "FR_CMR_Ln_QualityLevelRight02Status";
+CM_ SG_ 676 FR_CMR_Ln_LftViewRngVal "FR_CMR_Ln_LeftViewRangeValue";
+CM_ SG_ 676 FR_CMR_Ln_RtViewRngVal "FR_CMR_Ln_RightViewRangeValue";
+CM_ BO_ 675 "[P] Periodic";
+CM_ SG_ 675 FR_CMR_Ln_Crc02Val "FR_CMR_Ln_CyclicRedundancyCheck02Value";
+CM_ SG_ 675 FR_CMR_Ln_AlvCnt02Val "FR_CMR_Ln_AliveCounter02Value";
+CM_ SG_ 675 FR_CMR_Ln_LftNextDptDstVal "FR_CMR_Ln_LeftNextDepartureDistanceValue";
+CM_ SG_ 675 FR_CMR_Ln_RtNextDptDstVal "FR_CMR_Ln_RightNextDepartureDistanceValue";
+CM_ SG_ 675 FR_CMR_Ln_LftNextDptAnglVal "FR_CMR_Ln_LeftNextDepartureAngleValue";
+CM_ SG_ 675 FR_CMR_Ln_RtNextDptAnglVal "FR_CMR_Ln_RightNextDepartureAngleValue";
+CM_ SG_ 675 FR_CMR_Ln_LftNextCurveVal "FR_CMR_Ln_LeftNextCurvatureValue";
+CM_ SG_ 675 FR_CMR_Ln_RtNextCurveVal "FR_CMR_Ln_RightNextCurvatureValue";
+CM_ SG_ 675 FR_CMR_Ln_LftNextCurveRatVal "FR_CMR_Ln_LeftNextCurvatureRateValue";
+CM_ SG_ 675 FR_CMR_Ln_RtNextCurveRatVal "FR_CMR_Ln_RightNextCurvatureRateValue";
+CM_ BO_ 674 "[P] Periodic";
+CM_ SG_ 674 FR_CMR_Ln_Crc01Val "FR_CMR_Ln_CyclicRedundancyCheck01Value";
+CM_ SG_ 674 FR_CMR_Ln_AlvCnt01Val "FR_CMR_Ln_AliveCounter01Value";
+CM_ SG_ 674 FR_CMR_Ln_LftDptDstVal "FR_CMR_Ln_LeftDepartureDistanceValue";
+CM_ SG_ 674 FR_CMR_Ln_RtDptDstVal "FR_CMR_Ln_RightDepartureDistanceValue";
+CM_ SG_ 674 FR_CMR_Ln_LftDptAnglVal "FR_CMR_Ln_LeftDepartureAngleValue";
+CM_ SG_ 674 FR_CMR_Ln_RtDptAnglVal "FR_CMR_Ln_RightDepartureAngleValue";
+CM_ SG_ 674 FR_CMR_Ln_LftCurveVal "FR_CMR_Ln_LeftCurvatureValue";
+CM_ SG_ 674 FR_CMR_Ln_RtCurveVal "FR_CMR_Ln_RightCurvatureValue";
+CM_ SG_ 674 FR_CMR_Ln_LftCurveRatVal "FR_CMR_Ln_LeftCurvatureRateValue";
+CM_ SG_ 674 FR_CMR_Ln_RtCurveRatVal "FR_CMR_Ln_RightCurvatureRateValue";
+BA_DEF_ BO_  "DiagFdOnly" ENUM  "YES","NO";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "Baudrate" INT 50000 1000000;
+BA_DEF_  "GenEnvVarEndingDsp" STRING ;
+BA_DEF_  "GenEnvVarEndingSnd" STRING ;
+BA_DEF_  "GenEnvVarPrefix" STRING ;
+BA_DEF_  "GenNWMApBusSleep" STRING ;
+BA_DEF_  "GenNWMApCanNormal" STRING ;
+BA_DEF_  "GenNWMApCanOff" STRING ;
+BA_DEF_  "GenNWMApCanOn" STRING ;
+BA_DEF_  "GenNWMApCanSleep" STRING ;
+BA_DEF_  "GenNWMApCanWakeUp" STRING ;
+BA_DEF_  "GenNWMGotoMode_Awake" STRING ;
+BA_DEF_  "GenNWMGotoMode_BusSleep" STRING ;
+BA_DEF_  "GenNWMSleepTime" INT 1375 1650;
+BA_DEF_  "GenNWMTalkNM" STRING ;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmBaseAddress" HEX 0 2047;
+BA_DEF_  "NmMessageCount" INT 0 128;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "SamplePointMax" INT 50 85;
+BA_DEF_  "SamplePointMin" INT 55 85;
+BA_DEF_  "SyncJumpWidthMax" INT 1 8;
+BA_DEF_  "SyncJumpWidthMin" INT 1 4;
+BA_DEF_  "VersionDay" INT 1 31;
+BA_DEF_  "VersionMonth" INT 1 12;
+BA_DEF_  "VersionNumber" INT 0 9999;
+BA_DEF_  "VersionNumberInternal" INT 0 9999;
+BA_DEF_  "VersionWeek" INT 1 53;
+BA_DEF_  "VersionYear" INT 0 9999;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 127;
+BA_DEF_ BU_  "NmNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BU_  "GenNodSleepTime" INT 1375 1650;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmCAN" INT 1 2;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NWM_Knoten" ENUM  "No","Yes";
+BA_DEF_ BU_  "TpRxIdentifier" HEX 0 0;
+BA_DEF_ BU_  "TpTxIdentifier" HEX 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 2000;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 2000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 500;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 20;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 0;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgMinAcceptLength" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 3;
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "NWM_Botschaft" ENUM  "No","Yes";
+BA_DEF_ BO_  "TPTxIndex" INT 0 255;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ SG_  "SignalLongName" STRING ;
+BA_DEF_ SG_  "UserSigValidity" ENUM  "B+","ACC","IG","IG1","IG2","IG3","IG1 or IG2","IG1 or IG3","Undef";
+BA_DEF_ SG_  "GenSigTimeoutTime" INT 0 7000;
+BA_DEF_ SG_  "UsrSigTimeoutValue" STRING ;
+BA_DEF_ SG_  "UsrSigPurpose" ENUM  "Undef","FN","DIAG","DEV","NM";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 1215752192;
+BA_DEF_ SG_  "NetworkRequest" ENUM  "Yes","No";
+BA_DEF_ SG_  "NetworkRequestHoldingTime" INT 0 65535;
+BA_DEF_ SG_  "Description" STRING ;
+BA_DEF_ SG_  "Version" STRING ;
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "Int","Float","Undef";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 65536;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "OnChangeWithRepetition","OnWriteWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigTimeoutMsg" HEX 0 2047;
+BA_DEF_ SG_  "GwSigLatencyTime" INT 0 65536;
+BA_DEF_ SG_  "GwSigMissingSourceType" ENUM  "Undef","OldValue","DefaultValue","InitialValue";
+BA_DEF_ SG_  "NWM_WakeupAllowed" ENUM  "Undef","OldValue","DefaultValue","InitialValue";
+BA_DEF_ SG_  "UndefinedValueRangeBegin" INT 0 0;
+BA_DEF_ SG_  "RoutingFactor" INT 1 1215752192;
+BA_DEF_  "Datarate" INT 2000000 8000000;
+BA_DEF_DEF_  "DiagFdOnly" "YES";
+BA_DEF_DEF_  "BusType" "CAN FD";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "GenEnvVarEndingDsp" "Dsp_";
+BA_DEF_DEF_  "GenEnvVarEndingSnd" "_";
+BA_DEF_DEF_  "GenEnvVarPrefix" "Env";
+BA_DEF_DEF_  "GenNWMApBusSleep" "AppNmCanBusSleep()";
+BA_DEF_DEF_  "GenNWMApCanNormal" "AppNmCanNormal()";
+BA_DEF_DEF_  "GenNWMApCanOff" "ApplCanOffline()";
+BA_DEF_DEF_  "GenNWMApCanOn" "ApplCanOnline()";
+BA_DEF_DEF_  "GenNWMApCanSleep" "ApplNmCanSleep()";
+BA_DEF_DEF_  "GenNWMApCanWakeUp" "ApplCanWakeUp()";
+BA_DEF_DEF_  "GenNWMGotoMode_Awake" "GotoMode_Awake()";
+BA_DEF_DEF_  "GenNWMGotoMode_BusSleep" "GotoMode_BusSleep()";
+BA_DEF_DEF_  "GenNWMSleepTime" 1500;
+BA_DEF_DEF_  "GenNWMTalkNM" "TalkNM()";
+BA_DEF_DEF_  "Manufacturer" "HMC";
+BA_DEF_DEF_  "NmBaseAddress" 1280;
+BA_DEF_DEF_  "NmMessageCount" 0;
+BA_DEF_DEF_  "NmType" "Vector";
+BA_DEF_DEF_  "SamplePointMax" 80;
+BA_DEF_DEF_  "SamplePointMin" 80;
+BA_DEF_DEF_  "SyncJumpWidthMax" 3;
+BA_DEF_DEF_  "SyncJumpWidthMin" 2;
+BA_DEF_DEF_  "VersionDay" 1;
+BA_DEF_DEF_  "VersionMonth" 1;
+BA_DEF_DEF_  "VersionNumber" 0;
+BA_DEF_DEF_  "VersionNumberInternal" 0;
+BA_DEF_DEF_  "VersionWeek" 1;
+BA_DEF_DEF_  "VersionYear" 0;
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "Yes";
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "GenNodSleepTime" 1500;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NmCAN" 1;
+BA_DEF_DEF_  "NodeLayerModules" "oseknm01.dll,CANoeILNLVector.dll";
+BA_DEF_DEF_  "NWM_Knoten" "Yes";
+BA_DEF_DEF_  "TpRxIdentifier" 0;
+BA_DEF_DEF_  "TpTxIdentifier" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 200;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 40;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgMinAcceptLength" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 3;
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "NWM_Botschaft" "No";
+BA_DEF_DEF_  "TPTxIndex" 0;
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_  "SignalLongName" "";
+BA_DEF_DEF_  "UserSigValidity" "IG";
+BA_DEF_DEF_  "GenSigTimeoutTime" 500;
+BA_DEF_DEF_  "UsrSigTimeoutValue" "Undef";
+BA_DEF_DEF_  "UsrSigPurpose" "FN";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "NetworkRequest" "No";
+BA_DEF_DEF_  "NetworkRequestHoldingTime" 0;
+BA_DEF_DEF_  "Description" "";
+BA_DEF_DEF_  "Version" "";
+BA_DEF_DEF_  "GenSigEnvVarType" "Undef";
+BA_DEF_DEF_  "GenSigEVName" "";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigTimeoutMsg" 0;
+BA_DEF_DEF_  "GwSigLatencyTime" 40;
+BA_DEF_DEF_  "GwSigMissingSourceType" "Undef";
+BA_DEF_DEF_  "NWM_WakeupAllowed" "";
+BA_DEF_DEF_  "UndefinedValueRangeBegin" 0;
+BA_DEF_DEF_  "RoutingFactor" 1;
+BA_DEF_DEF_  "Datarate" 2000000;
+BA_ "VersionDay" 7;
+BA_ "VersionMonth" 3;
+BA_ "VersionYear" 2018;
+BA_ "VersionWeek" 10;
+BA_ "NmMessageCount" 47;
+BA_ "DBName" "CAN_FD4";
+BA_ "NmStationAddress" BU_ DPSU 56;
+BA_ "NmNode" BU_ DPSU 1;
+BA_ "NmStationAddress" BU_ SHVU_RR 43;
+BA_ "NmNode" BU_ SHVU_RR 1;
+BA_ "NmStationAddress" BU_ DPSS 57;
+BA_ "NmNode" BU_ DPSS 1;
+BA_ "NmStationAddress" BU_ RLPSM 28;
+BA_ "NmNode" BU_ RLPSM 1;
+BA_ "NmStationAddress" BU_ Dummy 0;
+BA_ "NmNode" BU_ Dummy 0;
+BA_ "NmStationAddress" BU_ DAU 2;
+BA_ "NmNode" BU_ DAU 1;
+BA_ "NmStationAddress" BU_ IBU_HS 0;
+BA_ "NmNode" BU_ IBU_HS 1;
+BA_ "NmStationAddress" BU_ BCW 0;
+BA_ "NmNode" BU_ BCW 0;
+BA_ "NmStationAddress" BU_ AHV 51;
+BA_ "NmNode" BU_ AHV 1;
+BA_ "NmStationAddress" BU_ RWS 0;
+BA_ "NmNode" BU_ RWS 0;
+BA_ "NmStationAddress" BU_ CGW 22;
+BA_ "NmNode" BU_ CGW 1;
+BA_ "NmStationAddress" BU_ DLBCU 64;
+BA_ "NmNode" BU_ DLBCU 1;
+BA_ "NmStationAddress" BU_ EPB 0;
+BA_ "NmNode" BU_ EPB 0;
+BA_ "NmStationAddress" BU_ RRHV 53;
+BA_ "NmNode" BU_ RRHV 1;
+BA_ "NmStationAddress" BU_ MDPS 0;
+BA_ "NmNode" BU_ MDPS 0;
+BA_ "NmStationAddress" BU_ WPC 30;
+BA_ "NmNode" BU_ WPC 1;
+BA_ "NmStationAddress" BU_ HSWS 25;
+BA_ "NmNode" BU_ HSWS 1;
+BA_ "NmStationAddress" BU_ RR_C_RDR 0;
+BA_ "NmNode" BU_ RR_C_RDR 0;
+BA_ "NmStationAddress" BU_ ADAS_PRK 0;
+BA_ "NmNode" BU_ ADAS_PRK 0;
+BA_ "NmStationAddress" BU_ DSS 26;
+BA_ "NmNode" BU_ DSS 1;
+BA_ "NmStationAddress" BU_ BCM 0;
+BA_ "NmNode" BU_ BCM 0;
+BA_ "NmStationAddress" BU_ FICU 16;
+BA_ "NmNode" BU_ FICU 1;
+BA_ "NmStationAddress" BU_ ACU 0;
+BA_ "NmNode" BU_ ACU 0;
+BA_ "NmStationAddress" BU_ vBDM 0;
+BA_ "NmNode" BU_ vBDM 0;
+BA_ "NmStationAddress" BU_ CLU 0;
+BA_ "NmNode" BU_ CLU 0;
+BA_ "NmStationAddress" BU_ SAS 0;
+BA_ "NmNode" BU_ SAS 0;
+BA_ "NmStationAddress" BU_ ARS 10;
+BA_ "NmNode" BU_ ARS 1;
+BA_ "NmStationAddress" BU_ MLM 41;
+BA_ "NmNode" BU_ MLM 1;
+BA_ "NmStationAddress" BU_ SCC 0;
+BA_ "NmNode" BU_ SCC 0;
+BA_ "NmStationAddress" BU_ MM_CGW 0;
+BA_ "NmNode" BU_ MM_CGW 0;
+BA_ "NmStationAddress" BU_ AHLS 0;
+BA_ "NmNode" BU_ AHLS 0;
+BA_ "NmStationAddress" BU_ ILCU_RH 55;
+BA_ "NmNode" BU_ ILCU_RH 1;
+BA_ "NmStationAddress" BU_ TCU 0;
+BA_ "NmNode" BU_ TCU 0;
+BA_ "NmStationAddress" BU_ EMS 0;
+BA_ "NmNode" BU_ EMS 0;
+BA_ "NmStationAddress" BU_ SWRC 8;
+BA_ "NmNode" BU_ SWRC 1;
+BA_ "NmStationAddress" BU_ LPI 0;
+BA_ "NmNode" BU_ LPI 0;
+BA_ "NmStationAddress" BU_ BMS 0;
+BA_ "NmNode" BU_ BMS 0;
+BA_ "NmStationAddress" BU_ SCM 7;
+BA_ "NmNode" BU_ SCM 1;
+BA_ "NmStationAddress" BU_ ADAS_DRV 0;
+BA_ "NmNode" BU_ ADAS_DRV 0;
+BA_ "NmStationAddress" BU_ AFCU_AST 38;
+BA_ "NmNode" BU_ AFCU_AST 1;
+BA_ "NmStationAddress" BU_ YRS 0;
+BA_ "NmNode" BU_ YRS 0;
+BA_ "NmStationAddress" BU_ HUD 0;
+BA_ "NmNode" BU_ HUD 0;
+BA_ "NmStationAddress" BU_ SBW 0;
+BA_ "NmNode" BU_ SBW 0;
+BA_ "NmStationAddress" BU_ VCU 0;
+BA_ "NmNode" BU_ VCU 0;
+BA_ "NmStationAddress" BU_ ODS 0;
+BA_ "NmNode" BU_ ODS 0;
+BA_ "NmStationAddress" BU_ DVRS 0;
+BA_ "NmNode" BU_ DVRS 0;
+BA_ "NmStationAddress" BU_ PSB 65;
+BA_ "NmNode" BU_ PSB 1;
+BA_ "NmStationAddress" BU_ APSU 49;
+BA_ "NmNode" BU_ APSU 1;
+BA_ "NmStationAddress" BU_ ESC 0;
+BA_ "NmNode" BU_ ESC 0;
+BA_ "NmStationAddress" BU_ SLB 27;
+BA_ "NmNode" BU_ SLB 1;
+BA_ "NmStationAddress" BU_ DIBOX 0;
+BA_ "NmNode" BU_ DIBOX 0;
+BA_ "NmStationAddress" BU_ APSM 9;
+BA_ "NmNode" BU_ APSM 1;
+BA_ "NmStationAddress" BU_ SCU 0;
+BA_ "NmNode" BU_ SCU 0;
+BA_ "NmStationAddress" BU_ FR_CMR 0;
+BA_ "NmNode" BU_ FR_CMR 0;
+BA_ "NmStationAddress" BU_ RR_C_RDR_LH 0;
+BA_ "NmNode" BU_ RR_C_RDR_LH 0;
+BA_ "NmStationAddress" BU_ H_U 0;
+BA_ "NmNode" BU_ H_U 0;
+BA_ "NmStationAddress" BU_ RLHV 52;
+BA_ "NmNode" BU_ RLHV 1;
+BA_ "NmStationAddress" BU_ PFSU 45;
+BA_ "NmNode" BU_ PFSU 1;
+BA_ "NmStationAddress" BU_ GST 0;
+BA_ "NmNode" BU_ GST 0;
+BA_ "NmStationAddress" BU_ PSU 48;
+BA_ "NmNode" BU_ PSU 1;
+BA_ "NmStationAddress" BU_ ILCU_LH 54;
+BA_ "NmNode" BU_ ILCU_LH 1;
+BA_ "NmStationAddress" BU_ MCU 0;
+BA_ "NmNode" BU_ MCU 0;
+BA_ "NmStationAddress" BU_ SHVU_FR 42;
+BA_ "NmNode" BU_ SHVU_FR 1;
+BA_ "NmStationAddress" BU_ OBC 0;
+BA_ "NmNode" BU_ OBC 0;
+BA_ "NmStationAddress" BU_ AFCU_RR 40;
+BA_ "NmNode" BU_ AFCU_RR 1;
+BA_ "NmStationAddress" BU_ PSD 23;
+BA_ "NmNode" BU_ PSD 1;
+BA_ "NmStationAddress" BU_ ADM 3;
+BA_ "NmNode" BU_ ADM 1;
+BA_ "NmStationAddress" BU_ SMK 0;
+BA_ "NmNode" BU_ SMK 0;
+BA_ "NmStationAddress" BU_ AFCU_RL 39;
+BA_ "NmNode" BU_ AFCU_RL 1;
+BA_ "NmStationAddress" BU_ IAU 44;
+BA_ "NmNode" BU_ IAU 1;
+BA_ "NmStationAddress" BU_ ESU 0;
+BA_ "NmNode" BU_ ESU 0;
+BA_ "NmStationAddress" BU_ PSM 6;
+BA_ "NmNode" BU_ PSM 1;
+BA_ "NmStationAddress" BU_ FCU 0;
+BA_ "NmNode" BU_ FCU 0;
+BA_ "NmStationAddress" BU_ ECS 0;
+BA_ "NmNode" BU_ ECS 0;
+BA_ "NmStationAddress" BU_ CCM 0;
+BA_ "NmNode" BU_ CCM 0;
+BA_ "NmStationAddress" BU_ ECW 12;
+BA_ "NmNode" BU_ ECW 1;
+BA_ "NmStationAddress" BU_ ICSC 0;
+BA_ "NmNode" BU_ ICSC 0;
+BA_ "NmStationAddress" BU_ OPU 0;
+BA_ "NmNode" BU_ OPU 0;
+BA_ "NmStationAddress" BU_ FCS 33;
+BA_ "NmNode" BU_ FCS 1;
+BA_ "NmStationAddress" BU_ PTGM 11;
+BA_ "NmNode" BU_ PTGM 1;
+BA_ "NmStationAddress" BU_ LDC 0;
+BA_ "NmNode" BU_ LDC 0;
+BA_ "NmStationAddress" BU_ AWD 0;
+BA_ "NmNode" BU_ AWD 0;
+BA_ "NmStationAddress" BU_ DHV 50;
+BA_ "NmNode" BU_ DHV 1;
+BA_ "NmStationAddress" BU_ OPI 0;
+BA_ "NmNode" BU_ OPI 0;
+BA_ "NmStationAddress" BU_ AFCU_DRV 37;
+BA_ "NmNode" BU_ AFCU_DRV 1;
+BA_ "NmStationAddress" BU_ IBU 0;
+BA_ "NmNode" BU_ IBU 0;
+BA_ "NmStationAddress" BU_ FPCM 0;
+BA_ "NmNode" BU_ FPCM 0;
+BA_ "NmStationAddress" BU_ MFSW 5;
+BA_ "NmNode" BU_ MFSW 1;
+BA_ "NmStationAddress" BU_ HFKS 24;
+BA_ "NmNode" BU_ HFKS 1;
+BA_ "NmStationAddress" BU_ HCU 0;
+BA_ "NmNode" BU_ HCU 0;
+BA_ "NmStationAddress" BU_ TPMS 0;
+BA_ "NmNode" BU_ TPMS 0;
+BA_ "NmStationAddress" BU_ RWPC 31;
+BA_ "NmNode" BU_ RWPC 1;
+BA_ "NmStationAddress" BU_ G5_RDR10 0;
+BA_ "NmNode" BU_ G5_RDR10 0;
+BA_ "NmStationAddress" BU_ AFS 0;
+BA_ "NmNode" BU_ AFS 0;
+BA_ "NmStationAddress" BU_ RRPSM 29;
+BA_ "NmNode" BU_ RRPSM 1;
+BA_ "NmStationAddress" BU_ ICU 15;
+BA_ "NmNode" BU_ ICU 1;
+BA_ "NmStationAddress" BU_ DATC 0;
+BA_ "NmNode" BU_ DATC 0;
+BA_ "NmStationAddress" BU_ eCall 0;
+BA_ "NmNode" BU_ eCall 0;
+BA_ "NmStationAddress" BU_ VESS 0;
+BA_ "NmNode" BU_ VESS 0;
+BA_ "NmStationAddress" BU_ RDC 47;
+BA_ "NmNode" BU_ RDC 1;
+BA_ "NmStationAddress" BU_ SVM 46;
+BA_ "NmNode" BU_ SVM 1;
+BA_ "GenMsgSendType" BO_ 692 0;
+BA_ "VFrameFormat" BO_ 692 14;
+BA_ "GenMsgSendType" BO_ 691 0;
+BA_ "VFrameFormat" BO_ 691 14;
+BA_ "GenMsgCycleTime" BO_ 816 30;
+BA_ "GenMsgSendType" BO_ 816 0;
+BA_ "VFrameFormat" BO_ 816 14;
+BA_ "GenMsgCycleTime" BO_ 784 30;
+BA_ "GenMsgSendType" BO_ 784 0;
+BA_ "VFrameFormat" BO_ 784 14;
+BA_ "GenMsgCycleTimeFast" BO_ 689 0;
+BA_ "GenMsgCycleTime" BO_ 689 30;
+BA_ "GenMsgSendType" BO_ 689 0;
+BA_ "GenMsgNrOfRepetition" BO_ 689 0;
+BA_ "VFrameFormat" BO_ 689 14;
+BA_ "GenMsgCycleTimeFast" BO_ 688 0;
+BA_ "GenMsgCycleTime" BO_ 688 30;
+BA_ "GenMsgSendType" BO_ 688 0;
+BA_ "GenMsgNrOfRepetition" BO_ 688 0;
+BA_ "VFrameFormat" BO_ 688 14;
+BA_ "GenMsgCycleTime" BO_ 699 30;
+BA_ "GenMsgSendType" BO_ 699 0;
+BA_ "VFrameFormat" BO_ 699 14;
+BA_ "GenMsgCycleTime" BO_ 700 30;
+BA_ "GenMsgSendType" BO_ 700 0;
+BA_ "VFrameFormat" BO_ 700 14;
+BA_ "GenMsgCycleTime" BO_ 701 30;
+BA_ "GenMsgSendType" BO_ 701 0;
+BA_ "VFrameFormat" BO_ 701 14;
+BA_ "GenMsgCycleTime" BO_ 702 30;
+BA_ "GenMsgSendType" BO_ 702 0;
+BA_ "VFrameFormat" BO_ 702 14;
+BA_ "GenMsgCycleTime" BO_ 703 30;
+BA_ "GenMsgSendType" BO_ 703 0;
+BA_ "VFrameFormat" BO_ 703 14;
+BA_ "GenMsgCycleTime" BO_ 704 30;
+BA_ "GenMsgSendType" BO_ 704 0;
+BA_ "VFrameFormat" BO_ 704 14;
+BA_ "GenMsgStartDelayTime" BO_ 387 0;
+BA_ "GenMsgNrOfRepetition" BO_ 387 0;
+BA_ "GenMsgCycleTimeFast" BO_ 387 0;
+BA_ "GenMsgCycleTime" BO_ 387 30;
+BA_ "GenMsgSendType" BO_ 387 0;
+BA_ "VFrameFormat" BO_ 387 14;
+BA_ "GenMsgStartDelayTime" BO_ 386 0;
+BA_ "GenMsgNrOfRepetition" BO_ 386 0;
+BA_ "GenMsgCycleTimeFast" BO_ 386 0;
+BA_ "GenMsgCycleTime" BO_ 386 30;
+BA_ "GenMsgSendType" BO_ 386 0;
+BA_ "VFrameFormat" BO_ 386 14;
+BA_ "GenMsgStartDelayTime" BO_ 385 0;
+BA_ "GenMsgNrOfRepetition" BO_ 385 0;
+BA_ "GenMsgCycleTimeFast" BO_ 385 0;
+BA_ "GenMsgCycleTime" BO_ 385 30;
+BA_ "GenMsgSendType" BO_ 385 0;
+BA_ "VFrameFormat" BO_ 385 14;
+BA_ "GenMsgStartDelayTime" BO_ 384 0;
+BA_ "GenMsgNrOfRepetition" BO_ 384 0;
+BA_ "GenMsgCycleTimeFast" BO_ 384 0;
+BA_ "GenMsgCycleTime" BO_ 384 30;
+BA_ "GenMsgSendType" BO_ 384 0;
+BA_ "VFrameFormat" BO_ 384 14;
+BA_ "GenMsgStartDelayTime" BO_ 389 0;
+BA_ "GenMsgNrOfRepetition" BO_ 389 0;
+BA_ "GenMsgCycleTimeFast" BO_ 389 0;
+BA_ "GenMsgCycleTime" BO_ 389 30;
+BA_ "GenMsgSendType" BO_ 389 0;
+BA_ "VFrameFormat" BO_ 389 14;
+BA_ "GenMsgStartDelayTime" BO_ 388 0;
+BA_ "GenMsgNrOfRepetition" BO_ 388 0;
+BA_ "GenMsgCycleTimeFast" BO_ 388 0;
+BA_ "GenMsgCycleTime" BO_ 388 30;
+BA_ "GenMsgSendType" BO_ 388 0;
+BA_ "VFrameFormat" BO_ 388 14;
+BA_ "GenMsgStartDelayTime" BO_ 438 0;
+BA_ "GenMsgNrOfRepetition" BO_ 438 0;
+BA_ "GenMsgCycleTimeFast" BO_ 438 0;
+BA_ "GenMsgCycleTime" BO_ 438 30;
+BA_ "GenMsgSendType" BO_ 438 0;
+BA_ "VFrameFormat" BO_ 438 14;
+BA_ "GenMsgStartDelayTime" BO_ 439 0;
+BA_ "GenMsgNrOfRepetition" BO_ 439 0;
+BA_ "GenMsgCycleTimeFast" BO_ 439 0;
+BA_ "GenMsgCycleTime" BO_ 439 30;
+BA_ "GenMsgSendType" BO_ 439 0;
+BA_ "VFrameFormat" BO_ 439 14;
+BA_ "GenMsgStartDelayTime" BO_ 440 0;
+BA_ "GenMsgNrOfRepetition" BO_ 440 0;
+BA_ "GenMsgCycleTimeFast" BO_ 440 0;
+BA_ "GenMsgCycleTime" BO_ 440 30;
+BA_ "GenMsgSendType" BO_ 440 0;
+BA_ "VFrameFormat" BO_ 440 14;
+BA_ "GenMsgStartDelayTime" BO_ 441 0;
+BA_ "GenMsgNrOfRepetition" BO_ 441 0;
+BA_ "GenMsgCycleTimeFast" BO_ 441 0;
+BA_ "GenMsgCycleTime" BO_ 441 30;
+BA_ "GenMsgSendType" BO_ 441 0;
+BA_ "VFrameFormat" BO_ 441 14;
+BA_ "GenMsgStartDelayTime" BO_ 507 0;
+BA_ "GenMsgNrOfRepetition" BO_ 507 0;
+BA_ "GenMsgCycleTimeFast" BO_ 507 0;
+BA_ "GenMsgCycleTime" BO_ 507 30;
+BA_ "GenMsgSendType" BO_ 507 0;
+BA_ "VFrameFormat" BO_ 507 14;
+BA_ "GenMsgStartDelayTime" BO_ 676 0;
+BA_ "GenMsgNrOfRepetition" BO_ 676 0;
+BA_ "GenMsgCycleTimeFast" BO_ 676 0;
+BA_ "GenMsgCycleTime" BO_ 676 30;
+BA_ "GenMsgSendType" BO_ 676 0;
+BA_ "VFrameFormat" BO_ 676 14;
+BA_ "GenMsgStartDelayTime" BO_ 675 0;
+BA_ "GenMsgNrOfRepetition" BO_ 675 0;
+BA_ "GenMsgCycleTimeFast" BO_ 675 0;
+BA_ "GenMsgCycleTime" BO_ 675 30;
+BA_ "GenMsgSendType" BO_ 675 0;
+BA_ "VFrameFormat" BO_ 675 14;
+BA_ "GenMsgStartDelayTime" BO_ 674 0;
+BA_ "GenMsgNrOfRepetition" BO_ 674 0;
+BA_ "GenMsgCycleTimeFast" BO_ 674 0;
+BA_ "GenMsgCycleTime" BO_ 674 30;
+BA_ "GenMsgSendType" BO_ 674 0;
+BA_ "VFrameFormat" BO_ 674 14;
+BA_ "GenSigStartValue" SG_ 784 CIPV_RelLongVel 512;
+BA_ "GenSigStartValue" SG_ 784 CIPV_RelLatVel 102.4;
+BA_ "Description" SG_ 699 FR_CMR_Obj_MtnCtgry01Sta "Defines the motion category of the detected object and the orientation of the detected object";
+BA_ "Version" SG_ 387 FR_CMR_Obj_Crc04Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_Crc04Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_Crc04Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_Crc04Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_Crc04Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_Crc04Val 65535;
+BA_ "Description" SG_ 387 FR_CMR_Obj_Crc04Val "[Cyclic redundancy check] The CRC checking process calculates the CRC over the entire data block, including the CRC result CRC Polynomial (0x1021) ,
+
+Initial Value : 0xFFFF, XOR value : 0x0000
+
+The mathematical expression to 16 bit CRC polynomial is ";
+BA_ "Version" SG_ 387 FR_CMR_Obj_AlvCnt04Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_AlvCnt04Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_AlvCnt04Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_AlvCnt04Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_AlvCnt04Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_AlvCnt04Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_AlvCnt04Val "[Alive counter] For the first transmission request for a data element the counter shall be initialized with 0 and shall be incremented by 1
+
+for every subsequent send request. When the counter reaches the maximum value(0xFF), then it shall restart with";
+BA_ "Version" SG_ 387 FR_CMR_Obj_QualLvl07Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_QualLvl07Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_QualLvl07Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_QualLvl07Sta 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_QualLvl07Sta 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_QualLvl07Sta 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_QualLvl07Sta "[Quality level] Information quality for a target object. Information quality can be interpreted by reliability, validity, probability etc.  
+
+Value range : 0~100 (0~30 : Low, 30~60 : Medium, 60~100 : High)";
+BA_ "Version" SG_ 387 FR_CMR_Obj_AlvAge07Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_AlvAge07Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_AlvAge07Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_AlvAge07Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_AlvAge07Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_AlvAge07Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_AlvAge07Val "[Alive Age] Lifetime
+
+(Keep the higher values than 255 as 255.)";
+BA_ "Version" SG_ 387 FR_CMR_Obj_MvngFlag07Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_MvngFlag07Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_MvngFlag07Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_MvngFlag07Sta 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_MvngFlag07Sta 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_MvngFlag07Sta 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_MvngFlag07Sta "[Moving flag] Moving information for a forward or oncoming object (ex. preceding vehicle, oncoming vehicle) : Stationary, Movable (Moving, Stopped) etc.";
+BA_ "Version" SG_ 387 FR_CMR_Obj_Id07Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_Id07Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_Id07Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_Id07Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_Id07Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_Id07Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_Id07Val "[Track ID] Unlike radar (including corner radar), extra 'Track ID' signal is required because camera automatically sorts messages according to distance between subject and track vehicle. (1-127 valid and 0 is always invalid)";
+BA_ "Version" SG_ 387 FR_CMR_Obj_Wth07Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_Wth07Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_Wth07Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_Wth07Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_Wth07Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_Wth07Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_Wth07Val "[Object width] Target object width.";
+BA_ "Version" SG_ 387 FR_CMR_Obj_Clfct07Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_Clfct07Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_Clfct07Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_Clfct07Sta 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_Clfct07Sta 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_Clfct07Sta 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_Clfct07Sta "[Object classification] Object classification result. 
+
+Passenger car, Motor bike, truck, bicycle, pedestrian, etc.";
+BA_ "Version" SG_ 387 FR_CMR_Obj_RelPosX07Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_RelPosX07Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_RelPosX07Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_RelPosX07Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_RelPosX07Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_RelPosX07Val 7000;
+BA_ "Description" SG_ 387 FR_CMR_Obj_RelPosX07Val "[Longitudinal distance] Physical distance between the subject vehicle and a target object in the x-axis of vehicle fixed coordinate system (ISO).
+
+Reference point of the subject vehicle : the center of front bumper
+
+Reference point of a target object";
+BA_ "Version" SG_ 387 FR_CMR_Obj_RelPosY07Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_RelPosY07Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_RelPosY07Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_RelPosY07Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_RelPosY07Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_RelPosY07Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_RelPosY07Val "[Lateral distance] Physical distance between the subject and a target object in the y-axis of vehicle fixed coordinate system (ISO). 
+
+Reference point of the subject vehicle : centerline of the subject vehicle (x-axis of vehicle fixed coordinate system";
+BA_ "Version" SG_ 387 FR_CMR_Obj_RelVelX07Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_RelVelX07Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_RelVelX07Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_RelVelX07Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_RelVelX07Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_RelVelX07Val 2000;
+BA_ "Description" SG_ 387 FR_CMR_Obj_RelVelX07Val "[Longitudinal velocity] Relative velocity between the subject vehicle and a target object. 
+
+Positive velocity : A forward object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 387 FR_CMR_Obj_RelVelY07Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_RelVelY07Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_RelVelY07Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_RelVelY07Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_RelVelY07Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_RelVelY07Val 500;
+BA_ "Description" SG_ 387 FR_CMR_Obj_RelVelY07Val "[Lateral velocity] Relative velocity between the subject vehicle and target object. 
+
+Positive velocity : A target object on the left side of the subject vehicle moves away from subject vehicle, or a target object on the right side of the subject vehic";
+BA_ "Version" SG_ 387 FR_CMR_Obj_RelAccelX07Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_RelAccelX07Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_RelAccelX07Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_RelAccelX07Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_RelAccelX07Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_RelAccelX07Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_RelAccelX07Val "[Longitudinal acceleration] Relative acceleration between the subject and target vehicle. 
+
+Positive acceleration : a target object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 387 FR_CMR_Obj_QualLvl08Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_QualLvl08Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_QualLvl08Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_QualLvl08Sta 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_QualLvl08Sta 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_QualLvl08Sta 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_QualLvl08Sta "[Quality level] Information quality for a target object. Information quality can be interpreted by reliability, validity, probability etc.  
+
+Value range : 0~100 (0~30 : Low, 30~60 : Medium, 60~100 : High)";
+BA_ "Version" SG_ 387 FR_CMR_Obj_AlvAge08Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_AlvAge08Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_AlvAge08Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_AlvAge08Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_AlvAge08Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_AlvAge08Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_AlvAge08Val "[Alive Age] Lifetime
+
+(Keep the higher values than 255 as 255.)";
+BA_ "Version" SG_ 387 FR_CMR_Obj_MvngFlag08Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_MvngFlag08Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_MvngFlag08Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_MvngFlag08Sta 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_MvngFlag08Sta 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_MvngFlag08Sta 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_MvngFlag08Sta "[Moving flag] Moving information for a forward or oncoming object (ex. preceding vehicle, oncoming vehicle) : Stationary, Movable (Moving, Stopped) etc.";
+BA_ "Version" SG_ 387 FR_CMR_Obj_Id08Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_Id08Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_Id08Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_Id08Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_Id08Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_Id08Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_Id08Val "[Track ID] Unlike radar (including corner radar), extra 'Track ID' signal is required because camera automatically sorts messages according to distance between subject and track vehicle. (1-127 valid and 0 is always invalid)";
+BA_ "Version" SG_ 387 FR_CMR_Obj_Wth08Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_Wth08Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_Wth08Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_Wth08Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_Wth08Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_Wth08Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_Wth08Val "[Object width] Target object width.";
+BA_ "Version" SG_ 387 FR_CMR_Obj_Clfct08Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_Clfct08Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_Clfct08Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_Clfct08Sta 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_Clfct08Sta 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_Clfct08Sta 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_Clfct08Sta "[Object classification] Object classification result. 
+
+Passenger car, Motor bike, truck, bicycle, pedestrian, etc.";
+BA_ "Version" SG_ 387 FR_CMR_Obj_RelPosX08Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_RelPosX08Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_RelPosX08Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_RelPosX08Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_RelPosX08Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_RelPosX08Val 7000;
+BA_ "Description" SG_ 387 FR_CMR_Obj_RelPosX08Val "[Longitudinal distance] Physical distance between the subject vehicle and a target object in the x-axis of vehicle fixed coordinate system (ISO).
+
+Reference point of the subject vehicle : the center of front bumper
+
+Reference point of a target object";
+BA_ "Version" SG_ 387 FR_CMR_Obj_RelPosY08Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_RelPosY08Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_RelPosY08Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_RelPosY08Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_RelPosY08Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_RelPosY08Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_RelPosY08Val "[Lateral distance] Physical distance between the subject and a target object in the y-axis of vehicle fixed coordinate system (ISO). 
+
+Reference point of the subject vehicle : centerline of the subject vehicle (x-axis of vehicle fixed coordinate system";
+BA_ "Version" SG_ 387 FR_CMR_Obj_RelVelX08Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_RelVelX08Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_RelVelX08Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_RelVelX08Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_RelVelX08Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_RelVelX08Val 2000;
+BA_ "Description" SG_ 387 FR_CMR_Obj_RelVelX08Val "[Longitudinal velocity] Relative velocity between the subject vehicle and a target object. 
+
+Positive velocity : A forward object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 387 FR_CMR_Obj_RelVelY08Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_RelVelY08Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_RelVelY08Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_RelVelY08Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_RelVelY08Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_RelVelY08Val 500;
+BA_ "Description" SG_ 387 FR_CMR_Obj_RelVelY08Val "[Lateral velocity] Relative velocity between the subject vehicle and target object. 
+
+Positive velocity : A target object on the left side of the subject vehicle moves away from subject vehicle, or a target object on the right side of the subject vehic";
+BA_ "Version" SG_ 387 FR_CMR_Obj_RelAccelX08Val "18.03.01";
+BA_ "RoutingFactor" SG_ 387 FR_CMR_Obj_RelAccelX08Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 387 FR_CMR_Obj_RelAccelX08Val 0;
+BA_ "GenSigTimeoutTime" SG_ 387 FR_CMR_Obj_RelAccelX08Val 500;
+BA_ "UserSigValidity" SG_ 387 FR_CMR_Obj_RelAccelX08Val 3;
+BA_ "GenSigStartValue" SG_ 387 FR_CMR_Obj_RelAccelX08Val 0;
+BA_ "Description" SG_ 387 FR_CMR_Obj_RelAccelX08Val "[Longitudinal acceleration] Relative acceleration between the subject and target vehicle. 
+
+Positive acceleration : a target object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 386 FR_CMR_Obj_Crc03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_Crc03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_Crc03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_Crc03Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_Crc03Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_Crc03Val 65535;
+BA_ "Description" SG_ 386 FR_CMR_Obj_Crc03Val "[Cyclic redundancy check] The CRC checking process calculates the CRC over the entire data block, including the CRC result CRC Polynomial (0x1021) ,
+
+Initial Value : 0xFFFF, XOR value : 0x0000
+
+The mathematical expression to 16 bit CRC polynomial is ";
+BA_ "Version" SG_ 386 FR_CMR_Obj_AlvCnt03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_AlvCnt03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_AlvCnt03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_AlvCnt03Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_AlvCnt03Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_AlvCnt03Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_AlvCnt03Val "[Alive counter] For the first transmission request for a data element the counter shall be initialized with 0 and shall be incremented by 1
+
+for every subsequent send request. When the counter reaches the maximum value(0xFF), then it shall restart with";
+BA_ "Version" SG_ 386 FR_CMR_Obj_QualLvl05Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_QualLvl05Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_QualLvl05Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_QualLvl05Sta 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_QualLvl05Sta 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_QualLvl05Sta 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_QualLvl05Sta "[Quality level] Information quality for a target object. Information quality can be interpreted by reliability, validity, probability etc.  
+
+Value range : 0~100 (0~30 : Low, 30~60 : Medium, 60~100 : High)";
+BA_ "Version" SG_ 386 FR_CMR_Obj_AlvAge05Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_AlvAge05Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_AlvAge05Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_AlvAge05Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_AlvAge05Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_AlvAge05Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_AlvAge05Val "[Alive Age] Lifetime
+
+(Keep the higher values than 255 as 255.)";
+BA_ "Version" SG_ 386 FR_CMR_Obj_MvngFlag05Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_MvngFlag05Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_MvngFlag05Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_MvngFlag05Sta 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_MvngFlag05Sta 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_MvngFlag05Sta 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_MvngFlag05Sta "[Moving flag] Moving information for a forward or oncoming object (ex. preceding vehicle, oncoming vehicle) : Stationary, Movable (Moving, Stopped) etc.";
+BA_ "Version" SG_ 386 FR_CMR_Obj_Id05Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_Id05Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_Id05Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_Id05Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_Id05Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_Id05Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_Id05Val "[Track ID] Unlike radar (including corner radar), extra 'Track ID' signal is required because camera automatically sorts messages according to distance between subject and track vehicle. (1-127 valid and 0 is always invalid)";
+BA_ "Version" SG_ 386 FR_CMR_Obj_Wth05Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_Wth05Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_Wth05Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_Wth05Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_Wth05Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_Wth05Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_Wth05Val "[Object width] Target object width.";
+BA_ "Version" SG_ 386 FR_CMR_Obj_Clfct05Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_Clfct05Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_Clfct05Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_Clfct05Sta 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_Clfct05Sta 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_Clfct05Sta 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_Clfct05Sta "[Object classification] Object classification result. 
+
+Passenger car, Motor bike, truck, bicycle, pedestrian, etc.";
+BA_ "Version" SG_ 386 FR_CMR_Obj_RelPosX05Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_RelPosX05Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_RelPosX05Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_RelPosX05Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_RelPosX05Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_RelPosX05Val 7000;
+BA_ "Description" SG_ 386 FR_CMR_Obj_RelPosX05Val "[Longitudinal distance] Physical distance between the subject vehicle and a target object in the x-axis of vehicle fixed coordinate system (ISO).
+
+Reference point of the subject vehicle : the center of front bumper
+
+Reference point of a target object";
+BA_ "Version" SG_ 386 FR_CMR_Obj_RelPosY05Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_RelPosY05Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_RelPosY05Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_RelPosY05Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_RelPosY05Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_RelPosY05Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_RelPosY05Val "[Lateral distance] Physical distance between the subject and a target object in the y-axis of vehicle fixed coordinate system (ISO). 
+
+Reference point of the subject vehicle : centerline of the subject vehicle (x-axis of vehicle fixed coordinate system";
+BA_ "Version" SG_ 386 FR_CMR_Obj_RelVelX05Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_RelVelX05Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_RelVelX05Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_RelVelX05Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_RelVelX05Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_RelVelX05Val 2000;
+BA_ "Description" SG_ 386 FR_CMR_Obj_RelVelX05Val "[Longitudinal velocity] Relative velocity between the subject vehicle and a target object. 
+
+Positive velocity : A forward object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 386 FR_CMR_Obj_RelVelY05Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_RelVelY05Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_RelVelY05Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_RelVelY05Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_RelVelY05Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_RelVelY05Val 500;
+BA_ "Description" SG_ 386 FR_CMR_Obj_RelVelY05Val "[Lateral velocity] Relative velocity between the subject vehicle and target object. 
+
+Positive velocity : A target object on the left side of the subject vehicle moves away from subject vehicle, or a target object on the right side of the subject vehic";
+BA_ "Version" SG_ 386 FR_CMR_Obj_RelAccelX05Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_RelAccelX05Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_RelAccelX05Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_RelAccelX05Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_RelAccelX05Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_RelAccelX05Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_RelAccelX05Val "[Longitudinal acceleration] Relative acceleration between the subject and target vehicle. 
+
+Positive acceleration : a target object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 386 FR_CMR_Obj_QualLvl06Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_QualLvl06Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_QualLvl06Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_QualLvl06Sta 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_QualLvl06Sta 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_QualLvl06Sta 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_QualLvl06Sta "[Quality level] Information quality for a target object. Information quality can be interpreted by reliability, validity, probability etc.  
+
+Value range : 0~100 (0~30 : Low, 30~60 : Medium, 60~100 : High)";
+BA_ "Version" SG_ 386 FR_CMR_Obj_AlvAge06Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_AlvAge06Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_AlvAge06Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_AlvAge06Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_AlvAge06Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_AlvAge06Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_AlvAge06Val "[Alive Age] Lifetime
+
+(Keep the higher values than 255 as 255.)";
+BA_ "Version" SG_ 386 FR_CMR_Obj_MvngFlag06Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_MvngFlag06Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_MvngFlag06Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_MvngFlag06Sta 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_MvngFlag06Sta 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_MvngFlag06Sta 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_MvngFlag06Sta "[Moving flag] Moving information for a forward or oncoming object (ex. preceding vehicle, oncoming vehicle) : Stationary, Movable (Moving, Stopped) etc.";
+BA_ "Version" SG_ 386 FR_CMR_Obj_Id06Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_Id06Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_Id06Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_Id06Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_Id06Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_Id06Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_Id06Val "[Track ID] Unlike radar (including corner radar), extra 'Track ID' signal is required because camera automatically sorts messages according to distance between subject and track vehicle. (1-127 valid and 0 is always invalid)";
+BA_ "Version" SG_ 386 FR_CMR_Obj_Wth06Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_Wth06Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_Wth06Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_Wth06Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_Wth06Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_Wth06Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_Wth06Val "[Object width] Target object width.";
+BA_ "Version" SG_ 386 FR_CMR_Obj_Clfct06Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_Clfct06Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_Clfct06Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_Clfct06Sta 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_Clfct06Sta 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_Clfct06Sta 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_Clfct06Sta "[Object classification] Object classification result. 
+
+Passenger car, Motor bike, truck, bicycle, pedestrian, etc.";
+BA_ "Version" SG_ 386 FR_CMR_Obj_RelPosX06Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_RelPosX06Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_RelPosX06Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_RelPosX06Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_RelPosX06Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_RelPosX06Val 7000;
+BA_ "Description" SG_ 386 FR_CMR_Obj_RelPosX06Val "[Longitudinal distance] Physical distance between the subject vehicle and a target object in the x-axis of vehicle fixed coordinate system (ISO).
+
+Reference point of the subject vehicle : the center of front bumper
+
+Reference point of a target object";
+BA_ "Version" SG_ 386 FR_CMR_Obj_RelPosY06Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_RelPosY06Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_RelPosY06Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_RelPosY06Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_RelPosY06Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_RelPosY06Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_RelPosY06Val "[Lateral distance] Physical distance between the subject and a target object in the y-axis of vehicle fixed coordinate system (ISO). 
+
+Reference point of the subject vehicle : centerline of the subject vehicle (x-axis of vehicle fixed coordinate system";
+BA_ "Version" SG_ 386 FR_CMR_Obj_RelVelX06Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_RelVelX06Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_RelVelX06Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_RelVelX06Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_RelVelX06Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_RelVelX06Val 2000;
+BA_ "Description" SG_ 386 FR_CMR_Obj_RelVelX06Val "[Longitudinal velocity] Relative velocity between the subject vehicle and a target object. 
+
+Positive velocity : A forward object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 386 FR_CMR_Obj_RelVelY06Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_RelVelY06Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_RelVelY06Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_RelVelY06Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_RelVelY06Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_RelVelY06Val 500;
+BA_ "Description" SG_ 386 FR_CMR_Obj_RelVelY06Val "[Lateral velocity] Relative velocity between the subject vehicle and target object. 
+
+Positive velocity : A target object on the left side of the subject vehicle moves away from subject vehicle, or a target object on the right side of the subject vehic";
+BA_ "Version" SG_ 386 FR_CMR_Obj_RelAccelX06Val "18.03.01";
+BA_ "RoutingFactor" SG_ 386 FR_CMR_Obj_RelAccelX06Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 386 FR_CMR_Obj_RelAccelX06Val 0;
+BA_ "GenSigTimeoutTime" SG_ 386 FR_CMR_Obj_RelAccelX06Val 500;
+BA_ "UserSigValidity" SG_ 386 FR_CMR_Obj_RelAccelX06Val 3;
+BA_ "GenSigStartValue" SG_ 386 FR_CMR_Obj_RelAccelX06Val 0;
+BA_ "Description" SG_ 386 FR_CMR_Obj_RelAccelX06Val "[Longitudinal acceleration] Relative acceleration between the subject and target vehicle. 
+
+Positive acceleration : a target object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 385 FR_CMR_Obj_Crc02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_Crc02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_Crc02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_Crc02Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_Crc02Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_Crc02Val 65535;
+BA_ "Description" SG_ 385 FR_CMR_Obj_Crc02Val "[Cyclic redundancy check] The CRC checking process calculates the CRC over the entire data block, including the CRC result CRC Polynomial (0x1021) ,
+
+Initial Value : 0xFFFF, XOR value : 0x0000
+
+The mathematical expression to 16 bit CRC polynomial is ";
+BA_ "Version" SG_ 385 FR_CMR_Obj_AlvCnt02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_AlvCnt02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_AlvCnt02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_AlvCnt02Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_AlvCnt02Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_AlvCnt02Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_AlvCnt02Val "[Alive counter] For the first transmission request for a data element the counter shall be initialized with 0 and shall be incremented by 1
+
+for every subsequent send request. When the counter reaches the maximum value(0xFF), then it shall restart with";
+BA_ "Version" SG_ 385 FR_CMR_Obj_QualLvl03Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_QualLvl03Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_QualLvl03Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_QualLvl03Sta 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_QualLvl03Sta 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_QualLvl03Sta 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_QualLvl03Sta "[Quality level] Information quality for a target object. Information quality can be interpreted by reliability, validity, probability etc.  
+
+Value range : 0~100 (0~30 : Low, 30~60 : Medium, 60~100 : High)";
+BA_ "Version" SG_ 385 FR_CMR_Obj_AlvAge03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_AlvAge03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_AlvAge03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_AlvAge03Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_AlvAge03Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_AlvAge03Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_AlvAge03Val "[Alive Age] Lifetime
+
+(Keep the higher values than 255 as 255.)";
+BA_ "Version" SG_ 385 FR_CMR_Obj_MvngFlag03Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_MvngFlag03Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_MvngFlag03Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_MvngFlag03Sta 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_MvngFlag03Sta 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_MvngFlag03Sta 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_MvngFlag03Sta "[Moving flag] Moving information for a forward or oncoming object (ex. preceding vehicle, oncoming vehicle) : Stationary, Movable (Moving, Stopped) etc.";
+BA_ "Version" SG_ 385 FR_CMR_Obj_Id03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_Id03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_Id03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_Id03Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_Id03Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_Id03Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_Id03Val "[Track ID] Unlike radar (including corner radar), extra 'Track ID' signal is required because camera automatically sorts messages according to distance between subject and track vehicle. (1-127 valid and 0 is always invalid)";
+BA_ "Version" SG_ 385 FR_CMR_Obj_Wth03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_Wth03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_Wth03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_Wth03Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_Wth03Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_Wth03Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_Wth03Val "[Object width] Target object width.";
+BA_ "Version" SG_ 385 FR_CMR_Obj_Clfct03Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_Clfct03Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_Clfct03Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_Clfct03Sta 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_Clfct03Sta 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_Clfct03Sta 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_Clfct03Sta "[Object classification] Object classification result. 
+
+Passenger car, Motor bike, truck, bicycle, pedestrian, etc.";
+BA_ "Version" SG_ 385 FR_CMR_Obj_RelPosX03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_RelPosX03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_RelPosX03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_RelPosX03Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_RelPosX03Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_RelPosX03Val 7000;
+BA_ "Description" SG_ 385 FR_CMR_Obj_RelPosX03Val "[Longitudinal distance] Physical distance between the subject vehicle and a target object in the x-axis of vehicle fixed coordinate system (ISO).
+
+Reference point of the subject vehicle : the center of front bumper
+
+Reference point of a target object";
+BA_ "Version" SG_ 385 FR_CMR_Obj_RelPosY03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_RelPosY03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_RelPosY03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_RelPosY03Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_RelPosY03Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_RelPosY03Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_RelPosY03Val "[Lateral distance] Physical distance between the subject and a target object in the y-axis of vehicle fixed coordinate system (ISO). 
+
+Reference point of the subject vehicle : centerline of the subject vehicle (x-axis of vehicle fixed coordinate system";
+BA_ "Version" SG_ 385 FR_CMR_Obj_RelVelX03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_RelVelX03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_RelVelX03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_RelVelX03Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_RelVelX03Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_RelVelX03Val 2000;
+BA_ "Description" SG_ 385 FR_CMR_Obj_RelVelX03Val "[Longitudinal velocity] Relative velocity between the subject vehicle and a target object. 
+
+Positive velocity : A forward object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 385 FR_CMR_Obj_RelVelY03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_RelVelY03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_RelVelY03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_RelVelY03Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_RelVelY03Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_RelVelY03Val 500;
+BA_ "Description" SG_ 385 FR_CMR_Obj_RelVelY03Val "[Lateral velocity] Relative velocity between the subject vehicle and target object. 
+
+Positive velocity : A target object on the left side of the subject vehicle moves away from subject vehicle, or a target object on the right side of the subject vehic";
+BA_ "Version" SG_ 385 FR_CMR_Obj_RelAccelX03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_RelAccelX03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_RelAccelX03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_RelAccelX03Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_RelAccelX03Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_RelAccelX03Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_RelAccelX03Val "[Longitudinal acceleration] Relative acceleration between the subject and target vehicle. 
+
+Positive acceleration : a target object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 385 FR_CMR_Obj_QualLvl04Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_QualLvl04Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_QualLvl04Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_QualLvl04Sta 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_QualLvl04Sta 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_QualLvl04Sta 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_QualLvl04Sta "[Quality level] Information quality for a target object. Information quality can be interpreted by reliability, validity, probability etc.  
+
+Value range : 0~100 (0~30 : Low, 30~60 : Medium, 60~100 : High)";
+BA_ "Version" SG_ 385 FR_CMR_Obj_AlvAge04Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_AlvAge04Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_AlvAge04Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_AlvAge04Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_AlvAge04Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_AlvAge04Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_AlvAge04Val "[Alive Age] Lifetime
+
+(Keep the higher values than 255 as 255.)";
+BA_ "Version" SG_ 385 FR_CMR_Obj_MvngFlag04Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_MvngFlag04Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_MvngFlag04Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_MvngFlag04Sta 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_MvngFlag04Sta 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_MvngFlag04Sta 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_MvngFlag04Sta "[Moving flag] Moving information for a forward or oncoming object (ex. preceding vehicle, oncoming vehicle) : Stationary, Movable (Moving, Stopped) etc.";
+BA_ "Version" SG_ 385 FR_CMR_Obj_Id04Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_Id04Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_Id04Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_Id04Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_Id04Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_Id04Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_Id04Val "[Track ID] Unlike radar (including corner radar), extra 'Track ID' signal is required because camera automatically sorts messages according to distance between subject and track vehicle. (1-127 valid and 0 is always invalid)";
+BA_ "Version" SG_ 385 FR_CMR_Obj_Wth04Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_Wth04Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_Wth04Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_Wth04Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_Wth04Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_Wth04Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_Wth04Val "[Object width] Target object width.";
+BA_ "Version" SG_ 385 FR_CMR_Obj_Clfct04Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_Clfct04Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_Clfct04Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_Clfct04Sta 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_Clfct04Sta 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_Clfct04Sta 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_Clfct04Sta "[Object classification] Object classification result. 
+
+Passenger car, Motor bike, truck, bicycle, pedestrian, etc.";
+BA_ "Version" SG_ 385 FR_CMR_Obj_RelPosX04Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_RelPosX04Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_RelPosX04Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_RelPosX04Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_RelPosX04Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_RelPosX04Val 7000;
+BA_ "Description" SG_ 385 FR_CMR_Obj_RelPosX04Val "[Longitudinal distance] Physical distance between the subject vehicle and a target object in the x-axis of vehicle fixed coordinate system (ISO).
+
+Reference point of the subject vehicle : the center of front bumper
+
+Reference point of a target object";
+BA_ "Version" SG_ 385 FR_CMR_Obj_RelPosY04Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_RelPosY04Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_RelPosY04Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_RelPosY04Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_RelPosY04Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_RelPosY04Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_RelPosY04Val "[Lateral distance] Physical distance between the subject and a target object in the y-axis of vehicle fixed coordinate system (ISO). 
+
+Reference point of the subject vehicle : centerline of the subject vehicle (x-axis of vehicle fixed coordinate system";
+BA_ "Version" SG_ 385 FR_CMR_Obj_RelVelX04Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_RelVelX04Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_RelVelX04Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_RelVelX04Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_RelVelX04Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_RelVelX04Val 2000;
+BA_ "Description" SG_ 385 FR_CMR_Obj_RelVelX04Val "[Longitudinal velocity] Relative velocity between the subject vehicle and a target object. 
+
+Positive velocity : A forward object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 385 FR_CMR_Obj_RelVelY04Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_RelVelY04Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_RelVelY04Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_RelVelY04Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_RelVelY04Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_RelVelY04Val 500;
+BA_ "Description" SG_ 385 FR_CMR_Obj_RelVelY04Val "[Lateral velocity] Relative velocity between the subject vehicle and target object. 
+
+Positive velocity : A target object on the left side of the subject vehicle moves away from subject vehicle, or a target object on the right side of the subject vehic";
+BA_ "Version" SG_ 385 FR_CMR_Obj_RelAccelX04Val "18.03.01";
+BA_ "RoutingFactor" SG_ 385 FR_CMR_Obj_RelAccelX04Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 385 FR_CMR_Obj_RelAccelX04Val 0;
+BA_ "GenSigTimeoutTime" SG_ 385 FR_CMR_Obj_RelAccelX04Val 500;
+BA_ "UserSigValidity" SG_ 385 FR_CMR_Obj_RelAccelX04Val 3;
+BA_ "GenSigStartValue" SG_ 385 FR_CMR_Obj_RelAccelX04Val 0;
+BA_ "Description" SG_ 385 FR_CMR_Obj_RelAccelX04Val "[Longitudinal acceleration] Relative acceleration between the subject and target vehicle. 
+
+Positive acceleration : a target object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 384 FR_CMR_Obj_Crc01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_Crc01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_Crc01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_Crc01Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_Crc01Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_Crc01Val 65535;
+BA_ "Description" SG_ 384 FR_CMR_Obj_Crc01Val "[Cyclic redundancy check] The CRC checking process calculates the CRC over the entire data block, including the CRC result CRC Polynomial (0x1021) ,
+
+Initial Value : 0xFFFF, XOR value : 0x0000
+
+The mathematical expression to 16 bit CRC polynomial is ";
+BA_ "Version" SG_ 384 FR_CMR_Obj_AlvCnt01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_AlvCnt01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_AlvCnt01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_AlvCnt01Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_AlvCnt01Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_AlvCnt01Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_AlvCnt01Val "[Alive counter] For the first transmission request for a data element the counter shall be initialized with 0 and shall be incremented by 1
+
+for every subsequent send request. When the counter reaches the maximum value(0xFF), then it shall restart with";
+BA_ "Version" SG_ 384 FR_CMR_Obj_QualLvl01Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_QualLvl01Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_QualLvl01Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_QualLvl01Sta 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_QualLvl01Sta 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_QualLvl01Sta 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_QualLvl01Sta "[Quality level] Information quality for a target object. Information quality can be interpreted by reliability, validity, probability etc.  
+
+Value range : 0~100 (0~30 : Low, 30~60 : Medium, 60~100 : High)";
+BA_ "Version" SG_ 384 FR_CMR_Obj_AlvAge01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_AlvAge01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_AlvAge01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_AlvAge01Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_AlvAge01Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_AlvAge01Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_AlvAge01Val "[Alive Age] Lifetime
+
+(Keep the higher values than 255 as 255.)";
+BA_ "Version" SG_ 384 FR_CMR_Obj_MvngFlag01Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_MvngFlag01Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_MvngFlag01Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_MvngFlag01Sta 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_MvngFlag01Sta 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_MvngFlag01Sta 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_MvngFlag01Sta "[Moving flag] Moving information for a forward or oncoming object (ex. preceding vehicle, oncoming vehicle) : Stationary, Movable (Moving, Stopped) etc.";
+BA_ "Version" SG_ 384 FR_CMR_Obj_Id01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_Id01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_Id01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_Id01Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_Id01Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_Id01Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_Id01Val "[Track ID] Unlike radar (including corner radar), extra 'Track ID' signal is required because camera automatically sorts messages according to distance between subject and track vehicle. (1-127 valid and 0 is always invalid)";
+BA_ "Version" SG_ 384 FR_CMR_Obj_Wth01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_Wth01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_Wth01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_Wth01Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_Wth01Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_Wth01Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_Wth01Val "[Object width] Target object width.";
+BA_ "Version" SG_ 384 FR_CMR_Obj_Clfct01Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_Clfct01Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_Clfct01Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_Clfct01Sta 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_Clfct01Sta 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_Clfct01Sta 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_Clfct01Sta "[Object classification] Object classification result. 
+
+Passenger car, Motor bike, truck, bicycle, pedestrian, etc.";
+BA_ "Version" SG_ 384 FR_CMR_Obj_RelPosX01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_RelPosX01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_RelPosX01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_RelPosX01Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_RelPosX01Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_RelPosX01Val 7000;
+BA_ "Description" SG_ 384 FR_CMR_Obj_RelPosX01Val "[Longitudinal distance] Physical distance between the subject vehicle and a target object in the x-axis of vehicle fixed coordinate system (ISO).
+
+Reference point of the subject vehicle : the center of front bumper
+
+Reference point of a target object";
+BA_ "Version" SG_ 384 FR_CMR_Obj_RelPosY01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_RelPosY01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_RelPosY01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_RelPosY01Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_RelPosY01Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_RelPosY01Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_RelPosY01Val "[Lateral distance] Physical distance between the subject and a target object in the y-axis of vehicle fixed coordinate system (ISO). 
+
+Reference point of the subject vehicle : centerline of the subject vehicle (x-axis of vehicle fixed coordinate system";
+BA_ "Version" SG_ 384 FR_CMR_Obj_RelVelX01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_RelVelX01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_RelVelX01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_RelVelX01Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_RelVelX01Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_RelVelX01Val 2000;
+BA_ "Description" SG_ 384 FR_CMR_Obj_RelVelX01Val "[Longitudinal velocity] Relative velocity between the subject vehicle and a target object. 
+
+Positive velocity : A forward object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 384 FR_CMR_Obj_RelVelY01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_RelVelY01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_RelVelY01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_RelVelY01Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_RelVelY01Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_RelVelY01Val 500;
+BA_ "Description" SG_ 384 FR_CMR_Obj_RelVelY01Val "[Lateral velocity] Relative velocity between the subject vehicle and target object. 
+
+Positive velocity : A target object on the left side of the subject vehicle moves away from subject vehicle, or a target object on the right side of the subject vehic";
+BA_ "Version" SG_ 384 FR_CMR_Obj_RelAccelX01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_RelAccelX01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_RelAccelX01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_RelAccelX01Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_RelAccelX01Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_RelAccelX01Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_RelAccelX01Val "[Longitudinal acceleration] Relative acceleration between the subject and target vehicle. 
+
+Positive acceleration : a target object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 384 FR_CMR_Obj_QualLvl02Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_QualLvl02Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_QualLvl02Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_QualLvl02Sta 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_QualLvl02Sta 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_QualLvl02Sta 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_QualLvl02Sta "[Quality level] Information quality for a target object. Information quality can be interpreted by reliability, validity, probability etc.  
+
+Value range : 0~100 (0~30 : Low, 30~60 : Medium, 60~100 : High)";
+BA_ "Version" SG_ 384 FR_CMR_Obj_AlvAge02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_AlvAge02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_AlvAge02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_AlvAge02Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_AlvAge02Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_AlvAge02Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_AlvAge02Val "[Alive Age] Lifetime
+
+(Keep the higher values than 255 as 255.)";
+BA_ "Version" SG_ 384 FR_CMR_Obj_MvngFlag02Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_MvngFlag02Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_MvngFlag02Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_MvngFlag02Sta 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_MvngFlag02Sta 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_MvngFlag02Sta 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_MvngFlag02Sta "[Moving flag] Moving information for a forward or oncoming object (ex. preceding vehicle, oncoming vehicle) : Stationary, Movable (Moving, Stopped) etc.";
+BA_ "Version" SG_ 384 FR_CMR_Obj_Id02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_Id02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_Id02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_Id02Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_Id02Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_Id02Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_Id02Val "[Track ID] Unlike radar (including corner radar), extra 'Track ID' signal is required because camera automatically sorts messages according to distance between subject and track vehicle. (1-127 valid and 0 is always invalid)";
+BA_ "Version" SG_ 384 FR_CMR_Obj_Wth02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_Wth02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_Wth02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_Wth02Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_Wth02Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_Wth02Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_Wth02Val "[Object width] Target object width.";
+BA_ "Version" SG_ 384 FR_CMR_Obj_Clfct02Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_Clfct02Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_Clfct02Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_Clfct02Sta 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_Clfct02Sta 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_Clfct02Sta 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_Clfct02Sta "[Object classification] Object classification result. 
+
+Passenger car, Motor bike, truck, bicycle, pedestrian, etc.";
+BA_ "Version" SG_ 384 FR_CMR_Obj_RelPosX02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_RelPosX02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_RelPosX02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_RelPosX02Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_RelPosX02Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_RelPosX02Val 7000;
+BA_ "Description" SG_ 384 FR_CMR_Obj_RelPosX02Val "[Longitudinal distance] Physical distance between the subject vehicle and a target object in the x-axis of vehicle fixed coordinate system (ISO).
+
+Reference point of the subject vehicle : the center of front bumper
+
+Reference point of a target object";
+BA_ "Version" SG_ 384 FR_CMR_Obj_RelPosY02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_RelPosY02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_RelPosY02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_RelPosY02Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_RelPosY02Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_RelPosY02Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_RelPosY02Val "[Lateral distance] Physical distance between the subject and a target object in the y-axis of vehicle fixed coordinate system (ISO). 
+
+Reference point of the subject vehicle : centerline of the subject vehicle (x-axis of vehicle fixed coordinate system";
+BA_ "Version" SG_ 384 FR_CMR_Obj_RelVelX02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_RelVelX02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_RelVelX02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_RelVelX02Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_RelVelX02Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_RelVelX02Val 2000;
+BA_ "Description" SG_ 384 FR_CMR_Obj_RelVelX02Val "[Longitudinal velocity] Relative velocity between the subject vehicle and a target object. 
+
+Positive velocity : A forward object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 384 FR_CMR_Obj_RelVelY02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_RelVelY02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_RelVelY02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_RelVelY02Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_RelVelY02Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_RelVelY02Val 500;
+BA_ "Description" SG_ 384 FR_CMR_Obj_RelVelY02Val "[Lateral velocity] Relative velocity between the subject vehicle and target object. 
+
+Positive velocity : A target object on the left side of the subject vehicle moves away from subject vehicle, or a target object on the right side of the subject vehic";
+BA_ "Version" SG_ 384 FR_CMR_Obj_RelAccelX02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 384 FR_CMR_Obj_RelAccelX02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 384 FR_CMR_Obj_RelAccelX02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 384 FR_CMR_Obj_RelAccelX02Val 500;
+BA_ "UserSigValidity" SG_ 384 FR_CMR_Obj_RelAccelX02Val 3;
+BA_ "GenSigStartValue" SG_ 384 FR_CMR_Obj_RelAccelX02Val 0;
+BA_ "Description" SG_ 384 FR_CMR_Obj_RelAccelX02Val "[Longitudinal acceleration] Relative acceleration between the subject and target vehicle. 
+
+Positive acceleration : a target object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 389 FR_CMR_Genrl_Crc01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 389 FR_CMR_Genrl_Crc01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 389 FR_CMR_Genrl_Crc01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 389 FR_CMR_Genrl_Crc01Val 500;
+BA_ "UserSigValidity" SG_ 389 FR_CMR_Genrl_Crc01Val 3;
+BA_ "GenSigStartValue" SG_ 389 FR_CMR_Genrl_Crc01Val 65535;
+BA_ "Description" SG_ 389 FR_CMR_Genrl_Crc01Val "The CRC checking process calculates the CRC over the entire data block, including the CRC result CRC Polynomial (0x1021) ,
+
+Initial Value : 0xFFFF, XOR value : 0x0000
+
+The mathematical expression to 16 bit CRC polynomial is given here. G(x) = x16 + x";
+BA_ "Version" SG_ 389 FR_CMR_Genrl_AlvCnt01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 389 FR_CMR_Genrl_AlvCnt01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 389 FR_CMR_Genrl_AlvCnt01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 389 FR_CMR_Genrl_AlvCnt01Val 500;
+BA_ "UserSigValidity" SG_ 389 FR_CMR_Genrl_AlvCnt01Val 3;
+BA_ "GenSigStartValue" SG_ 389 FR_CMR_Genrl_AlvCnt01Val 0;
+BA_ "Description" SG_ 389 FR_CMR_Genrl_AlvCnt01Val "For the first transmission request for a data element the counter shall be initialized with 0 and shall be incremented by 1
+
+for every subsequent send request. When the counter reaches the maximum value(0xFF), then it shall restart with ? for the next ";
+BA_ "Version" SG_ 389 FR_CMR_Genrl_DetObjNumVal "18.03.01";
+BA_ "RoutingFactor" SG_ 389 FR_CMR_Genrl_DetObjNumVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 389 FR_CMR_Genrl_DetObjNumVal 0;
+BA_ "GenSigTimeoutTime" SG_ 389 FR_CMR_Genrl_DetObjNumVal 500;
+BA_ "UserSigValidity" SG_ 389 FR_CMR_Genrl_DetObjNumVal 3;
+BA_ "GenSigStartValue" SG_ 389 FR_CMR_Genrl_DetObjNumVal 0;
+BA_ "Description" SG_ 389 FR_CMR_Genrl_DetObjNumVal "Total number of detected objects";
+BA_ "Version" SG_ 389 FR_CMR_Genrl_DetLnNumVal "18.03.01";
+BA_ "RoutingFactor" SG_ 389 FR_CMR_Genrl_DetLnNumVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 389 FR_CMR_Genrl_DetLnNumVal 0;
+BA_ "GenSigTimeoutTime" SG_ 389 FR_CMR_Genrl_DetLnNumVal 500;
+BA_ "UserSigValidity" SG_ 389 FR_CMR_Genrl_DetLnNumVal 3;
+BA_ "GenSigStartValue" SG_ 389 FR_CMR_Genrl_DetLnNumVal 0;
+BA_ "Description" SG_ 389 FR_CMR_Genrl_DetLnNumVal "Total number of detected Lines";
+BA_ "Version" SG_ 388 FR_CMR_Obj_Crc05Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_Crc05Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_Crc05Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_Crc05Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_Crc05Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_Crc05Val 65535;
+BA_ "Description" SG_ 388 FR_CMR_Obj_Crc05Val "[Cyclic redundancy check] The CRC checking process calculates the CRC over the entire data block, including the CRC result CRC Polynomial (0x1021) ,
+
+Initial Value : 0xFFFF, XOR value : 0x0000
+
+The mathematical expression to 16 bit CRC polynomial is ";
+BA_ "Version" SG_ 388 FR_CMR_Obj_AlvCnt05Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_AlvCnt05Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_AlvCnt05Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_AlvCnt05Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_AlvCnt05Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_AlvCnt05Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_AlvCnt05Val "[Alive counter] For the first transmission request for a data element the counter shall be initialized with 0 and shall be incremented by 1
+
+for every subsequent send request. When the counter reaches the maximum value(0xFF), then it shall restart with";
+BA_ "Version" SG_ 388 FR_CMR_Obj_QualLvl09Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_QualLvl09Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_QualLvl09Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_QualLvl09Sta 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_QualLvl09Sta 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_QualLvl09Sta 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_QualLvl09Sta "[Quality level] Information quality for a target object. Information quality can be interpreted by reliability, validity, probability etc.  
+
+Value range : 0~100 (0~30 : Low, 30~60 : Medium, 60~100 : High)";
+BA_ "Version" SG_ 388 FR_CMR_Obj_AlvAge09Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_AlvAge09Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_AlvAge09Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_AlvAge09Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_AlvAge09Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_AlvAge09Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_AlvAge09Val "[Alive Age] Lifetime
+
+(Keep the higher values than 255 as 255.)";
+BA_ "Version" SG_ 388 FR_CMR_Obj_MvngFlag09Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_MvngFlag09Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_MvngFlag09Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_MvngFlag09Sta 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_MvngFlag09Sta 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_MvngFlag09Sta 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_MvngFlag09Sta "[Moving flag] Moving information for a forward or oncoming object (ex. preceding vehicle, oncoming vehicle) : Stationary, Movable (Moving, Stopped) etc.";
+BA_ "Version" SG_ 388 FR_CMR_Obj_Id09Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_Id09Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_Id09Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_Id09Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_Id09Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_Id09Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_Id09Val "[Track ID] Unlike radar (including corner radar), extra 'Track ID' signal is required because camera automatically sorts messages according to distance between subject and track vehicle. (1-127 valid and 0 is always invalid)";
+BA_ "Version" SG_ 388 FR_CMR_Obj_Wth09Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_Wth09Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_Wth09Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_Wth09Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_Wth09Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_Wth09Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_Wth09Val "[Object width] Target object width.";
+BA_ "Version" SG_ 388 FR_CMR_Obj_Clfct09Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_Clfct09Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_Clfct09Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_Clfct09Sta 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_Clfct09Sta 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_Clfct09Sta 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_Clfct09Sta "[Object classification] Object classification result. 
+
+Passenger car, Motor bike, truck, bicycle, pedestrian, etc.";
+BA_ "Version" SG_ 388 FR_CMR_Obj_RelPosX09Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_RelPosX09Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_RelPosX09Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_RelPosX09Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_RelPosX09Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_RelPosX09Val 7000;
+BA_ "Description" SG_ 388 FR_CMR_Obj_RelPosX09Val "[Longitudinal distance] Physical distance between the subject vehicle and a target object in the x-axis of vehicle fixed coordinate system (ISO).
+
+Reference point of the subject vehicle : the center of front bumper
+
+Reference point of a target object";
+BA_ "Version" SG_ 388 FR_CMR_Obj_RelPosY09Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_RelPosY09Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_RelPosY09Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_RelPosY09Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_RelPosY09Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_RelPosY09Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_RelPosY09Val "[Lateral distance] Physical distance between the subject and a target object in the y-axis of vehicle fixed coordinate system (ISO). 
+
+Reference point of the subject vehicle : centerline of the subject vehicle (x-axis of vehicle fixed coordinate system";
+BA_ "Version" SG_ 388 FR_CMR_Obj_RelVelX09Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_RelVelX09Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_RelVelX09Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_RelVelX09Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_RelVelX09Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_RelVelX09Val 2000;
+BA_ "Description" SG_ 388 FR_CMR_Obj_RelVelX09Val "[Longitudinal velocity] Relative velocity between the subject vehicle and a target object. 
+
+Positive velocity : A forward object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 388 FR_CMR_Obj_RelVelY09Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_RelVelY09Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_RelVelY09Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_RelVelY09Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_RelVelY09Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_RelVelY09Val 500;
+BA_ "Description" SG_ 388 FR_CMR_Obj_RelVelY09Val "[Lateral velocity] Relative velocity between the subject vehicle and target object. 
+
+Positive velocity : A target object on the left side of the subject vehicle moves away from subject vehicle, or a target object on the right side of the subject vehic";
+BA_ "Version" SG_ 388 FR_CMR_Obj_RelAccelX09Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_RelAccelX09Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_RelAccelX09Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_RelAccelX09Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_RelAccelX09Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_RelAccelX09Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_RelAccelX09Val "[Longitudinal acceleration] Relative acceleration between the subject and target vehicle. 
+
+Positive acceleration : a target object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 388 FR_CMR_Obj_QualLvl10Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_QualLvl10Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_QualLvl10Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_QualLvl10Sta 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_QualLvl10Sta 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_QualLvl10Sta 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_QualLvl10Sta "[Quality level] Information quality for a target object. Information quality can be interpreted by reliability, validity, probability etc.  
+
+Value range : 0~100 (0~30 : Low, 30~60 : Medium, 60~100 : High)";
+BA_ "Version" SG_ 388 FR_CMR_Obj_AlvAge10Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_AlvAge10Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_AlvAge10Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_AlvAge10Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_AlvAge10Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_AlvAge10Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_AlvAge10Val "[Alive Age] Lifetime
+
+(Keep the higher values than 255 as 255.)";
+BA_ "Version" SG_ 388 FR_CMR_Obj_MvngFlag10Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_MvngFlag10Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_MvngFlag10Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_MvngFlag10Sta 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_MvngFlag10Sta 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_MvngFlag10Sta 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_MvngFlag10Sta "[Moving flag] Moving information for a forward or oncoming object (ex. preceding vehicle, oncoming vehicle) : Stationary, Movable (Moving, Stopped) etc.";
+BA_ "Version" SG_ 388 FR_CMR_Obj_Id10Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_Id10Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_Id10Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_Id10Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_Id10Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_Id10Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_Id10Val "[Track ID] Unlike radar (including corner radar), extra 'Track ID' signal is required because camera automatically sorts messages according to distance between subject and track vehicle. (1-127 valid and 0 is always invalid)";
+BA_ "Version" SG_ 388 FR_CMR_Obj_Wth10Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_Wth10Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_Wth10Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_Wth10Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_Wth10Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_Wth10Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_Wth10Val "[Object width] Target object width.";
+BA_ "Version" SG_ 388 FR_CMR_Obj_Clfct10Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_Clfct10Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_Clfct10Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_Clfct10Sta 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_Clfct10Sta 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_Clfct10Sta 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_Clfct10Sta "[Object classification] Object classification result. 
+
+Passenger car, Motor bike, truck, bicycle, pedestrian, etc.";
+BA_ "Version" SG_ 388 FR_CMR_Obj_RelPosX10Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_RelPosX10Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_RelPosX10Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_RelPosX10Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_RelPosX10Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_RelPosX10Val 7000;
+BA_ "Description" SG_ 388 FR_CMR_Obj_RelPosX10Val "[Longitudinal distance] Physical distance between the subject vehicle and a target object in the x-axis of vehicle fixed coordinate system (ISO).
+
+Reference point of the subject vehicle : the center of front bumper
+
+Reference point of a target object";
+BA_ "Version" SG_ 388 FR_CMR_Obj_RelPosY10Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_RelPosY10Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_RelPosY10Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_RelPosY10Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_RelPosY10Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_RelPosY10Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_RelPosY10Val "[Lateral distance] Physical distance between the subject and a target object in the y-axis of vehicle fixed coordinate system (ISO). 
+
+Reference point of the subject vehicle : centerline of the subject vehicle (x-axis of vehicle fixed coordinate system";
+BA_ "Version" SG_ 388 FR_CMR_Obj_RelVelX10Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_RelVelX10Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_RelVelX10Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_RelVelX10Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_RelVelX10Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_RelVelX10Val 2000;
+BA_ "Description" SG_ 388 FR_CMR_Obj_RelVelX10Val "[Longitudinal velocity] Relative velocity between the subject vehicle and a target object. 
+
+Positive velocity : A forward object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 388 FR_CMR_Obj_RelVelY10Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_RelVelY10Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_RelVelY10Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_RelVelY10Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_RelVelY10Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_RelVelY10Val 500;
+BA_ "Description" SG_ 388 FR_CMR_Obj_RelVelY10Val "[Lateral velocity] Relative velocity between the subject vehicle and target object. 
+
+Positive velocity : A target object on the left side of the subject vehicle moves away from subject vehicle, or a target object on the right side of the subject vehic";
+BA_ "Version" SG_ 388 FR_CMR_Obj_RelAccelX10Val "18.03.01";
+BA_ "RoutingFactor" SG_ 388 FR_CMR_Obj_RelAccelX10Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 388 FR_CMR_Obj_RelAccelX10Val 0;
+BA_ "GenSigTimeoutTime" SG_ 388 FR_CMR_Obj_RelAccelX10Val 500;
+BA_ "UserSigValidity" SG_ 388 FR_CMR_Obj_RelAccelX10Val 3;
+BA_ "GenSigStartValue" SG_ 388 FR_CMR_Obj_RelAccelX10Val 0;
+BA_ "Description" SG_ 388 FR_CMR_Obj_RelAccelX10Val "[Longitudinal acceleration] Relative acceleration between the subject and target vehicle. 
+
+Positive acceleration : a target object moves away from the subject vehicle, or a following object approaches the subject vehicle.";
+BA_ "Version" SG_ 676 FR_CMR_Ln_Crc03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_Crc03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_Crc03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_Crc03Val 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_Crc03Val 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_Crc03Val 65535;
+BA_ "Description" SG_ 676 FR_CMR_Ln_Crc03Val "[Cyclic redundancy check] The CRC checking process calculates the CRC over the entire data block, including the CRC result CRC Polynomial (0x1021) ,
+
+Initial Value : 0xFFFF, XOR value : 0x0000
+
+The mathematical expression to 16 bit CRC polynomial is ";
+BA_ "Version" SG_ 676 FR_CMR_Ln_AlvCnt03Val "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_AlvCnt03Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_AlvCnt03Val 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_AlvCnt03Val 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_AlvCnt03Val 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_AlvCnt03Val 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_AlvCnt03Val "[Alive counter] For the first transmission request for a data element the counter shall be initialized with 0 and shall be incremented by 1
+
+for every subsequent send request. When the counter reaches the maximum value(0xFF), then it shall restart with";
+BA_ "Version" SG_ 676 FR_CMR_Ln_WthLnLft01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_WthLnLft01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_WthLnLft01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_WthLnLft01Val 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_WthLnLft01Val 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_WthLnLft01Val 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_WthLnLft01Val "Line width of the left-side line on current lane";
+BA_ "Version" SG_ 676 FR_CMR_Ln_WthLnRt01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_WthLnRt01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_WthLnRt01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_WthLnRt01Val 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_WthLnRt01Val 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_WthLnRt01Val 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_WthLnRt01Val "Line width of the right-side line on current lane";
+BA_ "Version" SG_ 676 FR_CMR_Ln_ClfctLft01Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_ClfctLft01Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_ClfctLft01Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_ClfctLft01Sta 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_ClfctLft01Sta 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_ClfctLft01Sta 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_ClfctLft01Sta "[Type of the left-side line on current lane] dashed line, solid line, road edge, bott's dot, etc.";
+BA_ "Version" SG_ 676 FR_CMR_Ln_ClfctRt01Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_ClfctRt01Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_ClfctRt01Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_ClfctRt01Sta 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_ClfctRt01Sta 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_ClfctRt01Sta 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_ClfctRt01Sta "[Type of the right-side line on current lane] dashed line, solid line, road edge, bott's dot, etc.";
+BA_ "Version" SG_ 676 FR_CMR_Ln_LftClr01Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_LftClr01Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_LftClr01Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_LftClr01Sta 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_LftClr01Sta 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_LftClr01Sta 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_LftClr01Sta "[Color of the left-side line on current lane] unknown, white, yellow, blue, etc.";
+BA_ "Version" SG_ 676 FR_CMR_Ln_RtClr01Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_RtClr01Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_RtClr01Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_RtClr01Sta 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_RtClr01Sta 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_RtClr01Sta 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_RtClr01Sta "[Color of the right-side line on current lane] unknown, white, yellow, blue, etc.";
+BA_ "Version" SG_ 676 FR_CMR_Ln_QualLvlLft01Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_QualLvlLft01Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_QualLvlLft01Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_QualLvlLft01Sta 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_QualLvlLft01Sta 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_QualLvlLft01Sta 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_QualLvlLft01Sta "Quality level of current lane [Left]";
+BA_ "Version" SG_ 676 FR_CMR_Ln_QualLvlRt01Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_QualLvlRt01Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_QualLvlRt01Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_QualLvlRt01Sta 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_QualLvlRt01Sta 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_QualLvlRt01Sta 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_QualLvlRt01Sta "Quality level of current lane [Right]";
+BA_ "Version" SG_ 676 FR_CMR_Ln_ClfctLft02Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_ClfctLft02Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_ClfctLft02Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_ClfctLft02Sta 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_ClfctLft02Sta 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_ClfctLft02Sta 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_ClfctLft02Sta "[Type of the line on next lane] dashed line, solid line, road edge, bott's dot, etc.";
+BA_ "Version" SG_ 676 FR_CMR_Ln_ClfctRt02Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_ClfctRt02Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_ClfctRt02Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_ClfctRt02Sta 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_ClfctRt02Sta 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_ClfctRt02Sta 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_ClfctRt02Sta "[Type of the line on next lane] dashed line, solid line, road edge, bott's dot, etc.";
+BA_ "Version" SG_ 676 FR_CMR_Ln_QualLvlLft02Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_QualLvlLft02Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_QualLvlLft02Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_QualLvlLft02Sta 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_QualLvlLft02Sta 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_QualLvlLft02Sta 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_QualLvlLft02Sta "Quality level of next lane [Left]";
+BA_ "Version" SG_ 676 FR_CMR_Ln_QualLvlRt02Sta "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_QualLvlRt02Sta 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_QualLvlRt02Sta 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_QualLvlRt02Sta 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_QualLvlRt02Sta 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_QualLvlRt02Sta 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_QualLvlRt02Sta "Quality level of next lane [Right]";
+BA_ "Version" SG_ 676 FR_CMR_Ln_LftViewRngVal "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_LftViewRngVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_LftViewRngVal 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_LftViewRngVal 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_LftViewRngVal 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_LftViewRngVal 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_LftViewRngVal "physical view range of left lane mark";
+BA_ "Version" SG_ 676 FR_CMR_Ln_RtViewRngVal "18.03.01";
+BA_ "RoutingFactor" SG_ 676 FR_CMR_Ln_RtViewRngVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 676 FR_CMR_Ln_RtViewRngVal 0;
+BA_ "GenSigTimeoutTime" SG_ 676 FR_CMR_Ln_RtViewRngVal 500;
+BA_ "UserSigValidity" SG_ 676 FR_CMR_Ln_RtViewRngVal 3;
+BA_ "GenSigStartValue" SG_ 676 FR_CMR_Ln_RtViewRngVal 0;
+BA_ "Description" SG_ 676 FR_CMR_Ln_RtViewRngVal "physical view range of right lane mark";
+BA_ "Version" SG_ 675 FR_CMR_Ln_Crc02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 675 FR_CMR_Ln_Crc02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 675 FR_CMR_Ln_Crc02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 675 FR_CMR_Ln_Crc02Val 500;
+BA_ "UserSigValidity" SG_ 675 FR_CMR_Ln_Crc02Val 3;
+BA_ "GenSigStartValue" SG_ 675 FR_CMR_Ln_Crc02Val 65535;
+BA_ "Description" SG_ 675 FR_CMR_Ln_Crc02Val "[Cyclic redundancy check] The CRC checking process calculates the CRC over the entire data block, including the CRC result CRC Polynomial (0x1021) ,
+
+Initial Value : 0xFFFF, XOR value : 0x0000
+
+The mathematical expression to 16 bit CRC polynomial is ";
+BA_ "Version" SG_ 675 FR_CMR_Ln_AlvCnt02Val "18.03.01";
+BA_ "RoutingFactor" SG_ 675 FR_CMR_Ln_AlvCnt02Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 675 FR_CMR_Ln_AlvCnt02Val 0;
+BA_ "GenSigTimeoutTime" SG_ 675 FR_CMR_Ln_AlvCnt02Val 500;
+BA_ "UserSigValidity" SG_ 675 FR_CMR_Ln_AlvCnt02Val 3;
+BA_ "GenSigStartValue" SG_ 675 FR_CMR_Ln_AlvCnt02Val 0;
+BA_ "Description" SG_ 675 FR_CMR_Ln_AlvCnt02Val "[Alive counter] For the first transmission request for a data element the counter shall be initialized with 0 and shall be incremented by 1
+
+for every subsequent send request. When the counter reaches the maximum value(0xFF), then it shall restart with";
+BA_ "Version" SG_ 675 FR_CMR_Ln_LftNextDptDstVal "18.03.01";
+BA_ "RoutingFactor" SG_ 675 FR_CMR_Ln_LftNextDptDstVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 675 FR_CMR_Ln_LftNextDptDstVal 0;
+BA_ "GenSigTimeoutTime" SG_ 675 FR_CMR_Ln_LftNextDptDstVal 500;
+BA_ "UserSigValidity" SG_ 675 FR_CMR_Ln_LftNextDptDstVal 3;
+BA_ "GenSigStartValue" SG_ 675 FR_CMR_Ln_LftNextDptDstVal 2000;
+BA_ "Description" SG_ 675 FR_CMR_Ln_LftNextDptDstVal "[Position parameter for the left lane] the distance between lane mark (line) and the the subject vehicle (the center of front bumper) on lateral direction. (parameter C0 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0))
+
+If line is exist";
+BA_ "Version" SG_ 675 FR_CMR_Ln_RtNextDptDstVal "18.03.01";
+BA_ "RoutingFactor" SG_ 675 FR_CMR_Ln_RtNextDptDstVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 675 FR_CMR_Ln_RtNextDptDstVal 0;
+BA_ "GenSigTimeoutTime" SG_ 675 FR_CMR_Ln_RtNextDptDstVal 500;
+BA_ "UserSigValidity" SG_ 675 FR_CMR_Ln_RtNextDptDstVal 3;
+BA_ "GenSigStartValue" SG_ 675 FR_CMR_Ln_RtNextDptDstVal 2000;
+BA_ "Description" SG_ 675 FR_CMR_Ln_RtNextDptDstVal "[Position parameter for the right lane] the distance between lane mark (line) and the the subject vehicle (the center of front bumper) on lateral direction. (parameter C0 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0))
+
+If line is loca";
+BA_ "Version" SG_ 675 FR_CMR_Ln_LftNextDptAnglVal "18.03.01";
+BA_ "RoutingFactor" SG_ 675 FR_CMR_Ln_LftNextDptAnglVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 675 FR_CMR_Ln_LftNextDptAnglVal 0;
+BA_ "GenSigTimeoutTime" SG_ 675 FR_CMR_Ln_LftNextDptAnglVal 500;
+BA_ "UserSigValidity" SG_ 675 FR_CMR_Ln_LftNextDptAnglVal 3;
+BA_ "GenSigStartValue" SG_ 675 FR_CMR_Ln_LftNextDptAnglVal 30705.8393039918;
+BA_ "Description" SG_ 675 FR_CMR_Ln_LftNextDptAnglVal "[Heading angle parameter for the left lane] physical slope of the lane mark. (parameter C1 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)) 
+
+A positive value means steering towards the left (CCW).";
+BA_ "Version" SG_ 675 FR_CMR_Ln_RtNextDptAnglVal "18.03.01";
+BA_ "RoutingFactor" SG_ 675 FR_CMR_Ln_RtNextDptAnglVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 675 FR_CMR_Ln_RtNextDptAnglVal 0;
+BA_ "GenSigTimeoutTime" SG_ 675 FR_CMR_Ln_RtNextDptAnglVal 500;
+BA_ "UserSigValidity" SG_ 675 FR_CMR_Ln_RtNextDptAnglVal 3;
+BA_ "GenSigStartValue" SG_ 675 FR_CMR_Ln_RtNextDptAnglVal 30705.8393039918;
+BA_ "Description" SG_ 675 FR_CMR_Ln_RtNextDptAnglVal "[Heading angle parameter for the right lane] physical slope of the lane mark. (parameter C1 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)) 
+
+A positive value means steering towards the left (CCW).";
+BA_ "Version" SG_ 675 FR_CMR_Ln_LftNextCurveVal "18.03.01";
+BA_ "RoutingFactor" SG_ 675 FR_CMR_Ln_LftNextCurveVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 675 FR_CMR_Ln_LftNextCurveVal 0;
+BA_ "GenSigTimeoutTime" SG_ 675 FR_CMR_Ln_LftNextCurveVal 500;
+BA_ "UserSigValidity" SG_ 675 FR_CMR_Ln_LftNextCurveVal 3;
+BA_ "GenSigStartValue" SG_ 675 FR_CMR_Ln_LftNextCurveVal 30706243.2763562;
+BA_ "Description" SG_ 675 FR_CMR_Ln_LftNextCurveVal "[Curvature parameter for the left lane] parameter C2 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)";
+BA_ "Version" SG_ 675 FR_CMR_Ln_RtNextCurveVal "18.03.01";
+BA_ "RoutingFactor" SG_ 675 FR_CMR_Ln_RtNextCurveVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 675 FR_CMR_Ln_RtNextCurveVal 0;
+BA_ "GenSigTimeoutTime" SG_ 675 FR_CMR_Ln_RtNextCurveVal 500;
+BA_ "UserSigValidity" SG_ 675 FR_CMR_Ln_RtNextCurveVal 3;
+BA_ "GenSigStartValue" SG_ 675 FR_CMR_Ln_RtNextCurveVal 30706243.2763562;
+BA_ "Description" SG_ 675 FR_CMR_Ln_RtNextCurveVal "[Curvature parameter for the right lane] parameter C2 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)";
+BA_ "Version" SG_ 675 FR_CMR_Ln_LftNextCurveRatVal "18.03.01";
+BA_ "RoutingFactor" SG_ 675 FR_CMR_Ln_LftNextCurveRatVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 675 FR_CMR_Ln_LftNextCurveRatVal 0;
+BA_ "GenSigTimeoutTime" SG_ 675 FR_CMR_Ln_LftNextCurveRatVal 500;
+BA_ "UserSigValidity" SG_ 675 FR_CMR_Ln_LftNextCurveRatVal 3;
+BA_ "GenSigStartValue" SG_ 675 FR_CMR_Ln_LftNextCurveRatVal 32707;
+BA_ "Description" SG_ 675 FR_CMR_Ln_LftNextCurveRatVal "[Curvature derivative parameter for the left lane] parameter C3 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)";
+BA_ "Version" SG_ 675 FR_CMR_Ln_RtNextCurveRatVal "18.03.01";
+BA_ "RoutingFactor" SG_ 675 FR_CMR_Ln_RtNextCurveRatVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 675 FR_CMR_Ln_RtNextCurveRatVal 0;
+BA_ "GenSigTimeoutTime" SG_ 675 FR_CMR_Ln_RtNextCurveRatVal 500;
+BA_ "UserSigValidity" SG_ 675 FR_CMR_Ln_RtNextCurveRatVal 3;
+BA_ "GenSigStartValue" SG_ 675 FR_CMR_Ln_RtNextCurveRatVal 32707;
+BA_ "Description" SG_ 675 FR_CMR_Ln_RtNextCurveRatVal "[Curvature derivative parameter for the right lane] parameter C3 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)";
+BA_ "Version" SG_ 674 FR_CMR_Ln_Crc01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 674 FR_CMR_Ln_Crc01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 674 FR_CMR_Ln_Crc01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 674 FR_CMR_Ln_Crc01Val 500;
+BA_ "UserSigValidity" SG_ 674 FR_CMR_Ln_Crc01Val 3;
+BA_ "GenSigStartValue" SG_ 674 FR_CMR_Ln_Crc01Val 65535;
+BA_ "Description" SG_ 674 FR_CMR_Ln_Crc01Val "[Cyclic redundancy check] The CRC checking process calculates the CRC over the entire data block, including the CRC result CRC Polynomial (0x1021) ,
+
+Initial Value : 0xFFFF, XOR value : 0x0000
+
+The mathematical expression to 16 bit CRC polynomial is ";
+BA_ "Version" SG_ 674 FR_CMR_Ln_AlvCnt01Val "18.03.01";
+BA_ "RoutingFactor" SG_ 674 FR_CMR_Ln_AlvCnt01Val 1;
+BA_ "NetworkRequestHoldingTime" SG_ 674 FR_CMR_Ln_AlvCnt01Val 0;
+BA_ "GenSigTimeoutTime" SG_ 674 FR_CMR_Ln_AlvCnt01Val 500;
+BA_ "UserSigValidity" SG_ 674 FR_CMR_Ln_AlvCnt01Val 3;
+BA_ "GenSigStartValue" SG_ 674 FR_CMR_Ln_AlvCnt01Val 0;
+BA_ "Description" SG_ 674 FR_CMR_Ln_AlvCnt01Val "[Alive counter] For the first transmission request for a data element the counter shall be initialized with 0 and shall be incremented by 1
+
+for every subsequent send request. When the counter reaches the maximum value(0xFF), then it shall restart with";
+BA_ "Version" SG_ 674 FR_CMR_Ln_LftDptDstVal "18.03.01";
+BA_ "RoutingFactor" SG_ 674 FR_CMR_Ln_LftDptDstVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 674 FR_CMR_Ln_LftDptDstVal 0;
+BA_ "GenSigTimeoutTime" SG_ 674 FR_CMR_Ln_LftDptDstVal 500;
+BA_ "UserSigValidity" SG_ 674 FR_CMR_Ln_LftDptDstVal 3;
+BA_ "GenSigStartValue" SG_ 674 FR_CMR_Ln_LftDptDstVal 2000;
+BA_ "Description" SG_ 674 FR_CMR_Ln_LftDptDstVal "[Position parameter for the left-side line on current lane] the distance between lane mark (line) and the the subject vehicle (the center of front bumper) on lateral direction. (parameter C0 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)";
+BA_ "Version" SG_ 674 FR_CMR_Ln_RtDptDstVal "18.03.01";
+BA_ "RoutingFactor" SG_ 674 FR_CMR_Ln_RtDptDstVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 674 FR_CMR_Ln_RtDptDstVal 0;
+BA_ "GenSigTimeoutTime" SG_ 674 FR_CMR_Ln_RtDptDstVal 500;
+BA_ "UserSigValidity" SG_ 674 FR_CMR_Ln_RtDptDstVal 3;
+BA_ "GenSigStartValue" SG_ 674 FR_CMR_Ln_RtDptDstVal 2000;
+BA_ "Description" SG_ 674 FR_CMR_Ln_RtDptDstVal "[Position parameter for the right-side line on current lane] the distance between lane mark (line) and the the subject vehicle (the center of front bumper) on lateral direction. (parameter C0 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0";
+BA_ "Version" SG_ 674 FR_CMR_Ln_LftDptAnglVal "18.03.01";
+BA_ "RoutingFactor" SG_ 674 FR_CMR_Ln_LftDptAnglVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 674 FR_CMR_Ln_LftDptAnglVal 0;
+BA_ "GenSigTimeoutTime" SG_ 674 FR_CMR_Ln_LftDptAnglVal 500;
+BA_ "UserSigValidity" SG_ 674 FR_CMR_Ln_LftDptAnglVal 3;
+BA_ "GenSigStartValue" SG_ 674 FR_CMR_Ln_LftDptAnglVal 30705.8393039918;
+BA_ "Description" SG_ 674 FR_CMR_Ln_LftDptAnglVal "[Heading angle parameter for the left-side line on current lane] physical slope of the lane mark. (parameter C1 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)) 
+
+A positive value means steering towards the left (CCW).";
+BA_ "Version" SG_ 674 FR_CMR_Ln_RtDptAnglVal "18.03.01";
+BA_ "RoutingFactor" SG_ 674 FR_CMR_Ln_RtDptAnglVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 674 FR_CMR_Ln_RtDptAnglVal 0;
+BA_ "GenSigTimeoutTime" SG_ 674 FR_CMR_Ln_RtDptAnglVal 500;
+BA_ "UserSigValidity" SG_ 674 FR_CMR_Ln_RtDptAnglVal 3;
+BA_ "GenSigStartValue" SG_ 674 FR_CMR_Ln_RtDptAnglVal 30705.8393039918;
+BA_ "Description" SG_ 674 FR_CMR_Ln_RtDptAnglVal "[Heading angle parameter for the right-side line on current lane] physical slope of the lane mark. (parameter C1 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)) 
+
+A positive value means steering towards the left (CCW).";
+BA_ "Version" SG_ 674 FR_CMR_Ln_LftCurveVal "18.03.01";
+BA_ "RoutingFactor" SG_ 674 FR_CMR_Ln_LftCurveVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 674 FR_CMR_Ln_LftCurveVal 0;
+BA_ "GenSigTimeoutTime" SG_ 674 FR_CMR_Ln_LftCurveVal 500;
+BA_ "UserSigValidity" SG_ 674 FR_CMR_Ln_LftCurveVal 3;
+BA_ "GenSigStartValue" SG_ 674 FR_CMR_Ln_LftCurveVal 30706243.2763562;
+BA_ "Description" SG_ 674 FR_CMR_Ln_LftCurveVal "[Curvature parameter for the left-side on current lane] parameter C2 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)";
+BA_ "Version" SG_ 674 FR_CMR_Ln_RtCurveVal "18.03.01";
+BA_ "RoutingFactor" SG_ 674 FR_CMR_Ln_RtCurveVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 674 FR_CMR_Ln_RtCurveVal 0;
+BA_ "GenSigTimeoutTime" SG_ 674 FR_CMR_Ln_RtCurveVal 500;
+BA_ "UserSigValidity" SG_ 674 FR_CMR_Ln_RtCurveVal 3;
+BA_ "GenSigStartValue" SG_ 674 FR_CMR_Ln_RtCurveVal 30706243.2763562;
+BA_ "Description" SG_ 674 FR_CMR_Ln_RtCurveVal "[Curvature parameter for the right-side on current lane] parameter C2 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)";
+BA_ "Version" SG_ 674 FR_CMR_Ln_LftCurveRatVal "18.03.01";
+BA_ "RoutingFactor" SG_ 674 FR_CMR_Ln_LftCurveRatVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 674 FR_CMR_Ln_LftCurveRatVal 0;
+BA_ "GenSigTimeoutTime" SG_ 674 FR_CMR_Ln_LftCurveRatVal 500;
+BA_ "UserSigValidity" SG_ 674 FR_CMR_Ln_LftCurveRatVal 3;
+BA_ "GenSigStartValue" SG_ 674 FR_CMR_Ln_LftCurveRatVal 32707;
+BA_ "Description" SG_ 674 FR_CMR_Ln_LftCurveRatVal "[Curvature derivative parameter for the left-side line on current lane] parameter C3 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)";
+BA_ "Version" SG_ 674 FR_CMR_Ln_RtCurveRatVal "18.03.01";
+BA_ "RoutingFactor" SG_ 674 FR_CMR_Ln_RtCurveRatVal 1;
+BA_ "NetworkRequestHoldingTime" SG_ 674 FR_CMR_Ln_RtCurveRatVal 0;
+BA_ "GenSigTimeoutTime" SG_ 674 FR_CMR_Ln_RtCurveRatVal 500;
+BA_ "UserSigValidity" SG_ 674 FR_CMR_Ln_RtCurveRatVal 3;
+BA_ "GenSigStartValue" SG_ 674 FR_CMR_Ln_RtCurveRatVal 32707;
+BA_ "Description" SG_ 674 FR_CMR_Ln_RtCurveRatVal "[Curvature derivative parameter for the right-side line on current lane] parameter C3 of 3rd degree polynomial model X= (C3)*Z^3+(C2)*Z^2+(C1)*Z+(C0)";
+VAL_ 784 CIPV_Classification 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 699 FR_CMR_Obj_MtnCtgry01Sta 0 "UNDEFINED" 1 "PASSING" 2 "PASSING_IN" 3 "PASSING_OUT" 4 "CLOSE_CUT_IN" 5 "MOVING_IN" 6 "MOVING_OUT" 7 "CROSSING" 8 "LTAP" 9 "RTAP" 10 "MOVING" 11 "PRECEEDING" 12 "ONCOMING" ;
+VAL_ 699 FR_CMR_Obj_MtnOrient01Sta 0 "EQ_MTN_ONT_UNDEFINED" 1 "EQ_MTN_ONT_DRIFTING_RIGHT" 2 "EQ_MTN_ONT_CROSSING_RIGHT" 3 "EQ_MTN_ONT_ONCOMING_DRIFT_RIGHT" 4 "EQ_MTN_ONT_ONCOMING" 5 "EQ_MTN_ONT_ONCOMING_DRIFT_LEFT" 6 "EQ_MTN_ONT_CROSSING_LEFT" 7 "EQ_MTN_ONT_DRIFTING_LEFT" 8 "EQ_MTN_ONT_PRECEDING" ;
+VAL_ 699 FR_CMR_Obj_MtnCtgry02Sta 0 "UNDEFINED" 1 "PASSING" 2 "PASSING_IN" 3 "PASSING_OUT" 4 "CLOSE_CUT_IN" 5 "MOVING_IN" 6 "MOVING_OUT" 7 "CROSSING" 8 "LTAP" 9 "RTAP" 10 "MOVING" 11 "PRECEEDING" 12 "ONCOMING" ;
+VAL_ 699 FR_CMR_Obj_MtnOrient02Sta 0 "EQ_MTN_ONT_UNDEFINED" 1 "EQ_MTN_ONT_DRIFTING_RIGHT" 2 "EQ_MTN_ONT_CROSSING_RIGHT" 3 "EQ_MTN_ONT_ONCOMING_DRIFT_RIGHT" 4 "EQ_MTN_ONT_ONCOMING" 5 "EQ_MTN_ONT_ONCOMING_DRIFT_LEFT" 6 "EQ_MTN_ONT_CROSSING_LEFT" 7 "EQ_MTN_ONT_DRIFTING_LEFT" 8 "EQ_MTN_ONT_PRECEDING" ;
+VAL_ 699 FR_CMR_Obj_MtnCtgry03Sta 0 "UNDEFINED" 1 "PASSING" 2 "PASSING_IN" 3 "PASSING_OUT" 4 "CLOSE_CUT_IN" 5 "MOVING_IN" 6 "MOVING_OUT" 7 "CROSSING" 8 "LTAP" 9 "RTAP" 10 "MOVING" 11 "PRECEEDING" 12 "ONCOMING" ;
+VAL_ 699 FR_CMR_Obj_MtnOrient03Sta 0 "EQ_MTN_ONT_UNDEFINED" 1 "EQ_MTN_ONT_DRIFTING_RIGHT" 2 "EQ_MTN_ONT_CROSSING_RIGHT" 3 "EQ_MTN_ONT_ONCOMING_DRIFT_RIGHT" 4 "EQ_MTN_ONT_ONCOMING" 5 "EQ_MTN_ONT_ONCOMING_DRIFT_LEFT" 6 "EQ_MTN_ONT_CROSSING_LEFT" 7 "EQ_MTN_ONT_DRIFTING_LEFT" 8 "EQ_MTN_ONT_PRECEDING" ;
+VAL_ 699 FR_CMR_Obj_MtnCtgry04Sta 0 "UNDEFINED" 1 "PASSING" 2 "PASSING_IN" 3 "PASSING_OUT" 4 "CLOSE_CUT_IN" 5 "MOVING_IN" 6 "MOVING_OUT" 7 "CROSSING" 8 "LTAP" 9 "RTAP" 10 "MOVING" 11 "PRECEEDING" 12 "ONCOMING" ;
+VAL_ 699 FR_CMR_Obj_MtnOrient04Sta 0 "EQ_MTN_ONT_UNDEFINED" 1 "EQ_MTN_ONT_DRIFTING_RIGHT" 2 "EQ_MTN_ONT_CROSSING_RIGHT" 3 "EQ_MTN_ONT_ONCOMING_DRIFT_RIGHT" 4 "EQ_MTN_ONT_ONCOMING" 5 "EQ_MTN_ONT_ONCOMING_DRIFT_LEFT" 6 "EQ_MTN_ONT_CROSSING_LEFT" 7 "EQ_MTN_ONT_DRIFTING_LEFT" 8 "EQ_MTN_ONT_PRECEDING" ;
+VAL_ 699 FR_CMR_Obj_MtnCtgry05Sta 0 "UNDEFINED" 1 "PASSING" 2 "PASSING_IN" 3 "PASSING_OUT" 4 "CLOSE_CUT_IN" 5 "MOVING_IN" 6 "MOVING_OUT" 7 "CROSSING" 8 "LTAP" 9 "RTAP" 10 "MOVING" 11 "PRECEEDING" 12 "ONCOMING" ;
+VAL_ 699 FR_CMR_Obj_MtnOrient05Sta 0 "EQ_MTN_ONT_UNDEFINED" 1 "EQ_MTN_ONT_DRIFTING_RIGHT" 2 "EQ_MTN_ONT_CROSSING_RIGHT" 3 "EQ_MTN_ONT_ONCOMING_DRIFT_RIGHT" 4 "EQ_MTN_ONT_ONCOMING" 5 "EQ_MTN_ONT_ONCOMING_DRIFT_LEFT" 6 "EQ_MTN_ONT_CROSSING_LEFT" 7 "EQ_MTN_ONT_DRIFTING_LEFT" 8 "EQ_MTN_ONT_PRECEDING" ;
+VAL_ 699 FR_CMR_Obj_MtnCtgry06Sta 0 "UNDEFINED" 1 "PASSING" 2 "PASSING_IN" 3 "PASSING_OUT" 4 "CLOSE_CUT_IN" 5 "MOVING_IN" 6 "MOVING_OUT" 7 "CROSSING" 8 "LTAP" 9 "RTAP" 10 "MOVING" 11 "PRECEEDING" 12 "ONCOMING" ;
+VAL_ 699 FR_CMR_Obj_MtnOrient06Sta 0 "EQ_MTN_ONT_UNDEFINED" 1 "EQ_MTN_ONT_DRIFTING_RIGHT" 2 "EQ_MTN_ONT_CROSSING_RIGHT" 3 "EQ_MTN_ONT_ONCOMING_DRIFT_RIGHT" 4 "EQ_MTN_ONT_ONCOMING" 5 "EQ_MTN_ONT_ONCOMING_DRIFT_LEFT" 6 "EQ_MTN_ONT_CROSSING_LEFT" 7 "EQ_MTN_ONT_DRIFTING_LEFT" 8 "EQ_MTN_ONT_PRECEDING" ;
+VAL_ 699 FR_CMR_Obj_MtnCtgry07Sta 0 "UNDEFINED" 1 "PASSING" 2 "PASSING_IN" 3 "PASSING_OUT" 4 "CLOSE_CUT_IN" 5 "MOVING_IN" 6 "MOVING_OUT" 7 "CROSSING" 8 "LTAP" 9 "RTAP" 10 "MOVING" 11 "PRECEEDING" 12 "ONCOMING" ;
+VAL_ 699 FR_CMR_Obj_MtnOrient07Sta 0 "EQ_MTN_ONT_UNDEFINED" 1 "EQ_MTN_ONT_DRIFTING_RIGHT" 2 "EQ_MTN_ONT_CROSSING_RIGHT" 3 "EQ_MTN_ONT_ONCOMING_DRIFT_RIGHT" 4 "EQ_MTN_ONT_ONCOMING" 5 "EQ_MTN_ONT_ONCOMING_DRIFT_LEFT" 6 "EQ_MTN_ONT_CROSSING_LEFT" 7 "EQ_MTN_ONT_DRIFTING_LEFT" 8 "EQ_MTN_ONT_PRECEDING" ;
+VAL_ 699 FR_CMR_Obj_MtnCtgry08Sta 0 "UNDEFINED" 1 "PASSING" 2 "PASSING_IN" 3 "PASSING_OUT" 4 "CLOSE_CUT_IN" 5 "MOVING_IN" 6 "MOVING_OUT" 7 "CROSSING" 8 "LTAP" 9 "RTAP" 10 "MOVING" 11 "PRECEEDING" 12 "ONCOMING" ;
+VAL_ 699 FR_CMR_Obj_MtnOrient08Sta 0 "EQ_MTN_ONT_UNDEFINED" 1 "EQ_MTN_ONT_DRIFTING_RIGHT" 2 "EQ_MTN_ONT_CROSSING_RIGHT" 3 "EQ_MTN_ONT_ONCOMING_DRIFT_RIGHT" 4 "EQ_MTN_ONT_ONCOMING" 5 "EQ_MTN_ONT_ONCOMING_DRIFT_LEFT" 6 "EQ_MTN_ONT_CROSSING_LEFT" 7 "EQ_MTN_ONT_DRIFTING_LEFT" 8 "EQ_MTN_ONT_PRECEDING" ;
+VAL_ 699 FR_CMR_Obj_MtnCtgry09Sta 0 "UNDEFINED" 1 "PASSING" 2 "PASSING_IN" 3 "PASSING_OUT" 4 "CLOSE_CUT_IN" 5 "MOVING_IN" 6 "MOVING_OUT" 7 "CROSSING" 8 "LTAP" 9 "RTAP" 10 "MOVING" 11 "PRECEEDING" 12 "ONCOMING" ;
+VAL_ 699 FR_CMR_Obj_MtnOrient09Sta 0 "EQ_MTN_ONT_UNDEFINED" 1 "EQ_MTN_ONT_DRIFTING_RIGHT" 2 "EQ_MTN_ONT_CROSSING_RIGHT" 3 "EQ_MTN_ONT_ONCOMING_DRIFT_RIGHT" 4 "EQ_MTN_ONT_ONCOMING" 5 "EQ_MTN_ONT_ONCOMING_DRIFT_LEFT" 6 "EQ_MTN_ONT_CROSSING_LEFT" 7 "EQ_MTN_ONT_DRIFTING_LEFT" 8 "EQ_MTN_ONT_PRECEDING" ;
+VAL_ 699 FR_CMR_Obj_MtnCtgry10Sta 0 "UNDEFINED" 1 "PASSING" 2 "PASSING_IN" 3 "PASSING_OUT" 4 "CLOSE_CUT_IN" 5 "MOVING_IN" 6 "MOVING_OUT" 7 "CROSSING" 8 "LTAP" 9 "RTAP" 10 "MOVING" 11 "PRECEEDING" 12 "ONCOMING" ;
+VAL_ 699 FR_CMR_Obj_MtnOrient10Sta 0 "EQ_MTN_ONT_UNDEFINED" 1 "EQ_MTN_ONT_DRIFTING_RIGHT" 2 "EQ_MTN_ONT_CROSSING_RIGHT" 3 "EQ_MTN_ONT_ONCOMING_DRIFT_RIGHT" 4 "EQ_MTN_ONT_ONCOMING" 5 "EQ_MTN_ONT_ONCOMING_DRIFT_LEFT" 6 "EQ_MTN_ONT_CROSSING_LEFT" 7 "EQ_MTN_ONT_DRIFTING_LEFT" 8 "EQ_MTN_ONT_PRECEDING" ;
+VAL_ 703 FR_CMR_Obj_isCIPV01Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV02Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV03Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV04Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV05Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV06Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV07Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV08Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV09Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV10Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV11Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV12Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV13Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV14Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV15Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV16Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV17Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV18Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV19Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 703 FR_CMR_Obj_isCIPV20Sta 0 "EQ_NOT_RELAVANT" 1 "EQ_NO_CIPV" 2 "EQ_CIPV" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign01Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign02Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign03Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign04Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign05Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign06Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign07Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign08Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign09Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign10Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign11Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign12Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign13Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign14Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign15Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign16Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign17Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign18Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign19Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 704 FR_CMR_Obj_LaneAssign20Sta -2 "EQ_LEFT_NEXT_NEXT" -1 "EQ_LEFT_NEXT" 0 "EQ_EGO_LANE" 1 "EQ_RIGHT_NEXT" 2 "EQ_RIGHT_NEXT_NEXT" 3 "EQ_LANE_UNKNOWN" ;
+VAL_ 387 FR_CMR_Obj_MvngFlag07Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 387 FR_CMR_Obj_Clfct07Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 387 FR_CMR_Obj_MvngFlag08Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 387 FR_CMR_Obj_Clfct08Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 386 FR_CMR_Obj_MvngFlag05Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 386 FR_CMR_Obj_Clfct05Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 386 FR_CMR_Obj_MvngFlag06Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 386 FR_CMR_Obj_Clfct06Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 385 FR_CMR_Obj_MvngFlag03Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 385 FR_CMR_Obj_Clfct03Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 385 FR_CMR_Obj_MvngFlag04Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 385 FR_CMR_Obj_Clfct04Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 384 FR_CMR_Obj_MvngFlag01Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 384 FR_CMR_Obj_Clfct01Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 384 FR_CMR_Obj_MvngFlag02Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 384 FR_CMR_Obj_Clfct02Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 388 FR_CMR_Obj_MvngFlag09Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 388 FR_CMR_Obj_Clfct09Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 388 FR_CMR_Obj_MvngFlag10Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 388 FR_CMR_Obj_Clfct10Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 438 FR_CMR_Obj_MvngFlag11Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 438 FR_CMR_Obj_Clfct11Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 438 FR_CMR_Obj_MvngFlag12Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 438 FR_CMR_Obj_Clfct12Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 439 FR_CMR_Obj_MvngFlag13Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 439 FR_CMR_Obj_Clfct13Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 439 FR_CMR_Obj_MvngFlag14Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 439 FR_CMR_Obj_Clfct14Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 440 FR_CMR_Obj_MvngFlag15Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 440 FR_CMR_Obj_Clfct15Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 440 FR_CMR_Obj_MvngFlag16Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 440 FR_CMR_Obj_Clfct16Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 441 FR_CMR_Obj_MvngFlag17Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 441 FR_CMR_Obj_Clfct17Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 441 FR_CMR_Obj_MvngFlag18Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 441 FR_CMR_Obj_Clfct18Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 507 FR_CMR_Obj_MvngFlag19Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 507 FR_CMR_Obj_Clfct19Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 507 FR_CMR_Obj_MvngFlag20Sta 0 "Not Defined" 1 "Standing(nevermoved, lights ON)" 2 "Parked (never moved, lights off)" 3 "Stopped (movable)" 4 "Unknown (movable)" 5 "Moving (movable)" 6 "Stopped (Oncoming )" 7 "Unknown (Oncoming )" 8 "Moving (Oncoming )" 9 "Crossing Bicycle" ;
+VAL_ 507 FR_CMR_Obj_Clfct20Sta 0 "Unknown" 1 "Truck" 2 "Car" 3 "MotorBike" 4 "Bicycle" 5 "Pedestrians" 6 "Undecided" ;
+VAL_ 676 FR_CMR_Ln_ClfctLft01Sta 0 "Dashed" 1 "Solid" 2 "Undecided" 3 "Road Edge" 4 "DLM Inner Solid" 5 "DLM Inner Dashed" 6 "DLM Inner Undecided" 7 "Botts Dots" 8 "Barrier" ;
+VAL_ 676 FR_CMR_Ln_ClfctRt01Sta 0 "Dashed" 1 "Solid" 2 "Undecided" 3 "Road Edge" 4 "DLM Inner Solid" 5 "DLM Inner Dashed" 6 "DLM Inner Undecided" 7 "Botts Dots" 8 "Barrier" ;
+VAL_ 676 FR_CMR_Ln_LftClr01Sta 0 "Unknown" 1 "White" 2 "Yellow,Orange,Red" 3 "Blue,Green" ;
+VAL_ 676 FR_CMR_Ln_RtClr01Sta 0 "Unknown" 1 "White" 2 "Yellow,Orange,Red" 3 "Blue,Green" ;
+VAL_ 676 FR_CMR_Ln_QualLvlLft01Sta 0 "Very Low Quality 1" 1 "Low Quality 2" 2 "Prediction" 3 "High Quality" 4 "Reserved" 5 "Reserved" 6 "Not used" 7 "Error Indicator" ;
+VAL_ 676 FR_CMR_Ln_QualLvlRt01Sta 0 "Very Low Quality 1" 1 "Low Quality 2" 2 "Prediction" 3 "High Quality" 4 "Reserved" 5 "Reserved" 6 "Not used" 7 "Error Indicator" ;
+VAL_ 676 FR_CMR_Ln_ClfctLft02Sta 0 "Dashed" 1 "Solid" 2 "Undecided" 3 "Road Edge" 4 "DLM Inner Solid" 5 "DLM Inner Dashed" 6 "DLM Inner Undecided" 7 "Botts Dots" 8 " Barrier" ;
+VAL_ 676 FR_CMR_Ln_ClfctRt02Sta 0 "Dashed" 1 "Solid" 2 "Undecided" 3 "Road Edge" 4 "DLM Inner Solid" 5 "DLM Inner Dashed" 6 "DLM Inner Undecided" 7 "Botts Dots" 8 " Barrier" ;
+VAL_ 676 FR_CMR_Ln_QualLvlLft02Sta 0 "Very Low Quality 1" 1 "Low Quality 2" 2 "Prediction" 3 "High Quality" 4 "Reserved" 5 "Reserved" 6 "Not used" 7 "Error Indicator" ;
+VAL_ 676 FR_CMR_Ln_QualLvlRt02Sta 0 "Very Low Quality 1" 1 "Low Quality 2" 2 "Prediction" 3 "High Quality" 4 "Reserved" 5 "Reserved" 6 "Not used" 7 "Error Indicator" ;
+VAL_ 676 FR_CMR_Lnx_fLftLane01 0 "Road Border/Edge or None" 1 "Lane Marker" ;
+VAL_ 676 FR_CMR_Lnx_fRtLane01 0 "Road Border/Edge or None" 1 "Lane Marker" ;
+VAL_ 676 FR_CMR_Lnx_fLftLane02 0 "Road Border/Edge or None" 1 "Lane Marker" ;
+VAL_ 676 FR_CMR_Lnx_fRtLane02 0 "Road Border/Edge or None" 1 "Lane Marker" ;
+VAL_ 676 FR_CMR_Lnx_LftdlmType01 0 "DLM_NOTDLM" 1 "DLM_SOLID_DASHED" 2 "DLM_DASHED_SOLID" 3 "DLM_SOLID_SOLID" 4 "DLM_DACHED_DASHED" 5 "DLM_UNDECIDED" ;
+VAL_ 676 FR_CMR_Lnx_RtdlmType01 0 "DLM_NOTDLM" 1 "DLM_SOLID_DASHED" 2 "DLM_DASHED_SOLID" 3 "DLM_SOLID_SOLID" 4 "DLM_DACHED_DASHED" 5 "DLM_UNDECIDED" ;
+VAL_ 676 FR_CMR_Lnx_LftdlmType02 0 "DLM_NOTDLM" 1 "DLM_SOLID_DASHED" 2 "DLM_DASHED_SOLID" 3 "DLM_SOLID_SOLID" 4 "DLM_DACHED_DASHED" 5 "DLM_UNDECIDED" ;
+VAL_ 676 FR_CMR_Lnx_RtdlmType02 0 "DLM_NOTDLM" 1 "DLM_SOLID_DASHED" 2 "DLM_DASHED_SOLID" 3 "DLM_SOLID_SOLID" 4 "DLM_DACHED_DASHED" 5 "DLM_UNDECIDED" ;
+
