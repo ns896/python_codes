@@ -26,12 +26,12 @@ def parse_arguments():
         description='KRV CAN Bus Engine - Monitor and log CAN bus traffic using DBC files',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-Examples:
-  # Run for 60 seconds
-  python main.py --dbc example.dbc --port 192.168.1.100:8080 --output ./logs --duration 60
-  
-  # Process 1000 frames
-  python main.py --dbc example.dbc --port 192.168.1.100:8080 --output ./logs --frames 1000
+        Examples:
+        # Run TUI interface
+        python main.py --dbc example.dbc --port can0 --output ./logs --tui
+
+        # Run TUI interface with filter IDs
+        python main.py --dbc example.dbc --port can0 --output ./logs --tui --filter-ids 0x123,0x456
         """
     )
     
@@ -66,6 +66,18 @@ Examples:
         help='Set the logging level (default: INFO)'
     )
 
+    parser.add_argument(
+        '--tui',
+        action='store_true',
+        help='Launch TUI interface instead of logging to file'
+    )
+
+    parser.add_argument(
+        '--filter-ids',
+        type=str,
+        help='Comma-separated list of message IDs to filter (e.g., 0x123,0x456 or 291,1234)'
+    )
+
     return parser.parse_args()
 
 
@@ -87,10 +99,6 @@ def validate_arguments(args):
         print(f"Error: DBC file not found: {args.dbc}", file=sys.stderr)
         sys.exit(1)
     
-    # Validate DBC file extension
-    if not args.dbc.lower().endswith('.dbc'):
-        print(f"Warning: DBC file does not have .dbc extension: {args.dbc}", file=sys.stderr)
-    
     # Validate and create output directory
     output_path = Path(args.output)
     try:
@@ -98,7 +106,6 @@ def validate_arguments(args):
     except Exception as e:
         print(f"Error: Cannot create output directory '{args.output}': {e}", file=sys.stderr)
         sys.exit(1)
-    
    
     return True
 
@@ -107,13 +114,9 @@ def main():
     """
     Main entry point for the KRV CAN Bus Engine.
     """
-    # Parse command-line arguments
     args = parse_arguments()
-    
-    # Validate arguments
     validate_arguments(args)
 
-    # Initialize logger
     log_ = KRV_Logger(name="KRV_CanENGINE", output_dir=args.output, file_name="KRV_CanENGINE", level=args.log_level)
     LOG = log_.get_logger()
 
@@ -128,14 +131,44 @@ def main():
 
     can_engine = KRV_CanEngine(dbc_file=args.dbc, can_port=args.port)
 
-    while True:
-        message = can_engine.next()
-        if message is not None:
-            LOG.info(f"Message: {message}")
-        else:
-            LOG.warning("No message received")
-            time.sleep(0.01)
+    if args.tui:
+        # Launch TUI interface
+        from can_engine_gui import CANMessageTUI
         
+        # Parse filter IDs if provided
+        filter_ids = None
+        if args.filter_ids:
+            try:
+                filter_ids = []
+                for id_str in args.filter_ids.split(','):
+                    id_str = id_str.strip()
+                    if id_str.startswith('0x') or id_str.startswith('0X'):
+                        filter_ids.append(int(id_str, 16))
+                    else:
+                        filter_ids.append(int(id_str))
+            except ValueError as e:
+                LOG.error(f"Invalid filter ID format: {e}")
+                print(f"Error: Invalid filter ID format. Use hex (0x123) or decimal (291)", file=sys.stderr)
+                sys.exit(1)
+        
+        # Start TUI
+        tui = CANMessageTUI(can_engine=can_engine, filter_ids=filter_ids)
+        tui.start()  # Use start() method from BasicTUI which handles curses.wrapper
+    else:
+        # Logging mode - write to file
+        while True:
+            try:
+                message = can_engine.next()
+                if message is not None:
+                    LOG.info(f"Message: {message}")
+                else:
+                    LOG.warning("No message received")
+                    time.sleep(0.01)
+            except KeyboardInterrupt:
+                LOG.info("Interrupted by user. Shutting down...")
+                can_engine.can_receiver_destructor()
+                break
+
 
 if __name__ == '__main__':
     main()
