@@ -10,10 +10,9 @@ The KRV CAN Bus Engine is a software tool that enables real-time monitoring and 
 
 - [Overview](#overview)
 - [Features](#features)
-- [Requirements](#requirements)
-  - [Basic Requirements](#basic-requirements)
-  - [Future Enhancements](#future-enhancements)
+- [Future Enhancements](#future-enhancements)
 - [Usage](#usage)
+- [System Architecture](#system-architecture)
 
 
 
@@ -25,33 +24,15 @@ The KRV CAN Bus Engine is a software tool that enables real-time monitoring and 
 - **Configurable Runtime**: Control execution duration by time or frame count
 - **Future GUI/TUI**: Planned graphical and terminal user interfaces for real-time data visualization
 
-## Requirements
-
-### Basic Requirements
-
-The tool requires the following inputs:
-
-1. **DBC File Input**
-   - Command-line argument to specify the DBC (Database Container) file path
-
-2. **CAN IP Port**
-   - Command-line argument to specify the CAN bus IP port/address
-
-3. **Output Directory**
-   - Argument to specify the directory where log files will be generated
-   - Logs are saved in a structured format for easy analysis
-
-4. **Runtime Control**
-   - Option to specify execution duration:
-     - Time-based: Run for a specified duration (e.g., 60 seconds)
-     - Frame-based: Process a specific number of CAN frames
-
 ### Future Enhancements
 
 - **TUI/GUI Interface**: Interactive terminal or graphical user interface to display real-time parsed CAN bus data
 - Real-time data visualization and monitoring
 - Signal filtering and search capabilities
 - Export functionality for various data formats
+
+- Have the ability to construct database from a list of '.dbc' files.
+
 
 ## Usage
 
@@ -60,17 +41,7 @@ The tool requires the following inputs:
 python krv_can_engine.py \
     --dbc <path_to_dbc_file> \
     --port <can_ip_port> \
-    --output <output_directory> \
-    --duration <time_in_seconds> \
-    --frames <number_of_frames>
-```
-
-## Project Structure
-
-```
-KRV_CanENGINE/
-├── ReadME.md          # This file
-└── [source files]     # Implementation files
+    --output <output_directory> 
 ```
 
 ## Contributing
@@ -80,3 +51,68 @@ This project is under active development. Contributions and suggestions are welc
 ---
 
 **Note**: This README will be updated as the project evolves and additional features are implemented.
+
+
+## System Architecture
+
+### Architecture Diagram
+
+### Data Flow
+
+```
+┌─────────────┐
+│   User      │
+│   Input     │
+└──────┬──────┘
+       │
+       │ python3 main.py --dbc file.dbc --port can0 --output ./logs
+       ▼
+┌─────────────────────┐
+│   Argument Parser   │  Validates inputs, creates directories
+└──────────┬──────────┘
+           │
+           ├─────────────────┐
+           │                 │
+           ▼                 ▼
+┌──────────────────┐  ┌──────────────────┐
+│  KRV_Logger      │  │  KRV_CanEngine   │
+│  Initialized     │  │  Initialized     │
+└──────────────────┘  └────────┬─────────┘
+                               │
+                ┌──────────────┴───────────────┐
+                │                              │
+                ▼                              ▼
+    ┌───────────────────────┐      ┌───────────────────────┐
+    │  Load DBC File        │      │  Connect to CAN Bus   │
+    │  • Parse messages     │      │  • Open socketcan     │
+    │  • Parse signals      │      │  • Set timeout        │
+    └───────────┬───────────┘      └───────────┬───────────┘
+                │                              │
+                └──────────────┬───────────────┘
+                               │
+                               ▼
+                    ┌───────────────────────┐
+                    │   Main Loop           │
+                    │   while True:         │
+                    │     msg = next()      │
+                    └───────────┬───────────┘
+                                │
+                ┌───────────────┴───────────────┐
+                │                               │
+                ▼                               ▼
+    ┌───────────────────────┐      ┌───────────────────────┐
+    │  Receive CAN Message  │      │  Decode with DBC      │
+    │  • ID, DLC, Data      │      │  • Match message ID   │
+    │                       │      │  • Extract signals    │
+    └───────────┬───────────┘      └───────────┬───────────┘
+                │                               │
+                └───────────────┬───────────────┘
+                                │
+                                ▼
+                    ┌───────────────────────┐
+                    │   Log to File         │
+                    │   • Timestamp         │
+                    │   • Decoded data      │
+                    └───────────────────────┘
+```
+
