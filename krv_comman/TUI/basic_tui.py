@@ -28,6 +28,44 @@ class BasicTUI:
         self.stdscr.border()
         self.stdscr.addstr(0, 2, f" {self.title} ", curses.color_pair(1))
     
+    def get_header_text(self):
+        """Override this method in subclasses to return header text"""
+        return None
+    
+    def get_footer_text(self):
+        """Override this method in subclasses to return footer text"""
+        return None
+    
+    def draw_header(self):
+        """Draw header section - override get_header_text() to customize"""
+        header_text = self.get_header_text()
+        if header_text:
+            height, width = self.stdscr.getmaxyx()
+            # Draw header on line 1, separator on line 2
+            try:
+                self.stdscr.addstr(1, 2, header_text[:width-4], curses.color_pair(1))
+                self.stdscr.addstr(2, 2, "-" * (width - 4))
+            except curses.error:
+                pass  # Ignore if out of bounds
+    
+    def draw_footer(self):
+        """Draw footer section - override get_footer_text() to customize"""
+        footer_text = self.get_footer_text()
+        if footer_text:
+            height, width = self.stdscr.getmaxyx()
+            footer_y = height - 2
+            try:
+                self.stdscr.addstr(footer_y, 2, footer_text[:width-4], curses.color_pair(4))
+            except curses.error:
+                pass  # Ignore if out of bounds
+    
+    def get_content_area(self):
+        """Get the available area for content (y_start, y_end, width)"""
+        height, width = self.stdscr.getmaxyx()
+        y_start = 4 if self.get_header_text() else 1
+        y_end = height - 3 if self.get_footer_text() else height - 1
+        return y_start, y_end, width
+    
     def draw_content(self):
         """Override this method in subclasses to draw specific content"""
         height, width = self.stdscr.getmaxyx()
@@ -45,7 +83,9 @@ class BasicTUI:
     def refresh(self):
         """Refresh the display"""
         self.draw_border()
+        self.draw_header()
         self.draw_content()
+        self.draw_footer()
         self.stdscr.refresh()
     
     def _tui_main(self, stdscr):

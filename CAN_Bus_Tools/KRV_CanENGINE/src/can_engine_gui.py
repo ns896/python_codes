@@ -85,42 +85,35 @@ class CANMessageTUI(BasicTUI):
         self.receiver_thread = threading.Thread(target=receiver_loop, daemon=True)
         self.receiver_thread.start()
     
-    def draw_content(self):
-        """Draw the CAN message display"""
-        height, width = self.stdscr.getmaxyx()
-        
-        # Header
-        self._draw_header(width)
-        
-        # Message list
-        self._draw_message_list(height, width)
-        
-        # Footer
-        self._draw_footer(height, width)
-    
-    def _draw_header(self, width):
-        """Draw header with stats"""
+    def get_header_text(self):
+        """Return header text with CAN bus statistics"""
         header = f"CAN Port: {self.can_engine.can_port} | "
         header += f"Messages: {self.message_store.total_count} | "
         header += f"Unique IDs: {len(self.message_store.get_all())}"
         if self.filter_ids:
             header += f" | Filtered: {len(self.filter_ids)} IDs"
-        
-        self.stdscr.addstr(1, 2, header[:width-4], curses.color_pair(1))
-        self.stdscr.addstr(2, 2, "-" * (width - 4))
+        return header
     
-    def _draw_message_list(self, height, width):
+    def get_footer_text(self):
+        """Return footer text with controls"""
+        return "q=Quit | ↑↓=Scroll | f=Filter | r=Refresh | s=Sort"
+    
+    def draw_content(self):
+        """Draw the CAN message display"""
+        self._draw_message_list()
+    
+    def _draw_message_list(self):
         """Draw the list of messages"""
         messages = self.message_store.get_all()
-        start_y = 4
-        max_lines = height - start_y - 3  # Leave space for footer
+        y_start, y_end, width = self.get_content_area()
+        max_lines = y_end - y_start
         
         # Apply scroll offset
         display_messages = messages[self.scroll_offset:self.scroll_offset + max_lines]
         
         for idx, msg in enumerate(display_messages):
-            y_pos = start_y + idx
-            if y_pos >= height - 3:
+            y_pos = y_start + idx
+            if y_pos >= y_end:
                 break
             
             # Format message line
@@ -170,12 +163,6 @@ class CANMessageTUI(BasicTUI):
         line = f"{fixed_prefix}{signal_str}{fixed_suffix}"
         return line[:max_width]
     
-    def _draw_footer(self, height, width):
-        """Draw footer with controls"""
-        footer_y = height - 2
-        controls = "q=Quit | ↑↓=Scroll | f=Filter | r=Refresh | s=Sort"
-        self.stdscr.addstr(footer_y, 2, controls[:width-4], curses.color_pair(4))
-    
     def handle_input(self, key):
         """Handle keyboard input"""
         super().handle_input(key)
@@ -184,7 +171,9 @@ class CANMessageTUI(BasicTUI):
             self.scroll_offset = max(0, self.scroll_offset - 1)
         elif key == curses.KEY_DOWN:
             messages = self.message_store.get_all()
-            max_scroll = max(0, len(messages) - (self.stdscr.getmaxyx()[0] - 7))
+            y_start, y_end, _ = self.get_content_area()
+            max_lines = y_end - y_start
+            max_scroll = max(0, len(messages) - max_lines)
             self.scroll_offset = min(max_scroll, self.scroll_offset + 1)
         elif key == ord('f') or key == ord('F'):
             # Toggle filter mode
