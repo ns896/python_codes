@@ -31,6 +31,8 @@ classifiers = [
 dependencies = [
     "pyserial>=3.5",
     "minimalmodbus>=2.1.1",
+    "python-can>=4.0.0",
+    "cantools>=39.0.0",
 ]
 
 # Optional dependencies for different use cases
